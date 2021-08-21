@@ -1,0 +1,11 @@
+@font-face {
+    font-family:"ProvidentPali";
+    src: local("ProvidentPali"), 
+    url("ProvidentPaliSegoe.otf") 
+}
+
+.provident {font: 1.5rem "ProvidentPali"; width:100%;height:10rem}
+
+note {color:brown}
+note::before {content:'['}
+note::after {content:']'}
