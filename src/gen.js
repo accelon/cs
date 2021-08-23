@@ -1,17 +1,30 @@
-import {readFileSync,writeFileSync} from 'fs'
-import deva2provident from './deva2provident.js';
+import {existsSync, readdirSync,readFileSync} from 'fs'
 
-const filelists=['s0501m.mul','s0201m.mul'];
-const srcfolder='../Xml/';
-const outfolder='../';
-const xmlheader='<?xml version="1.0" encoding="UTF-16"?>\n<?xml-stylesheet type="text/xsl" href="tipitaka-deva.xsl"?>\n<TEI.2>\n<teiHeader></teiHeader>\n<text>\n<front></front>\n<body xml:space="preserve">'
-const xmlfooter='</body>\n<back></back>\n</text>\n</TEI.2>'
-const htmlheader='<!DOCTYPE html><head><link rel="stylesheet" href="cs.css"><head>\n<body xml:space="preserve" class="provident">'
-const htmlfooter='</body></html>'
-filelists.forEach(file=>{
-    const content=deva2provident(readFileSync(srcfolder+file+'.xml','ucs2')
-    .replace(/\r?\n/g,'\n').replace(xmlheader,htmlheader).replace(xmlfooter,htmlfooter));
+import fixCST4 from './cst4-errata.js';
+import prolog from './prolog.js';
+import translit from './transliterate.js';
+import aname from './aname.js';
+import epilog from './epilog.js';
+import htmlgen from './htmlgen.js';
 
-    // console.log(content.length,content.substr(1,300));
-    writeFileSync(outfolder+file+'.htm',content,'utf8');
+const srcfolder='/Cst4/Xml/'; //download Cst4 from tipitaka.org
+const testfn='s0102m.mul.xml';
+const fn1=process.argv[2]?process.argv[2]:testfn;
+const allfiles=readdirSync(srcfolder);
+if (fn1&&!existsSync(srcfolder+fn1)) {
+    throw "file not exists "+fn1;
+}
+const filelist=fn1?[fn1]:allfiles;
+
+const Steps=[fixCST4, prolog ,translit ,  aname, epilog, htmlgen];
+const ctx={};
+filelist.forEach(fn=>{
+    if (!fn.endsWith('.xml'))return;
+    let lines=readFileSync(srcfolder+fn,'ucs2').split(/\r?\n/);
+    process.stdout.write('\r'+fn+' linecount:'+lines.length);
+    ctx.fn=fn;
+    Steps.forEach(step=>lines=step(lines,ctx));
 })
+process.stdout.write('\n');
+console.log('processed',filelist.length ,'files');
+console.log('context',ctx)

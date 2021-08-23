@@ -3,9 +3,47 @@
     src: local("ProvidentPali"), 
     url("ProvidentPaliSegoe.otf") 
 }
+xml {
 
-.provident {font: 1.5rem "ProvidentPali"; width:100%;height:10rem}
-
-note {color:brown}
+    font: 1.5rem "ProvidentPali"; width:100%;
+}
+p {margin:0;line-height: 150%;padding-left:1.2em}
+note {color:blue}
 note::before {content:'['}
 note::after {content:']'}
+a[name] {font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;}
+a[name]::before {
+    cursor:pointer;
+    content:attr(name)
+}
+a[name]:hover {background:silver;border-radius: 0.25em;}
+
+.bold {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white}
+.bodytext { text-indent: 2em;}
+.hangnum { margin-bottom: -1em; text-indent: 2em;}
+.centered { text-align:center;}
+.book { font-size: 1.2em; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 1.5em; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 2em; text-align:center; font-weight: bold;}
+
+.title { text-align:center; font-weight: bold;}
+
+.subhead { text-align:center; font-weight: bold;}
+.subsubhead { text-align:center; font-weight: bold;}
+/* Gatha line 1 */
+.gatha1 { margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { margin-bottom: 0.5cm; margin-left: 4em;}
