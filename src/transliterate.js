@@ -1,5 +1,6 @@
-import {fromDevanagari} from 'provident-pali';
+import {fromDevanagari,toIAST} from 'provident-pali';
 
-export default function(rawlines,ctx){
-    return rawlines.map(line=>fromDevanagari(line));
+export default function(buf,ctx){
+    return toIAST(fromDevanagari(buf),{format:'xml'});
+    // return fromDevanagari(line);
 }
