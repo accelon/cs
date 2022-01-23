@@ -44,7 +44,8 @@ export const handlers={
                     return '\n^title['+text+']';
                 }
             }
-        } else if (el.attrs.n) {
+        }
+        if (el.attrs.n) {
             t='^n'+el.attrs.n;
         }
         t=t+text;

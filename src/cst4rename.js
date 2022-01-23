@@ -24,7 +24,7 @@ export const cst4rename=fn=>{
             const m=fn.match(/^s04(\d\d)m(\d)/);
             return 'an'+AN[m[1][1]+'-'+m[2]];
         } else if (m[1]=='05' && (vol=='13' ||vol=='14')){ //jataka att has multiple volumn
-            return 'ja'+ (parseInt(m[1])-4)  +mat+fn.substr(6,1);
+            return 'ja'+ (parseInt(vol)-12)  +mat+fn.substr(6,1);
         }
     }
     return Newname[fn.substr(0,6)]
