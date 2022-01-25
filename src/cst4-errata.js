@@ -62,7 +62,7 @@ const InvalidTransliteration={ // ः
 
     ],
     's0515m.mul.xml':[//mnd
-        [' प्वा',' वा',1],//"mnd1:43.2"
+        [' प्वा',' वा',1],// pvā==>vā "mnd1:43.2"
     ],
     's0516m.mul.xml':[//cnd
         ['द्पणिधि','पणिधि',1] ,//dpaṇidhi==>paṇidhi "cnd5:13.2":
