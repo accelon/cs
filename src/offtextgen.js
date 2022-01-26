@@ -8,6 +8,8 @@ export default function(buf,ctx){
     const bkid=outfn;
     const bkpf=bkid.match(/([^\d]+)/)[1];
     const teictx={cluster,bkid,bkpf};
+
+    // console.log(buf)
     const out=XML2OffText(body,teictx,handlers,closeHandlers);
     return out;
 }

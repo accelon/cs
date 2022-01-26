@@ -74,5 +74,17 @@ export default { //key is bkid or bkpf , bkid has precedence
             const sutta=JA_JATAKA[ctx.bkid] + parseInt(text);
             return '^c'+getMAT(ctx.bkid)+'m'+sutta+'['+text+']';  
         }
+    },
+    'vs':{//visuddhimagga , vs1,vs2
+        'chapter':(el,ctx,text)=>{
+            if (ctx.bkid.substr(2,1)=='2' && ctx.clusterCount==0) ctx.clusterCount=11;
+            ctx.clusterCount++;
+            return  '^c'+getMAT(ctx.bkid)+'vs'+ctx.clusterCount+'['+text+']';  
+        },
+        'book':(el,ctx,text)=>{
+            if (ctx.bkid.substr(2,1)=='1') {
+                return '^bk'+getMAT(ctx.bkid)+'vs['+text+']';//去掉 1a,2a
+            } else return ''; //雖分為兩檔(vs1:1-365, vs2:366-896)，但段落連號 ，合併為一書號 vs
+        }
     }
 }

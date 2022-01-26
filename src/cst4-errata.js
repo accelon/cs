@@ -76,6 +76,12 @@ const InvalidTransliteration={ // ः
         [/\u0903/g,';',1],
         ['भिक्खवेऋ','भिक्खवे',1],//extra R at the end
     ],
+    'e0104n.att.xml':[ //att of vism vol2
+        ['अचक्‍कबण्धोपि','अचक्कबन्धोपि',1],//Acakkabaṇdhopi==>Acakkabandhopi
+        ['अनुगच्‍च्छन्तो','अनुगच्छन्तो',1], // anugaccchanto ==> anugacchanto
+        ['सीलसमाधिपञ्मासङ्खातं','सीलसमाधिपञ्ञासङ्खातं',1],// sīlasamādhipañmāsaṅkhātaṃ==>Sīlasamādhipaññāsaṅkhātaṃ
+
+    ],
 /*
     's0513a1.att.xml':[
         [/<p rend="bodytext"> ([१२३४५६७८९१०]+)\./g,'<p rend="subhead">$1.',10], //錯誤的 rend

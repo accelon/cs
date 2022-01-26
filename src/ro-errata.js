@@ -43,6 +43,54 @@ const Errata={
         ['<p rend="hangnum" n="21"><hi rend="paranum">21</hi><hi rend="dot">.</hi></p>\n<p rend="gatha1">‘‘phalā',
 		'<p rend="hangnum" n="22"><hi rend="paranum">22</hi><hi rend="dot">.</hi></p>\n<p rend="gatha1">‘‘phalā'],
     ],
+    'e0102n.mul.xml':[
+        ['<p rend="bodytext" n="561"><hi rend="paranum">561</hi><hi rend="dot">.</hi> ayaṃ',
+        '<p rend="bodytext" n="591"><hi rend="paranum">591</hi><hi rend="dot">.</hi> ayaṃ']
+    ],
+    'e0103n.att.xml':[//清淨道論注缺 157段注釋
+        ['<p rend="bodytext" n="156"><hi rend="paranum">156</hi><hi rend="dot">',
+        '<p rend="bodytext" n="156-157"><hi rend="paranum">156-157</hi><hi rend="dot">'],
+        ['<p rend="bodytext" n="182"><hi rend="paranum">182</hi>',
+        '<p rend="bodytext" n="182-183"><hi rend="paranum">182-183</hi>'],
+        ['<p rend="bodytext" n="190"><hi rend="paranum">190</hi>',
+         '<p rend="bodytext" n="190-191"><hi rend="paranum">190-191</hi>'],
+         ['<p rend="bodytext" n="202"><hi rend="paranum">202</hi>',
+        '<p rend="bodytext" n="202-203"><hi rend="paranum">202-203</hi>'],
+        ['<p rend="bodytext" n="319"><hi rend="paranum">319</hi>',
+        '<p rend="bodytext" n="319-320"><hi rend="paranum">319-320</hi>'],
+        ['<p rend="bodytext" n="325"><hi rend="paranum">325</hi>',
+         '<p rend="bodytext" n="325-326"><hi rend="paranum">325-326</hi>'],
+
+        ['<p rend="bodytext" n="328"><hi rend="paranum">328</hi>',
+         '<p rend="bodytext" n="328-330"><hi rend="paranum">328-330</hi>'],
+
+         ['<p rend="bodytext" n="334"><hi rend="paranum">334</hi>',
+         '<p rend="bodytext" n="334-335"><hi rend="paranum">334-335</hi>'],
+         ['<p rend="bodytext" n="339"><hi rend="paranum">339</hi>',
+         '<p rend="bodytext" n="339-342"><hi rend="paranum">339-342</hi>'],
+         ['<p rend="bodytext" n="363"><hi rend="paranum">363</hi>',
+         '<p rend="bodytext" n="363-364"><hi rend="paranum">363-364</hi>']
+    ],
+    'e0104n.att.xml':[//清淨道論注缺 157段注釋
+        ['<p rend="bodytext" n="417"><hi rend="paranum">417</hi>',
+        '<p rend="bodytext" n="417-418"><hi rend="paranum">417-418</hi>'],
+        ['<p rend="bodytext" n="476"><hi rend="paranum">476</hi>',
+        '<p rend="bodytext" n="476-477"><hi rend="paranum">476-477</hi>'],
+        ['<p rend="bodytext" n="483"><hi rend="paranum">483</hi>',
+        '<p rend="bodytext" n="483-484"><hi rend="paranum">483-484</hi>'],
+        ['<p rend="bodytext" n="488"><hi rend="paranum">488</hi>',
+        '<p rend="bodytext" n="488-489"><hi rend="paranum">488-489</hi>'],
+        
+        ['<p rend="bodytext" n="778"><hi rend="paranum">778</hi>',
+        '<p rend="bodytext" n="778-779"><hi rend="paranum">778-779</hi>'],
+        ['<p rend="bodytext" n="786"><hi rend="paranum">786</hi>',
+        '<p rend="bodytext" n="786-787"><hi rend="paranum">786-787</hi>'],
+        ['<p rend="bodytext" n="843"><hi rend="paranum">843</hi>',
+        '<p rend="bodytext" n="843-844"><hi rend="paranum">843-844</hi>'],
+
+        ['<p rend="bodytext" n="880"><hi rend="paranum">880</hi>',
+        '<p rend="bodytext" n="880-881"><hi rend="paranum">880-881</hi>'],
+    ]
 
 }
 export const getErrata=fn=>{

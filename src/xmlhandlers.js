@@ -9,35 +9,40 @@ export const handlers={
     'p':(el,ctx)=>{
         let text=el.innerText();
         const ph=PHandlers[ctx.bkid]||PHandlers[ctx.bkpf];
+        let r;
         if (ph && ph[el.attrs.rend]) {
-            return ph[el.attrs.rend](el,ctx,text);
+            r=ph[el.attrs.rend](el,ctx,text);
         }
 
+        /*
+          PHandlers 若返回 undefined ，表示未完成
+        */
+        if (typeof r!=='undefined') return r;
         let t='',rend=el.attrs.rend;
         
         let newline=true;
-        if (rend=='subhead'){ 
+        if (rend==='subhead'){ 
             t='^h['+text+']';
             //副標與段合併，方便顯示
             newline=false;// combine subhead with <p n=
         } else if ( rend==='gatha1' || rend==='gatha2'|| rend==='gatha3'|| rend==='gathalast') {
-            t='^sz ';
+            t='^sz '+text;
         } else if (rend==='centre'||rend==='nikaya'||rend==='book') {
             if (rend==='centre' ) { //remove namo tassa
                 if (text.substr(0,2)==='॥ ') return '';
               else return '^end '+text+'\n';
             } else if (rend==='nikaya') {
-                // const last=ctx.bkid.substr(ctx.bkid.length-1);
-                // if ((last=='1' || isNaN(parseInt(last))) && ctx.bkpf!=='ja') {
-                    return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'['+el.innerText()+']';
-                // }
-                // return '';
-            } else if (rend==='book') {//only in jataka
-               return '';
+                return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'['+text+']';
+            } else if (rend==='book') {
+                //att,tik 以數字表達，最後的 a,t 去掉
+                return '^bk'+getMAT(ctx.bkid)+ctx.bkid.replace(/(\d+)[at]$/,'$1')+'['+text+']';
             }
-            t='^'+rend+'[';
+            t='^'+rend+'['+text+']';
         } else if (el.attrs.rend==='chapter') {
-            return '^c'+ctx.cluster+'['+el.innerText()+']';
+            ctx.clusterCount++;
+            return '^c'+ctx.clusterCount+'['+text+']';
+        } else {
+            t=text;
         }
         if (el.attrs.pn || el.attrs.hn) {
             const pn=el.attrs.pn || el.attrs.hn;
@@ -45,9 +50,8 @@ export const handlers={
                 //emit bk
             }
             if (el.attrs.hn) newline=false;
-            t='^n'+pn+' ';
+            t='^n'+pn+' '+text;
         }
-        t=t+text+']';
         return t+(newline?'\n':'');
     },
     'div':(el,ctx)=>{
