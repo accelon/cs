@@ -32,7 +32,8 @@ export const handlers={
                 if (text.substr(0,2)==='॥ ') return '';
               else return '^end '+text+'\n';
             } else if (rend==='nikaya') {
-                return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'['+text+']';
+                return '';
+                // return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'['+text+']';
             } else if (rend==='book') {
                 //att,tik 以數字表達，最後的 a,t 去掉
                 return '^bk'+getMAT(ctx.bkid)+ctx.bkid.replace(/(\d+)[at]$/,'$1')+'['+text+']';

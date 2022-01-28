@@ -1,5 +1,5 @@
 // import cst4files from './cst4files.js';
-import {XML2OffText,DOMFromString,xpath } from 'pitaka/xmlparser'
+import {walkDOMOfftext,DOMFromString,xpath } from 'pitaka/xmlparser'
 import {handlers,closeHandlers} from './xmlhandlers.js';
 export default function(buf,ctx){
     const {fn,outfn,cluster}=ctx;
@@ -10,6 +10,6 @@ export default function(buf,ctx){
     const teictx={cluster,bkid,bkpf};
 
     // console.log(buf)
-    const out=XML2OffText(body,teictx,handlers,closeHandlers);
+    const out=walkDOMOfftext(body,teictx,handlers,closeHandlers);
     return out;
 }

@@ -4,7 +4,7 @@ import {changequotepunc, removeparanum  } from './replaces.js';
 import {fixMarkups} from './fixmarkups.js'
 import {backmovepb} from './backmovepb.js'
 import {cst4rename} from './cst4rename.js';
-
+import {parseCite} from './citeparser.js'
 const srcfolder='../ro/'; 
 const desfolder='../books/';
 const testfn='s0101m.mul.xml';
@@ -14,7 +14,7 @@ let pat=process.argv[2]||testfn;
 // const files=readdirSync(srcfolder);
 const filelist= glob(srcfolder,pat);
 
-const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb ]
+const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb, parseCite ]
 
 filelist.forEach(file=>{
   const nn=cst4rename(file);
