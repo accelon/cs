@@ -13,7 +13,7 @@ let pat=process.argv[2]||testfn;
 
 const filelist= glob(srcfolder,pat);
 
-const Steps=[ transliterate, doInlineTag, offtextgen,/*shortenBodytext*/ ];
+const Steps=[ transliterate, doInlineTag, offtextgen,shortenBodytext ];
 const ctx={};
 let  processed=0;  
 

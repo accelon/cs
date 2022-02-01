@@ -7,8 +7,17 @@ Download cst4-2020 (tested on cst4-2020-05-07-4.0.0.15.msi) from tipitaka.org, i
 copy ProvidentPaliSegoe.otf from github.com/dhamma/provident-pali/www/
 
 ## Build steps
-
     cd src
+    
+### Create various indic script from cst4 devanagari TEI, see ro/README.md
+    node conv [filepat]
+    // filepat support DOS style wildcard , ? for single char, * for one or more char(except . )
+    // regular expression [charset] and $ (match end of string) are also supported
+
+### Fix markup and typo of romanized TEI, output to ./books
+    node tidy [filepat]
+
+### Generate offtext from ./books
     node gen
 
 ##

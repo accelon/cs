@@ -23,7 +23,6 @@ const hyperlink_regex=/#([sabhvine]+\d+[mat]\d?)_(\d+);/
 const hyperlink_regex_g=/#([sabhvine]+\d+[mat]\d?)_(\d+);/g
 
 const recognise=link=>{
-	let res=0,ok=false,lastpat;
 	for (var i=0;i<CiteHandler.length;i++){
 		const pat=CiteHandler[i];
 		const m=link.match(pat[0]);
@@ -81,9 +80,7 @@ const parseCite=(buf,fn)=>{
 			if (!cite.parsed) {
 				out+=citetext;
 			} else {
-				out+=cite.parsed.replace(/#([^;]+);/g,(m,m1)=>{
-					return '<cite cs="'+m1+'">'+cite.raw+'</cite>';
-				});
+				out+=cite.parsed;
 			}
  		})
 		return '('+out+')';

@@ -19,7 +19,7 @@ const mat=function(para,fulllink){ //mul , att, tik with multivol
 	}
 	let volpg='';
 	if (para.indexOf(".")>-1) { //multi volumn
-		volpg=para.replace(".",a_t+"/");
+		volpg=para.replace(".",a_t+".");
 		const lastch=parseInt(volpg[volpg.length-1]);
 		if (isNaN(lastch)) {
 			console.error("mat:invalid para",fulllink);

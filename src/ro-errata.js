@@ -1,6 +1,27 @@
 /* errata after convert TEI to ro */
 /* use single crlf */
 const Errata={
+    'vin02m2.mul.xml':[
+        ['<p rend="bodytext" n="199"><hi rend="paranum">199</hi> <hi rend="dot">.</hi>',
+        '<p rend="bodytext" n="199"><hi rend="paranum">199</hi><hi rend="dot">.</hi>']
+    ],
+    'vin02m4.mul.xml':[
+        //vri 只標了16 個的前兩個為title，改為與bhikkhu 一致
+        ['<p rend="subhead">1\. katthapaññattivāro</p>','<p rend="title">1. katthapaññattivāro</p>'],
+        ['<p rend="subhead">2\. katāpattivāro</p>','<p rend="title">2. katāpattivāro</p>'],
+        [/<p rend="subhead">3\. vipattivāro<\/p>/g,'<p rend="title">3. vipattivāro</p>',2],
+        [/<p rend="subhead">4\. saṅgahavāro<\/p>/g,'<p rend="title">4. saṅgahavāro</p>',2],
+        [/<p rend="subhead">5\. samuṭṭhānavāro<\/p>/g,'<p rend="title">5. samuṭṭhānavāro</p>',2],
+        [/<p rend="subhead">6\. adhikaraṇavāro<\/p>/g,'<p rend="title">6. adhikaraṇavāro</p>',2],
+        [/<p rend="subhead">7\. samathavāro<\/p>/g,'<p rend="title">7. samathavāro</p>',2],
+        [/<p rend="subhead">8\. samuccayavāro<\/p>/g,'<p rend="title">8. samuccayavāro</p>',2],
+
+        //vri atthavasapakaraṇaṃ(不是chapter/title) , 改為 chapter ，(應是漏標<div)
+            //對應 pli-tv-pvr9_root-pli-ms
+        ['<p rend="subhead">atthavasapakaraṇaṃ</p>','<p rend="chapter">atthavasapakaraṇaṃ</p>'],
+        //改為chapter 以便與 sc 對應 (pvr 分為 21 chapter, 頭兩個chapter各分為16節)
+        ['<p rend="title">samathabhedo</p>','<p rend="chapter">samathabhedo</p>']
+    ], 
     's0201a.att.xml':[
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']
     ],

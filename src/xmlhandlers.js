@@ -8,10 +8,12 @@ import {getMAT} from './utils.js'
 export const handlers={
     'p':(el,ctx)=>{
         let text=el.innerText();
+
         const ph=PHandlers[ctx.bkid]||PHandlers[ctx.bkpf];
         let r;
         if (ph && ph[el.attrs.rend]) {
-            r=ph[el.attrs.rend](el,ctx,text);
+            const mat=getMAT(ctx.bkid);
+            r=ph[el.attrs.rend](el,ctx,text,mat);
         }
 
         /*
@@ -36,6 +38,7 @@ export const handlers={
                 // return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'['+text+']';
             } else if (rend==='book') {
                 //att,tik 以數字表達，最後的 a,t 去掉
+                if (ctx.div_id==='vin2_5') return ''; //pc 有兩個 book 標記
                 return '^bk'+getMAT(ctx.bkid)+ctx.bkid.replace(/(\d+)[at]$/,'$1')+'['+text+']';
             }
             t='^'+rend+'['+text+']';
@@ -52,10 +55,12 @@ export const handlers={
             }
             if (el.attrs.hn) newline=false;
             t='^n'+pn+' '+text;
+            ctx.pn=pn;
         }
         return t+(newline?'\n':'');
     },
     'div':(el,ctx)=>{
+        ctx.div_id=el.attrs.id;
         // if (el.attrs.id) {
         //     const at=el.attrs.id.lastIndexOf('_');
         //     if (at>-1 && el.attrs.type!=='pannasaka' && ctx.bkpf!=='mn' && ctx.bkpf!=='ja') { //only AN has pannasaka
@@ -63,23 +68,6 @@ export const handlers={
         //     }
         // }
     },
-    // 'head':(el,ctx)=>{
-    //     let head='[t="'+el.innerText()+'"]';
-    //     const rend=el.attrs.rend;
-    //     if (rend==='chapter' ) {
-    //         // if (ctx.bkpf=='mn') {
-    //         //     return '';
-    //         // } else if (ctx.bkpf=='ja') {
-    //         //     return '\n\n^bk[id=ja'+parseInt(el.innerText())+']';
-    //         // } else {
-    //             return '^c'+ctx.cluster+head;
-    //         }
-    //     } else if (rend==='book') {
-    //         return '';
-    //     }
-    //     if (ctx.bkpf!=='mn') head+='\n' //讓MN 的chapter 和 cluster 同一行
-    //     return '^'+ (el.attrs.rend||'h')+head;
-    // },
     "body":(el,ctx)=>{
         ctx.clusterCount=0;
     },
@@ -94,10 +82,10 @@ export const handlers={
     "*":(el,ctx)=>{
         console.log("unknown tag",ctx.bkid,el.name,el.attrs);
     },
-    "pb":(el,ctx)=>{}
+    "pb":(el,ctx)=>{},
 }
 export const closeHandlers={
     "hi":(el,ctx)=>{
         if (el.attrs.rend==='bold') return ctx.snippet+']';
-    }
+    },
 }
