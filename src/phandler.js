@@ -8,8 +8,6 @@ const JA_JATAKA={
     
 }
 
-import {getMAT} from './utils.js'
-
 export default { //key is bkid or bkpf , bkid has precedence
     'pj':{
         'chapter':(el,ctx,text,mat)=>{
@@ -127,10 +125,10 @@ export default { //key is bkid or bkpf , bkid has precedence
             ctx.vaggo=-1;
             return '^c'+mat+'s'+ctx.samy+'['+text+']';
         },
-        'title': (el,ctx,text)=>{
+        'title': (el,ctx,text,mat)=>{
             return '^c'+mat+'s'+ctx.samy+  toBase26(++ctx.vaggo)+'['+text+']';
         },          //big samyutta has vaggo
-        'subhead':(el,ctx,text)=>{         //sutta
+        'subhead':(el,ctx,text,mat)=>{         //sutta
             return '^h' +'['+text+']';
         }
     },

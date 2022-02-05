@@ -1,5 +1,5 @@
 // import cst4files from './cst4files.js';
-import {walkDOMOfftext,DOMFromString,xpath, walkDOM } from 'pitaka/xmlparser'
+import {walkDOMOfftext,DOMFromString,xpath } from 'pitaka/xmlparser'
 import {handlers,closeHandlers} from './xmlhandlers.js';
 
 export default function(buf,ctx){
