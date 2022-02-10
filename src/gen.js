@@ -15,14 +15,19 @@ let pat=process.argv[2]||testfn;
 
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>{
+    if (!ctx.hooks) return buf;
     const lines=buf.split('\n');
     const out=[];
+    let pn='';
     for (let i=0;i<lines.length&&i<ctx.hooks.length;i++) {
-        const id=ctx.bkid+LOCATORSEP+ctx.pn;
-        if (!ctx.hooks[i]) {
-            // console.log('no ohook',i,ctx.hooks[i],lines[i])
+        const m=lines[i].match(/\^n([\d\-]+)/);
+        if (m) pn=m[1];
+        const id=ctx.fn.replace('.xml','')+LOCATORSEP+pn;
+        if (ctx.hooks[i]) {
+            out.push( ... breakByHook(lines[i], ctx.hooks[i].split('\t'),id) );
+        } else {
+            out.push(lines[i]);
         }
-        out.push( ... breakByHook(lines[i], ctx.hooks[i].split('\t'),id) );
     }
     return out.join('\n');
 }
@@ -34,7 +39,9 @@ filelist.forEach(fn=>{
     ctx.fn=fn;
     const outfn=fn.replace('.xml','');
     let buf=readTextContent(srcfolder+fn);
-    ctx.hooks=readTextLines(hookfolder+fn.replace('.xml','.txt'))
+    const hookfn=hookfolder+fn.replace('.xml','.txt');
+    if (fs.existsSync(hookfn) ) ctx.hooks=readTextLines(hookfn);
+    else ctx.hooks=null;
     ctx.outfn=outfn;
     // ctx.cluster=ClusterStarts[outfn]||0;
     // ctx.validateClusterNum= !fn.match(/^mn/)

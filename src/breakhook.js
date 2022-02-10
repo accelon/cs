@@ -10,7 +10,6 @@ const dofile=fn=>{
     const out=[];
     for (let i=0;i<paras.length;i++) {
         const [id,para]=paras[i];
-        // console.log(para)
         const hooks=hookFromParaLines(para);
         out.push(...hooks.map(it=>it.join('\t')));
     }

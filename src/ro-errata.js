@@ -22,6 +22,9 @@ const Errata={
         //改為chapter 以便與 sc 對應 (pvr 分為 21 chapter, 頭兩個chapter各分為16節)
         ['<p rend="title">samathabhedo</p>','<p rend="chapter">samathabhedo</p>']
     ], 
+    's0103m.mul.xml':[
+    	['<p rend="bodytext">paccayānuññātakāraṇaṃ</p>','<p rend="subhead">paccayānuññātakāraṇaṃ</p>'],
+    ],
     's0201a.att.xml':[
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']
     ],

@@ -13,5 +13,5 @@ export default function(buf,ctx){
     const out=walkDOMOfftext(body,teictx,handlers,closeHandlers);
 
     //^n to mark <p> without paranum 
-    return out.split('\n').map(it=>(it.match(/\^n\d+/))?it:'^n '+it).join('\n');
+    return out.trim().split('\n').map(it=>(it.match(/\^n\d+/))?it:'^n '+it).join('\n');
 }
