@@ -11,5 +11,7 @@ export default function(buf,ctx){
     const teictx={cluster,bkid,bkpf,started:false,div_id:''};
 
     const out=walkDOMOfftext(body,teictx,handlers,closeHandlers);
-    return out;
+
+    //^n to mark <p> without paranum 
+    return out.split('\n').map(it=>(it.match(/\^n\d+/))?it:'^n '+it).join('\n');
 }

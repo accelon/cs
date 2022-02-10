@@ -20,6 +20,7 @@ copy ProvidentPaliSegoe.otf from github.com/dhamma/provident-pali/www/
 ### Generate offtext from ./books
     node gen
 
+    
 ##
   
     切分為閱讀單元。每經一個htm
