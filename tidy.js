@@ -1,12 +1,12 @@
 import {nodefs,glob, writeChanged} from 'pitaka/cli';
 await nodefs; //export fs to global
-import {changequotepunc, removeparanum  } from './replaces.js';
-import {fixMarkups} from './fixmarkups.js'
-import {backmovepb} from './backmovepb.js'
-import {cst4rename} from './cst4rename.js';
-import {parseCite} from './citeparser.js'
-const srcfolder='../ro/'; 
-const desfolder='../books/';
+import {changequotepunc, removeparanum  } from './src/replaces.js';
+import {fixMarkups} from './src/fixmarkups.js'
+import {backmovepb} from './src/backmovepb.js'
+import {cst4rename} from './src/cst4rename.js';
+import {parseCite} from './src/citeparser.js'
+const srcfolder='./ro/'; 
+const desfolder='./books/';
 const testfn='s0101m.mul.xml';
 if (!fs.existsSync(desfolder)) fs.mkdirSync(desfolder);
 

@@ -2,11 +2,11 @@ import {glob,nodefs,patchBuf} from 'pitaka/cli';
 await nodefs; //export fs to global
 import {enumTransliteration, deva2IAST} from 'provident-pali';
 
-import {getErrata} from './cst4-errata.js'
+import {getErrata} from './src/cst4-errata.js'
 console.log('conv-romn [filepat]')
 // console.log('available transliteration: ro,',enumTransliteration().join(','));
 const srcfolder='/Cst4/Xml/'; //download Cst4 from tipitaka.org
-const desfolder='../ro/';
+const desfolder='./ro/';
 
 if (!fs.existsSync(srcfolder)) throw 'cst4 xml not found '+srcfolder;
 if (!fs.existsSync(desfolder)) fs.mkdirSync(desfolder);

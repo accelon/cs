@@ -1,9 +1,14 @@
 /* errata after convert TEI to ro */
 /* use single crlf */
 const Errata={
+    'vin01m.mul.xml':[
+        ['[ ]',''], //mess up with off tag
+    ],
     'vin02m2.mul.xml':[
         ['<p rend="bodytext" n="199"><hi rend="paranum">199</hi> <hi rend="dot">.</hi>',
-        '<p rend="bodytext" n="199"><hi rend="paranum">199</hi><hi rend="dot">.</hi>']
+        '<p rend="bodytext" n="199"><hi rend="paranum">199</hi><hi rend="dot">.</hi>'],
+        ['[ ]',''],
+
     ],
     'vin02m4.mul.xml':[
         //vri 只標了16 個的前兩個為title，改為與bhikkhu 一致
@@ -34,7 +39,100 @@ const Errata={
         //weird, seems redudent
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']
     ],
+    's0301m.mul.xml':[
+        //align with SC
+        ['<trailer rend="centre">bhikkhunīsaṃyuttaṃ samattaṃ।</trailer>\n</div>','<p rend="center">Bhikkhunīvaggo paṭhamo।</p>'],
+        //move </div> down to align with SC, samattaṃ cames after uddānaṃ
+        ['<div id="sn1_6"','<trailer rend="centre">bhikkhunīsaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn1_6"'],
+
+        ['<trailer rend="centre">vaṅgīsasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn1_9"','<trailer rend="centre">vaṅgīsasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn1_9"'],
+
+        ['<trailer rend="centre">vanasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn1_10"','<trailer rend="centre">vanasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn1_10"'],
+
+        ['<trailer rend="centre">yakkhasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn1_11"','<trailer rend="centre">yakkhasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn1_11"'],
+    ],
+    's0302m.mul.xml':[
+        //inconsistent in sn13.11:3.4 , should be moved to the end
+        //['<trailer rend="centre">abhisamayasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        //['<div id="sn2_3"','<trailer rend="centre">abhisamayasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn2_3"'],
+
+
+        ['<trailer rend="centre">kassapasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn2_6"','<trailer rend="centre">kassapasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn2_6"'],
+        ['<trailer rend="centre">opammasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn2_10"','<trailer rend="centre">opammasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn2_10"'],
+
+        ['<trailer rend="centre">bhikkhusaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<p rend="centre">nidānavaggo dutiyo।</p>',
+        '<trailer rend="centre">bhikkhusaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<p rend="centre">nidānavaggo dutiyo।</p>']
+
+    ],
+    's0303m.mul.xml':[
+        ['<trailer rend="centre">okkantasaṃyuttaṃ <note>okkantikasaṃyuttaṃ (pī ka)</note> samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_5"','<trailer rend="centre">okkantasaṃyuttaṃ <note>okkantikasaṃyuttaṃ (pī ka)</note> samattaṃ।</trailer>\n</div>\n<div id="sn3_5"'],
+
+        ['<trailer rend="centre">uppādasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_6"','<trailer rend="centre">uppādasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn3_6"'],
+        
+        ['<trailer rend="centre">kilesasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_7"','<trailer rend="centre">kilesasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn3_7"'],
+        
+        ['<trailer rend="centre">sāriputtasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_8"','<trailer rend="centre"></trailer>\n</div>\n<div id="sn3_8"'],
+        
+        ['<trailer rend="centre">nāgasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_9"','<trailer rend="centre">nāgasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn3_9"'],
+        
+        ['<trailer rend="centre">supaṇṇasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_10"','<trailer rend="centre">supaṇṇasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn3_10"'],
+        
+        ['<trailer rend="centre">gandhabbakāyasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_11"','<trailer rend="centre">gandhabbakāyasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn3_11"'],
+        
+        ['<trailer rend="centre">valāhakasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_12"','<trailer rend="centre">valāhakasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn3_12"'],
+        
+        ['<trailer rend="centre">vacchagottasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn3_13"','<trailer rend="centre">vacchagottasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn313_"'],
+
+        ['<trailer rend="centre">jhānasaṃyuttaṃ <note>samādhisaṃyuttaṃ (syā kaṃ)</note> samattaṃ।</trailer>\n</div>\n',''],
+        ['<p rend="gathalast">gocarā abhinīhāro sakkacca, sātacca athopi sappāyanti॥</p>'
+        ,'<p rend="gathalast">gocarā abhinīhāro sakkacca, sātacca athopi sappāyanti॥</p>\n<trailer rend="centre">jhānasaṃyuttaṃ <note>samādhisaṃyuttaṃ (syā kaṃ)</note> samattaṃ।</trailer>\n</div>'],
+
+        ['<p rend="centre">khandhavaggo tatiyo।</p>\n',''],
+        ['vitthāretabbāni।)</p>','vitthāretabbāni।)</p>\n<p rend="centre">khandhavaggo tatiyo।</p>',],
+
+    ],
+    's0304m.mul.xml':[
+//        ['<trailer rend="centre">jambukhādakasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+//        ['<div id="sn4_5"','<trailer rend="centre">jambukhādakasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn4_5"'],
+
+        ['<trailer rend="centre">moggallānasaṃyuttaṃ <pb ed="P" n="4.0281"/> samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn4_7"','<trailer rend="centre">moggallānasaṃyuttaṃ <pb ed="P" n="4.0281"/> samattaṃ।</trailer>\n</div>\n<div id="sn4_7"'],
+
+        ['<trailer rend="centre">cittasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn4_8"','<trailer rend="centre">cittasaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn4_8"'],
+
+        ['<trailer rend="centre">gāmaṇisaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
+        ['<div id="sn4_9"','<trailer rend="centre">gāmaṇisaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<div id="sn4_9"'],
+
+        ['<trailer rend="centre">abyākatasaṃyuttaṃ <pb ed="P" n="4.0403"/> samattaṃ।</trailer>\n</div>\n',''],
+
+        ['<p rend="centre">saḷāyatanavaggo catuttho।</p>'
+         ,'<trailer rend="centre">abyākatasaṃyuttaṃ <pb ed="P" n="4.0403"/> samattaṃ।</trailer>\n</div>'],
+
+        ['<p rend="gathalast">abyākatanti dasadhāti॥</p>','<p rend="gathalast">abyākatanti dasadhāti॥</p>\n<p rend="centre">saḷāyatanavaggo catuttho।</p>']
+    ],
     's0305m.mul.xml':[//fill the gap for passing sequencial number check
+        ['<p rend="centre">(gaṅgāpeyyālī)।</p>\n<p rend="centre">dutiyagaṅgāpeyyālavaggo dutiyo।</p>'
+        ,'<p rend="centre">(gaṅgāpeyyālī)। dutiyagaṅgāpeyyālavaggo dutiyo।</p>'],//missing dutiyo in SC, combined in single line
+    
+        //align with SC, swap
+        [' (sammappadhānasaṃyuttassa gaṅgāpeyyālī sammappadhānavasena vitthāretabbā)।</p>\n<p rend="centre">gaṅgāpeyyālavaggo paṭhamo।</p>',
+        '</p>\n<p rend="centre">gaṅgāpeyyālavaggo paṭhamo।</p>\n<p rend="centre">(sammappadhānasaṃyuttassa gaṅgāpeyyālī sammappadhānavasena vitthāretabbā)।</p>'],
         ['<p rend="bodytext" n="270"><hi rend="paranum">270</hi>',
         '<p rend="bodytext" n="270-279"><hi rend="paranum">270-279</hi>'],
         ['<p rend="bodytext" n="280"><hi rend="paranum">280</hi>',
@@ -58,8 +156,44 @@ const Errata={
         ['<p rend="bodytext" n="923-934"><hi rend="paranum">923-934</hi>',
         '<p rend="bodytext" n="923-966"><hi rend="paranum">923-966</hi>'],
     ],
+    's0401m.mul.xml':[
+        //SC pamadadivagga start from 82, CS starts from 81
+        ['<trailer rend="centre">kalyāṇamittādivaggo aṭṭhamo।</trailer>\n</div>\n<div id="an1_9" n="an1_9" type="vagga">\n<head rend="chapter">9. pamādādivaggo</head>\n',''],
+        ['<p rend="bodytext" n="82">','<trailer rend="centre">kalyāṇamittādivaggo aṭṭhamo।</trailer>\n</div>\n<div id="an1_9" n="an1_9" type="vagga">\n<head rend="chapter">9. pamādādivaggo</head>\n<p rend="bodytext" n="82">'],
+
+    ],
+    's0402m2.mul.xml':[//an3
+        //swap according to SC
+        ['<trailer rend="centre">rathakāravaggo dutiyo।</trailer>\n</div>\n<p rend="centre">paṭhamabhāṇavāro niṭṭhito।</p>',
+        '<p rend="centre">paṭhamabhāṇavāro niṭṭhito।</p>\n<trailer rend="centre">rathakāravaggo dutiyo।</trailer>\n</div>'],
+        ['<p rend="gathalast">samādhimūlakā peyyālesupi vavatthitā cāti॥</p>',
+        '<p rend="gathalast">samādhimūlakā peyyā, lesupi vavatthitā cāti॥</p>\n<p rend="centre">tatiyo paṇṇāsako niṭṭhito।</p>'] //SC break the word and extra pannasako nitthito (an3.183-352:8.5) 
+    ],
     's0402m3.mul.xml':[ //missing paranum
-        ['<p rend="bodytext">(chaṭṭhaṃ uttānatthamevāti','<p rend="bodytext" n="106"><hi rend="paranum">106</hi><hi rend="dot">.</hi>(chaṭṭhaṃ uttānatthamevāti']
+        ['<p rend="bodytext">(chaṭṭhaṃ uttānatthamevāti','<p rend="bodytext" n="106"><hi rend="paranum">106</hi><hi rend="dot">.</hi>(chaṭṭhaṃ uttānatthamevāti'],
+
+    ],
+    's0403m1.mul.xml':[
+        ['<p rend="bodytext">‘‘katame pañca? saddhābalaṃ',
+        //according to an5.308-1152_reference.json
+        '<p rend="bodytext" n="1152"><hi rend="paranum">1152</hi><hi rend="dot">.</hi>‘‘katame pañca? saddhābalaṃ']
+    ],
+    's0403m2.mul.xml':[
+        ['<p rend="hangnum">  </p>\n',''],
+    ],
+    's0404m1.mul.xml':[
+        ['[ ]',''], // miss up with offtag
+    ],
+    's0404m4.mul.xml':[
+        //MS 的 an11.502-981 為cs 所無， cs 的502 對應到sc為 msdiv503 (an11.982:1.1)，
+        //att/tik 並沒有解釋 an11 的 17段之後的經文，故修改 cs 的段號無影響。
+        ['<p rend="bodytext" n="502"><hi rend="paranum">502','<p rend="bodytext" n="503"><hi rend="paranum">503'],
+        ['<p rend="bodytext" n="503-511"><hi rend="paranum">503-511','<p rend="bodytext" n="504-512"><hi rend="paranum">504-512'],
+        ['<p rend="bodytext" n="512-671"><hi rend="paranum">512-671','<p rend="bodytext" n="513-672"><hi rend="paranum">513-672'],
+
+        ['</div>\n<div id="an11_4"',
+        '<p rend="bodytext" n="502"><hi rend="paranum">502</hi><hi rend="dot">.</hi> …pe…</p>\n</div>\n<div id="an11_4"']
+
     ],
     's0513a1.att.xml':[  //first 3 subhead is not jataka
         ['<p rend="subhead">1','<p rend="subsubhead">1'],
@@ -125,6 +259,9 @@ const Errata={
 
         ['<p rend="bodytext" n="880"><hi rend="paranum">880</hi>',
         '<p rend="bodytext" n="880-881"><hi rend="paranum">880-881</hi>'],
+    ],
+    'e1201n.nrf.xml':[
+        ['[ ]','',13],
     ]
 
 }

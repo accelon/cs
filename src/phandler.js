@@ -143,9 +143,9 @@ export default { //key is bkid or bkpf , bkid has precedence
             ctx.vaggo++;
             return '^c'+mat+'a'+nipata+toBase26(ctx.vaggo)+'['+text+']';
         },
-        'title': (el,ctx,text,mat)=>{},//skip pannasaka
+        'title': (el,ctx,text,mat)=>{return ""},//skip pannasaka 不輸出文字(SC版無)
         'subhead':(el,ctx,text,mat)=>{         //sutta
-            return '^h' +'['+text+']';
+            return '^h['+text+']';
         }
     },
  

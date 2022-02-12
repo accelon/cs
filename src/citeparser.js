@@ -78,7 +78,7 @@ const parseCite=(buf,fn)=>{
 		let out='';
 		cites.forEach(cite=>{
 			if (!cite.parsed) {
-				out+=citetext;
+				out+=cite.raw;
 			} else {
 				out+=cite.parsed;
 			}

@@ -20,36 +20,41 @@ copy ProvidentPaliSegoe.otf from github.com/dhamma/provident-pali/www/
 ### Generate offtext from ./books
     node gen
 
+
+## 定址方式
+
+### 精準定位 (locator)
+
+    cs:冊.段號:行 ，例  cs:mn1.272:2   中部第一冊第272段，往下兩行，0可省略。
+    冊的標記是 ^bk ，段號是 ^n ，行不必標記，以文字檔的換行。
+    標題與首行本文合並一行，這樣標題就不會歸入上一段。(sc 的解法是設置第0號)
+    "dn11:0.1": "Dīgha Nikāya 11 " (第11經) , "dn11:0.2": "Kevaṭṭasutta " (經題),  "dn11:1.1": "Evaṁ me sutaṁ—",(首行本文)
     
-##
-  
-    切分為閱讀單元。每經一個htm
-    按suttacentral 命名分目錄
-    連結不知道檔案所在
+    我們的標記方式是
+    ^c#d11[Kevaṭṭasutta]^n272 Evaṁ me sutaṁ—
 
-    <k n=""> </k>
-    如果缺少n，自動識別<k>包住的文字
-    dn.1:5  第一經第五段
-    dn3:6   第三冊第六段(檔名未知)
     
-    pj, pc,  mv, cv, pvr, dn, mn, sn, an, kv, pt
+### 瀏閱分卷 (cluster)
 
+    ^c 定義分卷，即網頁捲動的的範圍，長部及中部一經一卷，相經部及增支部一個vagga一卷，約十經左右。
+    清淨道論一章一卷。
 
-    cap 地址到htm 檔名的轉換表，每個htm都要載入。
-
-    清淨道論
-
-    攝阿毘達摩義論  
-
-    <a name="1.1"></a>  在此處加上平行連結(若有不同的譯本)
-
-
-
-
-
-
-
-
-
-
-
+### 標題列表 (header)
+    標題清單可以各種方式過濾，如文字內容、關鍵字、限定全文檢索範圍。
+    對cs 而言，一個cluster 即為一標題，
+    對大正藏而言，每經為一標題，因為卷只有數字，出現在清單無意義。
+    
+### 跨卷結構
+    複雜的內容相關結構，如大智度論，以 ^mulu 標記。
+    
+## 書名代碼    
+    pj, pc,  mv, cv, pvr,
+    dn, mn, sn, an, kv, pt
+    
+## cluster 代碼
+    以 [數字,26進位,數字...] 表達多增結構
+    
+    d, 一層  m 長部經, 中部經
+    s  兩層  第n相應   s56a  第56相應第一品
+    a  兩層  第n支
+    j  一層  第n本生

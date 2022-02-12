@@ -1,14 +1,14 @@
 import {glob,nodefs,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
 import {breakByHook} from 'pitaka/utils';
 await nodefs; //export fs to global
-import offtextgen from './offtextgen.js';
-import doInlineTag from './doinlinetag.js';
+import offtextgen from './src/offtextgen.js';
+import doInlineTag from './src/doinlinetag.js';
 
-import transliterate from './transliterate.js';
+import transliterate from './src/transliterate.js';
 // import { shortenBodytext } from './buildutils.js';
-const desfolder='../off/';
-const srcfolder='../books/'; 
-const hookfolder='../breakhook/'
+const desfolder='./off/';
+const srcfolder='./books/'; 
+const hookfolder='./breakhook/'
 const testfn='dn1.xml';
 
 let pat=process.argv[2]||testfn;
