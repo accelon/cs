@@ -30,6 +30,14 @@ const Errata={
     's0103m.mul.xml':[
     	['<p rend="bodytext">paccayānuññātakāraṇaṃ</p>','<p rend="subhead">paccayānuññātakāraṇaṃ</p>'],
     ],
+    's0201m.mul.xml':[
+        //combine 119-135
+        
+        //delete 120-135 in code 
+        ['<p rend="bodytext" n="119"><hi rend="paranum">119',
+        '<p rend="bodytext" n="119-135"><hi rend="paranum">119-135'],
+
+    ],
     's0201a.att.xml':[
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']
     ],

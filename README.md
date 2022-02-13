@@ -20,6 +20,8 @@ copy ProvidentPaliSegoe.otf from github.com/dhamma/provident-pali/www/
 ### Generate offtext from ./books
     node gen
 
+### 經文修改
+   MN1.120~135 刪除，MN1.119 改為MN1.119-135
 
 ## 定址方式
 

@@ -11,7 +11,7 @@
     "labels":{
             "bk":["LabelBook",{"resets":"n"} ],
             "c":["LabelChapter",{"caption":"Title"}],
-            "n":["LabelMilestone",{"sequencial":true,"range":true, "skipempty":true}]
+            "n":["LabelMilestone",{"sequencial":true,"range":true}]
     },
     "homepage":"https://github.com/accelon/cs",
     "rootdir":"off/",

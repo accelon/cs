@@ -20,6 +20,14 @@ export const fixJataka=(buf,fn)=>{
     });
 
 }
+export const deleteMN1_120_135=(buf,fn)=>{
+    if (fn.match(/s0201m/)) {
+        const start=buf.indexOf('<p rend="centre">paṭhamabhāṇavāro niṭṭhito');
+        const end=buf.indexOf('<p rend="bodytext" n="136">');
+        buf=buf.substr(0,start)+buf.substr(end);
+    }
+    return buf;
+}
 export const headchapter=(content,fn)=>{
 	if (!fn.match('s0')&&!fn.match('vin')) return content;
 	return content.replace(/<head rend="chapter">([^>]+)<\/head>/g,'<p rend="chapter">$1</p>');
@@ -33,6 +41,7 @@ export const headtitle=(content,fn)=>{
 	return content.replace(/<head rend="title">([^>]+)<\/head>/g,'<p rend="title">$1</p>');
 }
 export const fixMarkups=(buf,fn)=>{
+    buf=deleteMN1_120_135(buf,fn);
     buf=fixJataka(buf,fn);
     const errata=getErrata(fn);
     buf=patchBuf(buf,errata,fn);
