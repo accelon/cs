@@ -138,9 +138,18 @@ const Errata={
         ['<p rend="centre">(gaṅgāpeyyālī)।</p>\n<p rend="centre">dutiyagaṅgāpeyyālavaggo dutiyo।</p>'
         ,'<p rend="centre">(gaṅgāpeyyālī)। dutiyagaṅgāpeyyālavaggo dutiyo।</p>'],//missing dutiyo in SC, combined in single line
     
+    //give Appamādavagga a pseudo paranum
+     	['<p rend="centre">(appamādavaggo sammappadhānavasena vitthāretabbo)।</p>', //sn49.13-22:1.1
+     	'<p rend="bodytext" n="663-672"><hi rend="paranum">663-672</hi><hi rend="dot">.</hi> (appamādavaggo sammappadhānavasena vitthāretabbo)।</p>'],
+
+		['<p rend="centre">appamādavaggo <pb ed="V" n="3.0323"/> vitthāretabbo।</p>', //sn50.13-22:1.1
+		'<p rend="bodytext" n="717-748"><hi rend="paranum">717-748</hi><hi rend="dot">.</hi> appamādavaggo <pb ed="V" n="3.0323"/> vitthāretabbo।</p>'],
+
         //align with SC, swap
         [' (sammappadhānasaṃyuttassa gaṅgāpeyyālī sammappadhānavasena vitthāretabbā)।</p>\n<p rend="centre">gaṅgāpeyyālavaggo paṭhamo।</p>',
         '</p>\n<p rend="centre">gaṅgāpeyyālavaggo paṭhamo।</p>\n<p rend="centre">(sammappadhānasaṃyuttassa gaṅgāpeyyālī sammappadhānavasena vitthāretabbā)।</p>'],
+
+//多部小經只標了一個經號
         ['<p rend="bodytext" n="270"><hi rend="paranum">270</hi>',
         '<p rend="bodytext" n="270-279"><hi rend="paranum">270-279</hi>'],
         ['<p rend="bodytext" n="280"><hi rend="paranum">280</hi>',
@@ -149,20 +158,44 @@ const Errata={
         '<p rend="bodytext" n="292-301"><hi rend="paranum">292-301</hi>'],
         ['<p rend="bodytext" n="302"><hi rend="paranum">302</hi>',
         '<p rend="bodytext" n="302-310"><hi rend="paranum">302-310</hi>'],
-        ['<p rend="bodytext" n="541-552"><hi rend="paranum">541-552</hi>',
-        '<p rend="bodytext" n="541-586"><hi rend="paranum">541-586</hi>'],
-        ['<p rend="bodytext" n="597-608"><hi rend="paranum">597-608</hi>',
-        '<p rend="bodytext" n="597-640"><hi rend="paranum">597-640</hi>'],
-        ['<p rend="bodytext" n="651-662"><hi rend="paranum">651-662</hi>',
-        '<p rend="bodytext" n="651-672"><hi rend="paranum">651-672</hi>'],
-        ['<p rend="bodytext" n="705-716"><hi rend="paranum">705-716</hi>',
-        '<p rend="bodytext" n="705-748"><hi rend="paranum">705-748</hi>'],
-        ['<p rend="bodytext" n="759-770"><hi rend="paranum">759-770</hi>',
-        '<p rend="bodytext" n="759-791"><hi rend="paranum">759-791</hi>'],
-        ['<p rend="bodytext" n="845-856"><hi rend="paranum">845-856</hi>',
-        '<p rend="bodytext" n="845-888"><hi rend="paranum">845-888</hi>'],
-        ['<p rend="bodytext" n="923-934"><hi rend="paranum">923-934</hi>',
-        '<p rend="bodytext" n="923-966"><hi rend="paranum">923-966</hi>'],
+
+
+        // ['<p rend="bodytext" n="541-552"><hi rend="paranum">541-552</hi>',
+        // '<p rend="bodytext" n="541-586"><hi rend="paranum">541-586</hi>'],
+        // 不能直接擴充range，改為塞入一個虛擬段
+        ['<p rend="title">12. oghavaggo</p>',
+        '<p rend="bodytext" n="553-586"><hi rend="paranum">553-586</hi><hi rend="dot">.</hi>…</p>\n<p rend="title">12. oghavaggo</p>'],
+
+        // ['<p rend="bodytext" n="597-608"><hi rend="paranum">597-608</hi>',
+        // '<p rend="bodytext" n="597-640"><hi rend="paranum">597-640</hi>'],
+
+        ['<p rend="bodytext">appamādavagga',
+        '<p rend="bodytext" n="609-640"><hi rend="paranum">609-640</hi><hi rend="dot">.</hi>…</p>\n<p rend="bodytext">appamādavagga'],
+
+
+//        ['<p rend="bodytext" n="651-662"><hi rend="paranum">651-662</hi>',   //改為補入663-672
+//        '<p rend="bodytext" n="651-672"><hi rend="paranum">651-672</hi>'],
+//        ['<p rend="bodytext" n="705-716"><hi rend="paranum">705-716</hi>',  //改為補入717-748
+//        '<p rend="bodytext" n="705-748"><hi rend="paranum">705-748</hi>'],
+
+//	        ['<p rend="bodytext" n="759-770"><hi rend="paranum">759-770</hi>',
+//        '<p rend="bodytext" n="759-791"><hi rend="paranum">759-791</hi>'],
+
+        ['<p rend="centre">appamāda-balakaraṇīyavaggā',
+        '<p rend="bodytext" n="771-791"><hi rend="paranum">771-791</hi><hi rend="dot">.</hi>…</p>\n<p rend="centre">appamāda-balakaraṇīyavaggā'],
+
+
+        // ['<p rend="bodytext" n="845-856"><hi rend="paranum">845-856</hi>',
+        // '<p rend="bodytext" n="845-888"><hi rend="paranum">845-888</hi>'],
+
+        ['<p rend="title">8. oghavaggo</p>\n<p rend="subhead">1-10',
+        '<p rend="bodytext" n="857-888"><hi rend="paranum">857-888</hi><hi rend="dot">.</hi>…</p>\n<p rend="title">8. oghavaggo</p>\n<p rend="subhead">1-10'],
+
+    //     ['<p rend="bodytext" n="923-934"><hi rend="paranum">923-934</hi>',
+    //     '<p rend="bodytext" n="923-966"><hi rend="paranum">923-966</hi>'],
+        ['<p rend="title">5. oghavaggo</p>\n<p rend="subhead">1-10. oghādisuttaṃ</p>',
+        '<p rend="bodytext" n="935-966"><hi rend="paranum">935-966</hi><hi rend="dot">.</hi>…</p>\n<p rend="title">5. oghavaggo</p>\n<p rend="subhead">1-10. oghādisuttaṃ</p>']
+
     ],
     's0401m.mul.xml':[
         //SC pamadadivagga start from 82, CS starts from 81
