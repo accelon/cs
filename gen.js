@@ -1,5 +1,5 @@
 import {glob,nodefs,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
-import {breakByHook} from 'pitaka/utils';
+import {breakByPin,spacify} from 'pitaka/utils';
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import doInlineTag from './src/doinlinetag.js';
@@ -8,24 +8,24 @@ import transliterate from './src/transliterate.js';
 // import { shortenBodytext } from './buildutils.js';
 const desfolder='./off/';
 const srcfolder='./books/'; 
-const hookfolder='./breakhook/'
+const pinfolder='./pinpos/'
 const testfn='dn1.xml';
 
 let pat=process.argv[2]||testfn;
 
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>{
-    if (!ctx.hooks) return buf;
+    if (!ctx.pins) return buf;
     const lines=buf.split('\n');
     const out=[];
     let pn='';
-    for (let i=0;i<lines.length&&i<ctx.hooks.length;i++) {
+    for (let i=0;i<lines.length&&i<ctx.pins.length;i++) {
         const m=lines[i].match(/\^n([\d\-]+)/);
         if (m) pn=m[1];
         const id=ctx.fn.replace('.xml','')+LOCATORSEP+pn;
-        if (ctx.hooks[i]) {
-            out.push( ... breakByHook(lines[i], ctx.hooks[i].split('\t'),id) );
-        } else {
+        if (ctx.pins[i]) {
+            out.push( ... breakByPin(lines[i], spacify(lines[i]), ctx.pins[i].split('\t'),id) );
+        } else { //無pin，直接插入空面行, 見 pitaka 的 pinpos.js 的 makePin()
             out.push(lines[i]);
         }
     }
@@ -39,15 +39,15 @@ filelist.forEach(fn=>{
     ctx.fn=fn;
     const outfn=fn.replace('.xml','');
     let buf=readTextContent(srcfolder+fn);
-    const hookfn=hookfolder+fn.replace('.xml','.txt');
-    if (fs.existsSync(hookfn) ) ctx.hooks=readTextLines(hookfn);
-    else ctx.hooks=null;
+    const pinfn=pinfolder+fn.replace('.xml','.txt');
+    if (fs.existsSync(pinfn) ) ctx.pins=readTextLines(pinfn);
+    else ctx.pins=null;
     ctx.outfn=outfn;
     // ctx.cluster=ClusterStarts[outfn]||0;
     // ctx.validateClusterNum= !fn.match(/^mn/)
     processed++;
     Steps.forEach(step=>buf=step(buf,ctx));
-    buf=buf.trim().split('\n').filter(ln=>!!ln).join('\n');
+    buf=buf.trim();
     
     const ofn=desfolder+outfn+'.off';
 

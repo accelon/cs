@@ -5,14 +5,10 @@
     "license": "CC0",
     "cluster":"c",
     "lang":"pl",
+    "alignment":"cs",
     "locator":"bk.n",
     "textOnly":true,
-    "label":"sz,end,trailer,v,h,cite",
-    "labels":{
-            "bk":["LabelBook",{"resets":"n"} ],
-            "c":["LabelChapter",{"caption":"Title"}],
-            "n":["LabelMilestone",{"sequencial":true,"range":true}]
-    },
+    "label":"sz,end,trailer,v,cite",
     "homepage":"https://github.com/accelon/cs",
     "rootdir":"off/",
     "files":"dn?.off,mn?.off,sn?.off,an?.off,an??.off"
