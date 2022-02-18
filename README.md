@@ -20,10 +20,26 @@ copy ProvidentPaliSegoe.otf from github.com/dhamma/provident-pali/www/
 ### Generate offtext from ./books
     node gen
 
+
+### 分句
+  先在 sc 用 gen-pli 建立 pli 的off 檔
+  
+  node gen dn1 p                                //產生一段一行的off (不依 pinpos/dn1.txt 分句)
+  node align-sent dn1 folder                    //預設以 sc\pli\ 下同名檔案分句
+  pitaka compare off\dn1.off ..\sc\pli\dn1.off  //比較 sc 版和 cs 版之差異，可能需要手工修正直到滿意
+  node pinpos dn1                               //產生 dn1.txt 的分句檔，須git 。
+  node gen dn1                                  //重新產生分句檔 (依pinpos/dn1.txt分句)
+
+  往後如果與 sc 脫勾，手動修改 off\dn1 之後，
+  node poinpos dn1
+  保存改動過的 dn1.txt (約原文的4%~5%)
+
 ### 經文修改
    MN1.120~135 刪除，MN1.119 改為MN1.119-135
 
 ## 定址方式
+
+
 
 ### 精準定位 (locator)
 

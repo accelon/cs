@@ -1,5 +1,5 @@
 import {spacify,autoBreak,paragraphSimilarity,
-    removeHeader,removeVariantBold,
+    removeHeader,removeBold,
     diffBreak,breakSentence} from "pitaka/utils";
 
 
@@ -21,7 +21,7 @@ export const guidedBreak=(loc,sclines_o,cslines_o,problematic,marker='<>')=>{
     }
     const res=autoBreak(cslines_o);
     const sclines=sclines_o.map(removeHeader);
-    const cslines=cslines_o.map(removeHeader).map(removeVariantBold);
+    const cslines=cslines_o.map(removeHeader);
 
 
     if (sclines.length===res.sentences.length) {
@@ -36,7 +36,7 @@ export const guidedBreak=(loc,sclines_o,cslines_o,problematic,marker='<>')=>{
         const spaced2=sclines.map(spacify);
         const diffbreakpos=diffBreak(spaced1,spaced2 ,loc,marker);
         const sents=breakSentence(cslines_o,diffbreakpos);
-        const sim=paragraphSimilarity(sclines.map(spacify), sents.map(removeVariantBold).map(removeHeader).map(spacify) );
+        const sim=paragraphSimilarity(sclines.map(spacify), sents.map(removeHeader).map(spacify) );
         if (sim>0.1) {
             problematic.push(`${loc}\t${sim}`);
             problematic.push( ...dumpProblematic(sclines,sents));

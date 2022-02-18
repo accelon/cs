@@ -4,9 +4,9 @@ await nodefs; //export fs to global
 import { guidedBreak } from './src/guidedbreak.js';
 
 // const desfolder='./ocs/break-by-sc/'; //copy to cs/breakpos
-const srcfolder='./off/'
+const srcfolder='./par/'
 const desfolder='./off/'; //off is overwritable, ./pinpos/ need to 
-const scfolder='../sc/pli/';     //
+const scfolder=process.argv[3]||'../sc/pli/';     //
 const testfn='dn1.off';
 /*
   由 sc pli 指引的重排可能不完美，

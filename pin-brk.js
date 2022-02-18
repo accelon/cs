@@ -1,9 +1,9 @@
 /* generate pin information from off */
 import {glob,nodefs,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
-import {breakByPin, pinPos, toParagraphs,spacify} from 'pitaka/utils';
+import {pinPos, toParagraphs,spacify} from 'pitaka/utils';
 await nodefs; //export fs to global
 const srcfolder='off/';     //不git
-const desfolder='pinpos/';  //須git
+const desfolder='brk/';  //須git
 let pat=process.argv[2]||"dn1.off";
 
 const filelist= glob(srcfolder,pat);
@@ -26,7 +26,7 @@ const makePin=(paralines,id)=>{
     for (let i=1;i<paralines.length;i++) {
         const l=paralines[i];
         if (!l) { //空白行
-            console.log('empty',id)
+            //console.log('empty line in ',id)
             pins.push('');
             continue;
         }
@@ -60,8 +60,14 @@ filelist.forEach(fn=>{
     //輸出的文字檔只有 927 行，每行的pin 以tab 隔開
     //gen-pli.js 會讀取 pinpos/ 的txt 檔做為分句標準
     
-    const outfn=desfolder+fn.replace('.off','.txt');
+    let outfn=desfolder+fn.replace('.off','.txt');
+    let renamed=false;
+    if (fs.existsSync(outfn)) {
+        renamed=true;
+        outfn=desfolder+fn.replace('.off','.off.gen');
+    }
     if (writeChanged(outfn, out.join('\n'))) {
+        if (renamed) console.log('file exists, renamed.');
         console.log('written',outfn,'lines',out.length);
     }
 });
