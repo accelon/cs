@@ -43,8 +43,8 @@ export const handlers={
             }
             t='^'+rend+'['+text+']';
         } else if (el.attrs.rend==='chapter') {
-            ctx.clusterCount++;
-            return '^c'+ctx.clusterCount+'['+text+']';
+            ctx.chunkCount++;
+            return '^ck'+ctx.chunkCount+'['+text+']';
         } else {
             t=text;
         }
@@ -64,12 +64,12 @@ export const handlers={
         // if (el.attrs.id) {
         //     const at=el.attrs.id.lastIndexOf('_');
         //     if (at>-1 && el.attrs.type!=='pannasaka' && ctx.bkpf!=='mn' && ctx.bkpf!=='ja') { //only AN has pannasaka
-        //         ctx.cluster++;
+        //         ctx.Chunk++;
         //     }
         // }
     },
     "body":(el,ctx)=>{
-        ctx.clusterCount=0;
+        ctx.chunkCount=0;
     },
     "trailer":(el)=>{return '^trailer '+el.innerText()+'\n'},
     "hi":(el,ctx)=>{

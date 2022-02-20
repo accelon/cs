@@ -40,7 +40,6 @@
 16	 u	 i	 itI v:1
 17	 sE	 itI 	 itI v:1
 18	 sE	 it	 itI v:1
-
 19	 sE	 it	 itI v:1
 20	 i	 itI v
 :1	
