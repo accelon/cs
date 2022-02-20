@@ -2,14 +2,9 @@
     "name":"cs",
     "title": "Pāḷi Tipiṭaka(Chaṭṭha Saṅgāyanā)|cs",
     "description":"converted from Chattha Sangayana Tipitaka 4.0 from VRI",
-    "license": "CC0",
-    "cluster":"c",
+    "template":"cs",
     "lang":"pl",
-    "alignment":"cs",
-    "locator":"bk.n",
-    "textOnly":true,
-    "label":"sz,end,trailer,v,cite",
+    "label":"end,trailer,cite",
     "homepage":"https://github.com/accelon/cs",
-    "rootdir":"off/",
     "files":"dn?.off,mn?.off,sn?.off,an?.off,an??.off"
 }

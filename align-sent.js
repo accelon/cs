@@ -19,13 +19,15 @@ const checkleadblank=(fn,lines)=>{
         if (lines[i][0]==' ') throw `${fn} line ${(i+1)} has leading blank`;
     }
 }
-
+console.log('src',srcfolder,'des',desfolder,'guide ',scfolder)
 const fixPunc=str=>{
     //.replace(/…\n pE…/g,'\n …pE…')
     return str.replace(/\n।/g,'।\n')
-    .replace(/\^\n(v\[[^\]]+\])/g,'^$1\n')
+    // .replace(/\^\n(v\[[^\]]+\])/g,'^$1\n')
     .replace(/ \n/g,'\n ').replace(/( ?‘)\n/g,'\n$1')
-    .replace(/\n( ?–)/g,'$1\n');
+    .replace(/\n( ?–)/g,'$1\n')
+    .replace(/\n… /g,'…\n ')
+    .replace(/\n([\!,;\?])/g,'$1\n');
 }
 const failmarker='<>';
 const dofile=fn=>{
@@ -66,5 +68,5 @@ const dofile=fn=>{
     const outstr=fixPunc(out.join('\n'));
     if (writeChanged(desfolder+fn,outstr)) console.log('written',desfolder+fn);
 }
-const filelist= glob(srcfolder,pat);
+const filelist= glob(srcfolder,pat).filter(fn=>fn.endsWith('.off'));
 filelist.forEach(dofile);

@@ -4,6 +4,7 @@ my
 ppl
 ro
 books
+*.gen
 *.otf
 *.zip
 *.7z

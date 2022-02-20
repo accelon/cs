@@ -1,12 +1,13 @@
 /* generate pin information from off */
-import {glob,nodefs,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
-import {pinPos, toParagraphs,spacify} from 'pitaka/utils';
+import {glob,nodefs,writeChanged, readTextLines,kluer,DELTASEP} from 'pitaka/cli';
+import {pinPos, toParagraphs} from 'pitaka/utils';
 await nodefs; //export fs to global
 const srcfolder='off/';     //不git
 const desfolder='brk/';  //須git
 let pat=process.argv[2]||"dn1.off";
+const {red} = kluer;
 
-const filelist= glob(srcfolder,pat);
+const filelist= glob(srcfolder,pat).filter(fn=>fn.endsWith('.off'));
 
 const makePin=(paralines,id)=>{
     //每一段第一行必有有號段，之後可能有^n 必定在行首。
@@ -23,31 +24,44 @@ const makePin=(paralines,id)=>{
     paras.push(line);
     let lidx=0, pins=[];
     let offset=paralines[0].length;
+
+    const addParaPins=()=>{
+        //段不分句無釘文，只補空行的情況，多補一個\t ，否則無法區分
+        // "\t" 產生一空行，"\t\t" 產生兩空行
+        // "A\t" 產生以A開頭的分句，以及補一空行
+        // "\tA" 補一空行，然是以A開頭的分句
+        //參見breaker.js ::breakByPin，無釘文的情況
+        if (pins.filter(it=>!!it).length==0) { 
+            pins.push('')
+        }
+        const prefix=out.length?DELTASEP+out.length:id;
+        out.push(prefix+'\t'+pins.join('\t'));
+        pins=[];
+        lidx++;
+        offset=0;
+    }
     for (let i=1;i<paralines.length;i++) {
         const l=paralines[i];
         if (!l) { //空白行
-            //console.log('empty line in ',id)
             pins.push('');
             continue;
         }
-        const pureline=spacify(paras[lidx]);
+        const linetext=paras[lidx];//spacify(paras[lidx]);
         if (l.substr(0,3)=='^n ') {//新的一行
-            out.push(pins.join('\t'));
-            pins=[];
-            lidx++;
-            offset=0;
+            addParaPins();
         } else { //被折之文字
-            const pin=pinPos(pureline,offset);
+            const pin=pinPos(linetext,offset);
             if (!pin) {
-                console.log(pureline.length,offset)
-                throw 'cannot get pin at sentence '+i+'of '+pureline+'offset:'+offset;
+                console.log(linetext.length,offset)
+                throw 'cannot get pin at sentence '+i+'of '+linetext+'offset:'+offset;
             }
             pins.push(pin);
         }
         offset+=l.length;
     }
-    out.push(pins.join('\t'));
-    return out.join('\n');
+    addParaPins();
+
+    return out.join('\n'); 
 }
 
 filelist.forEach(fn=>{
@@ -64,10 +78,10 @@ filelist.forEach(fn=>{
     let renamed=false;
     if (fs.existsSync(outfn)) {
         renamed=true;
-        outfn=desfolder+fn.replace('.off','.off.gen');
+        outfn=desfolder+fn.replace('.off','.txt.gen');
     }
     if (writeChanged(outfn, out.join('\n'))) {
-        if (renamed) console.log('file exists, renamed.');
+        if (renamed) console.log(red('file exists, renamed to'),outfn);
         console.log('written',outfn,'lines',out.length);
     }
 });

@@ -41,6 +41,8 @@ const Errata={
         ['<p rend="bodytext" n="119"><hi rend="paranum">119',
         '<p rend="bodytext" n="119-135"><hi rend="paranum">119-135'],
 
+        //sc 和an5.194 都沒拆那麼細
+        ['</p>\n<p rend="bodytext">‘‘paṇḍito maññe’’ti।</p>',' ‘‘paṇḍito maññe’’ti।</p>']
     ],
     's0201a.att.xml':[
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']
@@ -141,7 +143,10 @@ const Errata={
     's0305m.mul.xml':[//fill the gap for passing sequencial number check
         ['<p rend="centre">(gaṅgāpeyyālī)।</p>\n<p rend="centre">dutiyagaṅgāpeyyālavaggo dutiyo।</p>'
         ,'<p rend="centre">(gaṅgāpeyyālī)। dutiyagaṅgāpeyyālavaggo dutiyo।</p>'],//missing dutiyo in SC, combined in single line
-    
+
+        ['<trailer rend="centre">mahāvaggasaṃyuttapāḷi niṭṭhitā।</trailer>',
+        '<trailer rend="centre">mahāvaggasaṃyuttapāḷi niṭṭhitā।</trailer>\n<trailer rend="centre">saṃyuttanikāyo samatto।</trailer></div></div>'],
+
     //give Appamādavagga a pseudo paranum
      	['<p rend="centre">(appamādavaggo sammappadhānavasena vitthāretabbo)।</p>', //sn49.13-22:1.1
      	'<p rend="bodytext" n="663-672"><hi rend="paranum">663-672</hi><hi rend="dot">.</hi> (appamādavaggo sammappadhānavasena vitthāretabbo)।</p>'],
@@ -214,22 +219,27 @@ const Errata={
         ['<p rend="gathalast">samādhimūlakā peyyālesupi vavatthitā cāti॥</p>',
         '<p rend="gathalast">samādhimūlakā peyyā, lesupi vavatthitā cāti॥</p>\n<p rend="centre">tatiyo paṇṇāsako niṭṭhito।</p>'] //SC break the word and extra pannasako nitthito (an3.183-352:8.5) 
     ],
-    's0402m3.mul.xml':[ //missing paranum
+    's0402m3.mul.xml':[ //missing paranum //an4
         ['<p rend="bodytext">(chaṭṭhaṃ uttānatthamevāti','<p rend="bodytext" n="106"><hi rend="paranum">106</hi><hi rend="dot">.</hi>(chaṭṭhaṃ uttānatthamevāti'],
-
+        
+        //需要這個
+        ['<trailer rend="centre">catukkanipātapāḷi','<p rend="centre">pañcamo paṇṇāsako samatto।</p>\n<trailer rend="centre">catukkanipātapāḷi']
     ],
     's0403m1.mul.xml':[
         ['<p rend="bodytext">‘‘katame pañca? saddhābalaṃ',
         //according to an5.308-1152_reference.json
-        '<p rend="bodytext" n="1152"><hi rend="paranum">1152</hi><hi rend="dot">.</hi>‘‘katame pañca? saddhābalaṃ']
+        '<p rend="bodytext" n="1152"><hi rend="paranum">1152</hi><hi rend="dot">.</hi>‘‘katame pañca? saddhābalaṃ'],
+
     ],
     's0403m2.mul.xml':[
         ['<p rend="hangnum">  </p>\n',''],
     ],
-    's0404m1.mul.xml':[
+    's0404m1.mul.xml':[//an8
         ['[ ]',''], // miss up with offtag
+        [' ekamantaṃ</p>\n<p rend="bodytext"><pb ed="T" n="4.0233"/> nisinnaṃ',
+        '</p>\n<p rend="bodytext"><pb ed="T" n="4.0233"/>ekamantaṃ nisinnaṃ']
     ],
-    's0404m4.mul.xml':[
+    's0404m4.mul.xml':[ 
         //MS 的 an11.502-981 為cs 所無， cs 的502 對應到sc為 msdiv503 (an11.982:1.1)，
         //att/tik 並沒有解釋 an11 的 17段之後的經文，故修改 cs 的段號無影響。
         ['<p rend="bodytext" n="502"><hi rend="paranum">502','<p rend="bodytext" n="503"><hi rend="paranum">503'],
