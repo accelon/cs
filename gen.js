@@ -1,5 +1,6 @@
 import {glob,nodefs,DELTASEP,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
-import {breakByPin,spacify} from 'pitaka/utils';
+import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/utils';
+
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import doInlineTag from './src/doinlinetag.js';
@@ -33,7 +34,10 @@ const breaklines=(buf,ctx)=>{
         if (pn!==pinpn && pinpn[0]!==DELTASEP) {
             throw `pin paranum missmatch ${id} != ${pinpn}, #${i+1}`
         }
-        out.push( ... breakByPin(lines[i], pins,id) );
+        const before=beforePN(lines[i]);
+        let sentences=breakByPin(afterPN(lines[i]), pins,id);
+        sentences[0]=before+sentences[0]
+        out.push( ...sentences  );
     }
     return out.join('\n');
 }

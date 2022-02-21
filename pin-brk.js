@@ -1,6 +1,6 @@
 /* generate pin information from off */
 import {glob,nodefs,writeChanged, readTextLines,kluer,DELTASEP} from 'pitaka/cli';
-import {pinPos, toParagraphs} from 'pitaka/utils';
+import {pinPos, toParagraphs, afterPN} from 'pitaka/utils';
 await nodefs; //export fs to global
 const srcfolder='off/';     //不git
 const desfolder='brk/';  //須git
@@ -9,21 +9,23 @@ const {red} = kluer;
 
 const filelist= glob(srcfolder,pat).filter(fn=>fn.endsWith('.off'));
 
-const makePin=(paralines,id)=>{
+
+const pinParagraph=([id,paralines])=>{
     //每一段第一行必有有號段，之後可能有^n 必定在行首。
     const out=[];
     const paras=[]; //每個<p>  一行
-    let line='';
-    for (let i=0;i<paralines.length;i++) {
-        if (paralines[i].substr(0,3)=='^n ') {//新的一行
+    let line=afterPN(paralines[0]);
+    for (let i=1;i<paralines.length;i++) {
+        let t=afterPN(paralines[i]);
+        if (t.length<paralines[i].length) { //新的一行
             paras.push(line);
             line='';
         }
-        line+=paralines[i];
+        line+=t;
     } 
     paras.push(line);
     let lidx=0, pins=[];
-    let offset=paralines[0].length;
+    let offset=afterPN(paralines[0]).length;
 
     const addParaPins=()=>{
         //段不分句無釘文，只補空行的情況，多補一個\t ，否則無法區分
@@ -39,28 +41,27 @@ const makePin=(paralines,id)=>{
         pins=[];
         lidx++;
         offset=0;
+        
     }
     for (let i=1;i<paralines.length;i++) {
-        const l=paralines[i];
+        const l=afterPN(paralines[i]);
         if (!l) { //空白行
             pins.push('');
             continue;
         }
-        const linetext=paras[lidx];//spacify(paras[lidx]);
-        if (l.substr(0,3)=='^n ') {//新的一行
+        const paratext=paras[lidx];  //合併後整段(含無號段)文字
+        if (l.length<paralines[i].length) {//新的一行
             addParaPins();
         } else { //被折之文字
-            const pin=pinPos(linetext,offset);
+            const pin=pinPos(paratext,offset);
             if (!pin) {
-                console.log(linetext.length,offset)
-                throw 'cannot get pin at sentence '+i+'of '+linetext+'offset:'+offset;
+                throw 'cannot get pin at sentence '+i+' of '+paratext+' offset:'+offset;
             }
             pins.push(pin);
         }
         offset+=l.length;
     }
     addParaPins();
-
     return out.join('\n'); 
 }
 
@@ -68,7 +69,7 @@ filelist.forEach(fn=>{
     const out=[];
     let buf=readTextLines(srcfolder+fn);
     const paras=toParagraphs(buf);  //返回 [ id, paralines ] , paralines 是分好句的字串陣列
-    out.push(... paras.map(para=>makePin(para[1],para[0])));
+    out.push(... paras.map(pinParagraph));
     //dn1有559個段號(^n\d+)，927個p(368個^n )
     //按 sc 分為4104 句。
     //輸出的文字檔只有 927 行，每行的pin 以tab 隔開
