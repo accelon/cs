@@ -1,5 +1,5 @@
 import {nodefs,glob, writeChanged,readTextLines} from 'pitaka/cli';
-import {breakSentence,autoBreak,ensureArrayLength,toParagraphs} from "pitaka/utils";
+import {breakSentence,autoBreak,ensureArrayLength,toParagraphs} from "pitaka/align";
 await nodefs; //export fs to global
 import { guidedBreak } from './src/guidedbreak.js';
 

@@ -1,6 +1,5 @@
 import {spacify,autoBreak,paragraphSimilarity,
-    removeHeader,removeBold,
-    diffBreak,breakSentence} from "pitaka/utils";
+    removeHeader, diffBreak,breakSentence} from "pitaka/align";
 
 
 const dumpProblematic=(p1,p2)=>{

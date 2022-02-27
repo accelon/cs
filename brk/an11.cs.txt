@@ -1,0 +1,218 @@
+1	 ek	 aT	 “	 “a
+:1	 “
+:2	 “
+:3	 “
+:4	 “
+:5	 “
+:6	 “
+:7	 “
+:8	 “
+:9	 “
+:10	 avIp:2	 pAmO:2	 pIIt:2	 psVs:2	 sUKM	 smAD:2	 yTAB:2	 nIbV:2	 vIrA:2	 i	 pX
+2	 ‘	 D
+:1	 ‘	 D
+:2	 ‘	 D
+:3	 ‘	 D
+:4	 ‘	 D
+:5	 ‘	 D
+:6	 ‘	 D
+:7	 ‘	 D
+:8	 ‘	 D
+:9	 ‘	 D
+:10	 i	 d
+3	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:1	 e	 avIp:1	 v
+:2	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:3	 e	 avIp:1	 v	 tt
+4	 “	 ^	 aAys:2
+:1	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:2	 e	 avIp:1	 v
+:3	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:4	 e	 avIp:1	 v	 c
+5	 “	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:1	 e	 avIp:1	 v
+:2	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:3	 e	 avIp:1	 v	 pY
+6	
+:1	 a	 aD	 s	 sdVD:1	 anB	 aY	 sI	 g	 u	 sm	 kAy	 y
+:2	
+:3	 a	 aD	 s	 sdVD:1	 anB	 aY	 sI	 g	 u	 sm	 kAy	 y	 C
+7	
+:1	
+:2	
+:3	
+:4	 ‘	 evM 
+:5	 smVm:1
+:6	 “
+:7	
+:8	 ‘	 evM 
+:9	 y	 i	 BgvA	 ac	 ytVr:1	 stVt
+8	
+:1	 mnsI:21
+:2	 mnsI:21
+:3	 ym	 mnsI:3
+:4	 ‘	 evM K	 ym	 mnsI:4	 aW
+9	 a
+:1	 m	 k	 a	 t	 n	 ‘k	 sO	 evm	 sO k	 bV	 T	 ud	 vIc	 sO v	 sO p	 evM K
+:2	 B	 t	 BdVr:1	 ‘k	 sO	 BdVr:2	 evm	 n b	 n T	 n u	 n v	 sO n	 JAyt:13	 evM J
+:3	 n
+:4	 ym
+:5	 “	 JAyt:11	 k
+:6	 n
+:7	 ym
+:8	 e	 ymVp:1	 JAyt:2	 evM J:1
+:9	 n
+:10	 ym	 nv
+10	 t	 “	 “Bd	 BgvA:2
+:1	 k	 as	 i
+:2	 k	 i	 im
+:3	 k	 smV	 i
+:4	 k	 v	 i	 b
+:5	 y
+:6	 s
+:7	 ah
+:8	 y
+:9	 s	 ds
+:10	
+:11	
+:12	 u
+:13	 sd
+11	 t	 “	 a	 “s	 ‘
+:1	 “	 ‘	 nIW	 tEs
+:2	 e	 ‘	 sd	 aArd	 upW	 sm	 pY	 i	 “	 ‘i	 ys	 uj	 ujUg:1	 pm	 ay
+:3	 ‘	 y	 u	 ujUg:1	 pm	 ay
+:4	 ‘	 ys	 ujUg	 ujUg:1	 pm	 ay
+:5	 y	 u	 ujUg:1	 pm	 ay
+:6	 ‘	 y	 ys	 u	 ujUg:1	 pm	 ay
+:7	 ‘	 yT	 yTAr:1	 yTAr:2	 yTAr:3	 yTAr:4	 ys	 u	 ujUg:1	 pm	 ay	 pX
+12	 t	 tEn K:1	 “
+:1	 “	 ‘	 a	 “sU	 ‘s	 nIW	 tEs
+:2	 e	 ‘	 sd	 aArd	 upW	 sm	 pY	 i
+:3	 ‘	 y	 u	 ujUg:1	 pm	 i
+:4	 s	 at	 atVt:1	 d	 ‘	 sn	 y	 yTAr:1	 sU	 cAgE	 p	 ys	 u	 ujUg:1	 pm	 im	 dU
+13	 t
+:1	 “	 a	 “y	 t
+:2	 n	 t	 tE	 “
+:3	 “	 ‘	 a	 “sU	 ‘s	 nIW	 tEs
+:4	 e	 ‘	 sd	 sI	 aArd	 upW	 sm	 pY	 i
+:5	 ‘	 i
+:6	 ‘	 i
+:7	 ‘	 y	 i
+:8	 ‘	 y	 i
+:9	 ‘	 sE	 e	 i
+:10	 sE	 sEyV:1	 ev	 tt
+14	 “	 “s
+:1	 “	 y	 i
+:2	 “	 BgvA
+:3	 y
+:4	 ym
+:5	 y
+:6	 y
+:7	 ym
+:8	 y
+:9	 y
+:10	 y
+:11	 sE	 y
+:12	 ym
+:13	 y
+:14	 “
+:15	
+:16	
+:17	
+:18	
+:19	
+:20	
+:21	
+:22	
+:23	
+:24	
+:25	 y
+:26	 t	 y	 ct
+15	
+:1	 s	 mE	 pY
+16	 t
+:1	 “	 dsV	 “e
+:2	 “	 “atV:1
+:3	 “	 sO	 ‘	 ‘y	 sO t	 nO	 ay
+:4	 t	 ct	 sO	 ‘	 ‘y	 sO t	 nO	 ay
+:5	 sO	 ‘	 ‘y	 sO t	 nO	 ay
+:6	 m	 u	 i	 sO	 ‘	 ‘y	 sO t	 nO	 ay
+:7	 sO	 ‘ay	 ‘y	 sO t	 nO	 ay
+:8	 sbVb:1	 sO	 ‘ay	 ‘y	 sO t	 nO	 ay
+:9	 “	 ev	 sEy	 evmE:1	 imE 	 kI
+:10	 e	 aAys:1	 C
+17	 kt	 i	 im
+:1	 k	 iD
+:2	 i	 e
+:3	 i	 e
+:4	 i	 upVp:3	 e
+:5	 i	 y	 sO	 G	 j	 k	 m	 ytVv:1	 e
+:6	 i	 e
+:7	 i	 ‘	 ts	 e
+:8	 i	 e
+:9	 i	 e
+:10	 i	 e
+:11	 i	 e
+:12	 i	 e
+:13	
+:14	 kt	 i	 im
+:15	 k	 iD
+:16	 i	 e
+:17	 i	 e
+:18	 i	 e
+:19	 i	 y	 sO	 G	 j	 k	 m	 ytVv:1	 e
+:20	 i	 e
+:21	 i	 ‘	 ts	 e
+:22	 i	 e
+:23	 i	 e
+:24	 i	 e
+:25	 i	 t	 e
+:26	 i	 e
+:27	 st
+18	
+:1	
+:2	
+:3	
+:4	 ‘	 evM 	 aW
+19	 “	 “Bd	 BgvA:1
+:1	 “
+:2	 “	 BgvA
+:3	
+:4	
+:5	 ‘	 evM 	 nv
+20	 smVm:1
+:1	 “
+:2	
+:3	 ‘	 evM 	 ds
+21	 “
+:1	 sAD	 aAys:1
+:2	 “	 aAys:1
+:3	
+:4	
+:5	 ‘	 evM 	 ek
+:6	
+:7	
+:8	 n
+:9	 c
+22-29	 kt	 i	 im
+:1	…p	 aBbV:1	 aBbV:2	 aBbV:3	 aBbV:4	 aBbV:5	 aBbV:6	 aBbV:7
+30-69	sO	 G	 j	 k	 m
+70-117	rU	 s	 g	 r	 P	 D
+118-165	ck	 s	 G	 j	 k	 m
+166-213	ck	 s	 G	 j	 k	 m
+214-261	ck	 s	 G	 j	 k	 m
+262-309	rU	 s	 g	 r	 P	 D
+310-357	rU	 s	 g	 r	 P	 D
+358-405	rU	 s	 g	 r	 P	 D
+406-453	rU	 s	 g	 r	 P	 D
+454-501	rU	 s	 g	 r	 P	 D	 d	 ant	 K	 vy	 vIr	 n	 p
+502						
+503	 k	 p	 r
+504-512	 prIk	 ph	 K	 v	 vI	 n	 c	 pW	 i
+513-672	 m	 k	 u	 mk	 p	 i	 mc	 mA	 s	 T	 sAr	 mAn	 a	 md	 pm	 pr	 prIk	 ph	 K	 v	 vI	 n	 c	 pW
+:1	 a
+:2	
+:3	 B
+:4	 a
+:5	
+:6	

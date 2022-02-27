@@ -81,7 +81,11 @@ const Errata={
 
         ['<trailer rend="centre">bhikkhusaṃyuttaṃ samattaṃ।</trailer>\n</div>\n',''],
         ['<p rend="centre">nidānavaggo dutiyo।</p>',
-        '<trailer rend="centre">bhikkhusaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<p rend="centre">nidānavaggo dutiyo।</p>']
+        '<trailer rend="centre">bhikkhusaṃyuttaṃ samattaṃ।</trailer>\n</div>\n<p rend="centre">nidānavaggo dutiyo।</p>'],
+        
+        //align with sc
+        //['<trailer rend="centre">abhisamayasaṃyuttaṃ samattaṃ।</trailer>\n',''],
+        //['mahābhiñño”ti। ekādasamaṃ।</p>','mahābhiñño”ti। ekādasamaṃ।</p>\n<trailer rend="centre">abhisamayasaṃyuttaṃ samattaṃ।</trailer>'],
 
     ],
     's0303m.mul.xml':[
@@ -203,8 +207,10 @@ const Errata={
     //     ['<p rend="bodytext" n="923-934"><hi rend="paranum">923-934</hi>',
     //     '<p rend="bodytext" n="923-966"><hi rend="paranum">923-966</hi>'],
         ['<p rend="title">5. oghavaggo</p>\n<p rend="subhead">1-10. oghādisuttaṃ</p>',
-        '<p rend="bodytext" n="935-966"><hi rend="paranum">935-966</hi><hi rend="dot">.</hi>…</p>\n<p rend="title">5. oghavaggo</p>\n<p rend="subhead">1-10. oghādisuttaṃ</p>']
+        '<p rend="bodytext" n="935-966"><hi rend="paranum">935-966</hi><hi rend="dot">.</hi>…</p>\n<p rend="title">5. oghavaggo</p>\n<p rend="subhead">1-10. oghādisuttaṃ</p>'],
 
+        ['dasamaṃ।</p>\n<p rend="centre">oghavaggo pañcamo।</p>\n<p rend="bodytext">tassuddānaṃ –</p>\n<p rend="gatha1">ogho yogo upādānaṃ, ganthā anusayena ca।</p>\n<p rend="gathalast">kāmaguṇā nīvaraṇā, khandhā oruddhambhāgiyāti॥</p>\n<p rend="title">6. gaṅgāpeyyālavaggo</p>'
+        ,'</p>\n<p rend="title">6. gaṅgāpeyyālavaggo</p>'] //redundant gatha
     ],
     's0401m.mul.xml':[
         //SC pamadadivagga start from 82, CS starts from 81

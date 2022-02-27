@@ -1,10 +1,10 @@
 /* generate pin information from off */
 import {glob,nodefs,writeChanged, readTextLines,kluer,DELTASEP} from 'pitaka/cli';
-import {pinPos, toParagraphs, afterPN} from 'pitaka/utils';
+import {pinPos, toParagraphs, afterPN} from 'pitaka/align';
 await nodefs; //export fs to global
 const srcfolder='off/';     //不git
 const desfolder='brk/';  //須git
-let pat=process.argv[2]||"dn1.off";
+let pat=process.argv[2]||"dn1.cs.off";
 const {red} = kluer;
 
 const filelist= glob(srcfolder,pat).filter(fn=>fn.endsWith('.off'));
@@ -26,7 +26,7 @@ const pinParagraph=([id,paralines])=>{
     paras.push(line);
     let lidx=0, pins=[];
     let offset=afterPN(paralines[0]).length;
-
+    
     const addParaPins=()=>{
         //段不分句無釘文，只補空行的情況，多補一個\t ，否則無法區分
         // "\t" 產生一空行，"\t\t" 產生兩空行
@@ -41,6 +41,7 @@ const pinParagraph=([id,paralines])=>{
         pins=[];
         lidx++;
         offset=0;
+
         
     }
     for (let i=1;i<paralines.length;i++) {
@@ -57,6 +58,7 @@ const pinParagraph=([id,paralines])=>{
             if (!pin) {
                 throw 'cannot get pin at sentence '+i+' of '+paratext+' offset:'+offset;
             }
+
             pins.push(pin);
         }
         offset+=l.length;

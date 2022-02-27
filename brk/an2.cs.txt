@@ -1,0 +1,283 @@
+1	 e	 t	 “	 “Bd	 BgvA:2
+:1	 k	 dI	 ktmY	 i	 ks
+:2	 ‘	 ks	 ah	 ksAh:1	 sO	 i
+:3	 i	 ‘	 ah	 kI	 sO	 id	 “	 ts	 ‘d	 evY	 vjVj:8	 pX
+2	 k	 y	 i
+:1	 t	 ‘	 evY	 dU
+3	 k	 i	 v	 m	 s	 ‘v	 ‘m	 im	 tt
+4	 k	 i	 v	 m	 s	 ‘v	 ‘m	 im	 c
+5	 y	 apVp:1	 ‘	 ts	 tU	 ‘kAm:1	 ys	 tsVm	 ‘a	 kA	 evY	 pY
+6	 k	 y	 sMyO:2	 rAgM:1	 n pr:1
+:1	 rAgM:1	 prIm:1	 i	 C
+7	 kt	 a	 i	 s
+8	 k	 h	 i	 a
+9	 k	 h	 i	 sm	 ys	 nv
+10	 k	 p	 i	 ds
+:1	
+:2	
+:3	 u
+:4	 sU
+11	 k	 p	 ktmY	 i	 ‘	 s	 id
+:1	 t	 sEKY	 rAgM:1	 i	 im
+12	 k	 p	 ktmY	 i	 ‘	 s	 id
+:1	 i	 id	 im
+13	 k	 p	 ktmY	 i	 ‘	 s	 id
+:1	 i	 vIt	 pIIt:2	 sUKs	 id	 im
+14	 k	 s	 i
+15	 d	 y	 n d
+:1	 i	 ‘	 m	 n	 y	 dI	 antV:1	 antV:3	 antV:5	 itI m	 e
+:2	 i	 ‘	 ah	 n	 y	 dI	 antV:1	 antV:3	 antV:5	 itI m	 e
+:3	 y
+16	 smVm:1	 “	 “a
+:1	 “
+:2	 s	 es	 up
+17	 smVm:1	 “	 “kt	 ev	 “kO p	 “ktt:1	 evmI:1	 “n	 sAD	 “t	 “e	 BgvA:1
+:1	 v	 m	 ev	 i	 vcII:2	 mnOs:1	 evM K:1
+:2	
+18	 “	 “y	 “ymI:1	 at	 an	 pAp	 s	 kAys	 ym
+:1	 “	 “ymI:1	 at	 an	 kl	 as	 kAys:3	 y
+19	 s	 n	 ‘	 y	 ‘akU:1	 akUs:3	 ‘akU:2	 ysVm:1	 ‘akU:3
+:1	 s	 n	 ‘	 y	 ‘kUs:1	 kUsl:3	 ‘kUs:2	 ysVm:1	 ‘kUs:3
+20	 k	 dU	 dUnV:2	 i
+21	 k	 sU	 sUnI:2	 i
+:1	
+22	 k	 y	 i	 ‘	 ktmE:1	 yO c:2	 imE K:1
+23	 k	 dU	 i
+24	 k	 y	 i	 ‘	 ktmE:1	 yO c:2	 imE K:1
+25	 k	 y	 i
+26	 k	 y	 i
+27	 n	 ap	 dE
+28	 n
+29	 dE
+30	 n	 s	 dE
+31	 k	 atVt	 i
+32	 k	 s	 smTO:1	 cI	 cItV:1	 y	 vIps:1	 pY	 pYVY:1	 yA	 rAgU	 i
+:1	
+33	 t	 “	 BgvA
+:1	 aspV:1	 asb	 k	 s	 sb	 kEvl:1
+34	 k	 m	 e	 t	 i	 tM	 b	 y
+35	 “	 “kIr	 “y
+:1	 kI	 e
+:2	
+36	 “	 “d	 s	 i
+:1	 i
+:2	
+:3	
+:4	 v
+:5	 e
+37	 e	 t	 tt	 “	 “aAv:1	 aAys:3	 “aj	 tM	 “e	 aAys:5
+:1	 i	 sO	 sO t	 ay
+:2	 i	 sO	 sO k	 sO t	 ay
+:3	 sO	 sO B	 sO t	 sO l	 sO k:1	 sO t:1	 ay
+:4	 “	 h	 sAD	 aD	 aT	 nI	 aAys:2	 ekmn:3
+:5	 ‘	 h	 sAD	 tA K	 sI	 ‘t	 n K	 i	 ts	 ‘s	 evY	 ‘snV:1	 snVt:5	 ‘ev	 ans
+38	 e	 aT	 smVm:1	 “	 “kA
+:1	 “
+:2	 “
+:3	 “	 t	 sO h
+:4	
+:5	 n	 nmO t:1	 y
+:6	 s	 es	 up
+39	 aT	 “	 ty	 n 	 tyId:1
+:1	 vUdV:1	 aT	 dhrO	 sO c:1	 aT K:1
+:2	 “	 dhrA:1
+:3	
+40	 tsVm:1	 bV	 e	 tsVm:4	 ty
+:1	 tsVm:1	 bV	 e	 tsVm:4	 ty
+41	 gIhI:1
+:1	 gIhI:1
+42	 bhUY
+:1	 bhUY
+:2	
+43	 k	 u	 ktmA:1	 i	 ay
+:1	 i	 ay	 im	 et
+44	 k	 v	 ktmA:1	 i	 ay
+:1	 i	 ay	 im	 e
+45	 k	 a	 ktmA:1	 i	 t	 sAp	 ay
+:1	 i	 t	 sAp	 ay	 im	 e
+46	 k	 a	 ktmA:1	 i	 ay
+:1	 i	 ay	 im	 e
+47	 k	 prIs:1	 ktmO	 i	 a
+:1	 i	 a	 im	 e
+48	 k	 o	 ktmA:1	 i	 yE p	 ‘	 tE a	 ay
+:1	 i	 yE p	 tE t	 ‘	 tE a	 ay	 imA	 e
+49	 k	 a	 ktmA:1	 i	 ‘	 t	 tE t:1	 ay
+:1	 i	 ‘	 t	 tE t:1	 ay	 im	 e
+50	 k	 v	 ktmA:1	 i	 ay
+:1	 i	 ay	 im	 e
+51	 k	 a	 e
+52	 k	 a	 ktmA:1	 i	 t	 tE a	 ‘	 ay
+:1	 i	 t	 tE s	 ‘	 ay	 im	 e
+:2	
+:3	
+:4	 ar
+:5	 v
+:6	
+53	 k	 t	 i
+54	 k	 t	 i
+55	 kt	 t	 i
+56	 k	 t	 i
+57	 k	 t	 i
+58	 k	 BIkV:1	 i
+59	 k	 BIkV:1	 i
+60	 k	 BIkV:1	 i
+61	 kt	 mA 	 i
+62	 kt	 mE	 i
+63	 t	 “	 BgvA
+:1	 i	 ‘	 TErm	 TErO	 mjVJ:2	 mjVJ:3	 ‘TEr:1	 TErm:1	 TErO:1	 mjVJ:6	 evM K
+:2	 i	 ‘	 TErm	 TErO	 mjVJ:2	 mjVJ:3	 ‘TEr:1	 TErm:1	 TErO:1	 mjVJ:6	 evM K
+64	 ‘	 y	 ‘n
+:1	
+65	 k	 g	 i	 e
+66	 k	 kA	 i	 e
+67	 k	 u	 i	 e
+68	 k	 sA	 i	 e
+69	 k	 sA	 i	 e
+70	 k	 a	 i	 e
+71	 k	 kA	 i	 e
+72	 k	 sp	 i	 e
+73	 k	 sA	 i	 e
+74	 k	 sm	 i	 e
+75	 k	 sp	 i	 e
+76	 k	 sA	 i	 e
+77	 k	 r	 i	 e
+:1	
+78	 t
+79	 t
+80	 t
+81	 t
+82	 t
+83	 t
+84	 t
+85	 t
+86	 t
+87	 t
+:1	
+88	 k	 c	 i
+89	 k	 p	 i
+90	 k	 n	 i
+91	 k	 v	 i
+92	 k	 Bv	 i
+93	 k	 a	 i
+94	 k	 h	 i
+95	 k	 dO	 i
+96	 k	 s	 i
+97	 k	 DA	 i
+98	 k	 a	 i
+:1	
+99	 k	 y	 i
+100	 k	 y	 i
+101	 k	 y	 i
+102	 k	 y	 i
+103	 k	 y	 i
+104	 k	 y	 i
+105	 k	 y	 i
+106	 k	 y	 i
+107	 k	 y	 i
+108	 k	 y	 i
+109	 k	 y	 i
+110	 k	 y	 i
+111	 k	 y	 i
+112	 k	 y	 i
+113	 k	 y	 i
+114	 k	 y	 i
+115	 k	 y	 i
+116	 k	 y	 i
+117	 k	 y	 i
+118	 k	 y	 i
+:1	
+:2	
+119	 k	 l	 i
+120	 k	 y	 i
+121	 k	 t	 i
+122	 k	 y	 i
+123	 k	 y	 i
+124	 k	 s	 i
+125	 k	 pW	 i
+126	 k	 pr	 i
+127	 k	 pr	 i
+128	 k	 l	 i
+129	 k	 dU	 i
+130	 k	 s	 i
+:1	
+131	 ‘	 es
+132	 ‘	 es
+133	 ‘	 es
+134	 ‘	 es
+135	 k	 an	 annU:1	 i
+:1	 k	 anUv	 anUv:1	 i
+136	 k	 an	 annU:1	 i
+:1	 k	 anUv	 anUv:1	 i
+137	 k	 mA	 i
+:1	 k	 m	 i
+138	 k	 t	 i
+:1	 k	 t	 i
+139	 k	 s	 i
+140	 k	 kO	 i
+141	 k	 kO	 i
+:1	
+142	 k	 a	 i	 e
+143	 k	 a	 i	 e
+144	 k	 a	 i	 e
+145	 k	 a	 i	 e
+146	 k	 a	 i	 e
+147	 k	 a	 i	 e
+148	 k	 a	 i	 e
+149	 k	 a	 i	 e
+150	 k	 aA	 i	 e
+151	 k	 aA	 i	 e
+:1	
+152	 k	 a	 i	 e
+153	 k	 a	 i	 e
+154	 k	 a	 i	 et
+155	 k	 a	 i	 e
+156	 k	 a	 i	 e
+157	 k	 a	 i	 e
+158	 k	 aAm	 i	 e
+159	 k	 a	 im	 e
+160	 k	 a	 i	 e
+161	 k	 a	 i	 e
+162	 k	 a	 i	 e
+163	 k	 a	 i	 e
+:1	
+164	 k	 s	 i
+165	 k	 a	 i
+166	 k	 K	 i
+167	 k	 s	 i
+168	 k	 a	 i
+169	 k	 i	 im
+170	 k	 i	 im
+171	 k	 p	 i
+172	 k	 s	 i
+173	 k	 s	 i
+174	 k	 s	 i
+175	 k	 s	 i
+176	 k	 s	 i
+177	 k	 dI	 i
+178	 k	 a	 i
+179	 k	 m	 i
+180	 k	 s	 i
+:1	
+:2	
+181	 k	 kO	 im
+182	 k	 a	 i
+183	 k	 kO	 im
+184	 k	 a	 i
+185	 k	 kO	 im
+186	 k	 ak	 i
+187	 k	 kO	 im
+188	 k	 a	 i
+189	 kt	 kO	 im
+190	 kt	 a	 im
+:1	
+191-200	 kt	 akV	 i
+:1	
+201	 k	 sN	 i
+202-230	 k	 sN	 i
+:1	
+231	 k	 s	 r
+:1	
+232-246	 ktmE:6	 smTO:6	 pmAd:13
+:1	 a
+:2	
+:3	

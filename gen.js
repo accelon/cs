@@ -1,13 +1,13 @@
-import {glob,nodefs,DELTASEP,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
-import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/utils';
-
+import {kluer,glob,nodefs,DELTASEP,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
+import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/align';
+const {yellow,red} =kluer;
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import doInlineTag from './src/doinlinetag.js';
 
 import transliterate from './src/transliterate.js';
 // import { shortenBodytext } from './buildutils.js';
-
+const scfolder='../sc/pli/'
 const srcfolder='./books/'; 
 const brkfolder='./brk/'
 const testfn='dn1.xml';
@@ -50,10 +50,9 @@ filelist.forEach(fn=>{
     ctx.notes=[];
     const bkid=fn.replace('.xml','');
     let buf=readTextContent(srcfolder+fn);
-    const pinfn=brkfolder+fn.replace('.xml','.txt');
+    const pinfn=brkfolder+fn.replace('.xml','.cs.txt');
     if (!paramode&&fs.existsSync(pinfn) ) {
         ctx.pins=readTextLines(pinfn);
-        console.log('using pin',pinfn)
     } else ctx.pins=null;
     ctx.outfn=bkid;
     // ctx.cluster=ClusterStarts[outfn]||0;
@@ -72,8 +71,14 @@ filelist.forEach(fn=>{
         }
         ctx.notes=[];
     }
+    const sccontent=readTextLines(scfolder+bkid+'.ms.off');
+    const lines=buf.split('\n');
+    const linecountwarning=lines.length!==sccontent.length?red("!="+sccontent.length):'';
+
     if (writeChanged(ofn, buf)) {
-        console.log('written',ofn)
+        console.log('written',ofn,lines.length,linecountwarning);
+    } else {
+        console.log('same',ofn,lines.length,linecountwarning);
     }
 })
 process.stdout.write('\n');
