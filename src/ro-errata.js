@@ -217,6 +217,11 @@ const Errata={
         ['<trailer rend="centre">kalyāṇamittādivaggo aṭṭhamo।</trailer>\n</div>\n<div id="an1_9" n="an1_9" type="vagga">\n<head rend="chapter">9. pamādādivaggo</head>\n',''],
         ['<p rend="bodytext" n="82">','<trailer rend="centre">kalyāṇamittādivaggo aṭṭhamo।</trailer>\n</div>\n<div id="an1_9" n="an1_9" type="vagga">\n<head rend="chapter">9. pamādādivaggo</head>\n<p rend="bodytext" n="82">'],
 
+        //SC missing
+        ['<trailer rend="centre">ekadhammapāḷi soḷasamo।</trailer>\n',''],
+        ['<trailer rend="centre">pasādakaradhammavaggo sattarasamo।</trailer>\n',''],
+
+
     ],
     's0402m2.mul.xml':[//an3
         //swap according to SC
