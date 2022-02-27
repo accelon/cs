@@ -62,10 +62,10 @@ filelist.forEach(fn=>{
     Steps.forEach(step=>buf=step(buf,ctx));
     buf=buf.trim();
     
-    const ofn=desfolder+bkid+'.off';
+    const ofn=desfolder+bkid+'.cs.off';
 
     if (ctx.notes.length) { //將校勘移出本文, 先用流水號，之後再處理
-        const notefn=desfolder+bkid+'.notes';
+        const notefn=desfolder+bkid+'.cs.notes';
         ctx.notes.unshift('^bk#'+bkid+'.notes');
         if (writeChanged(notefn,ctx.notes.join('\n'))){
             console.log('written notes',notefn,ctx.notes.length)
