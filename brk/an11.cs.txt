@@ -24,7 +24,7 @@
 :1	 e	 avIp:1	 v
 :2	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :3	 e	 avIp:1	 v	 tt
-4	 “	 ^	 aAys:2
+4	 “	 “aAv:1	 aAys:2
 :1	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :2	 e	 avIp:1	 v
 :3	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1

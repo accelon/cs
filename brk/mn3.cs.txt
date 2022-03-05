@@ -44,7 +44,7 @@
 21	 e	 t	 “	 “Bd	 BgvA:2	 “s	 ‘	 i	 ‘a	 itVT:1	 ‘n	 itVT:2	 st	 itI	 itI i	 ay
 22	 ty	 yE K	 yd	 ‘	 ‘t	 i
 23	 tt	 tM	 sYVY:1	 ty	 yE K	 yO	 ‘ah	 nEt	 ‘t	 i
-24	 tt	 tM	 sYVY:1	 ‘	 ^	 yE K	 yE h	 n 	 sNVK:1	 ‘t	 i
+24	 tt	 tM	 sYVY:1	 ‘	 ty	 yE K	 yE h	 n 	 sNVK:1	 ‘t	 i
 25	 tM	 sb	 ‘	 sE	 ‘itO	 evm	 ‘itI:1	 ty	 yE K	 sEyV:1	 evmE:1	 ‘t	 itI v
 26	
 27	 ‘	 it	 itVT:1	 itVT:2	 itVT:3	 itVT:4	 itVT:5	 itVT:6	 itVT:7	 itVT:8	 itVT:9	 itVT:10	 itVT:11	 itVT:12	 itVT:13	 itVT:14	 itVT:15
@@ -524,7 +524,7 @@
 :1	 ‘	 itIh	 yA 	 itIh:1
 :2	 ‘	 itIh	 y	 itIh:1
 190	 kt	 c	 s	 G	 j	 kAy	 imE 	 y	 ‘	 sc	 ‘atV:1	 evM s	 ‘y	 it	 scE 	 ‘n	 evM s:1	 ‘yO K:1	 itIh:1
-191	 ‘	 itI v	 itI s	 itI s:1	 itI v:1	 t	 e	 ‘y	 itIh	 imE 	 tM	 kM	 ^f24:1
+191	 ‘	 itI v	 itI s	 itI s:1	 itI v:1	 t	 e	 ‘y	 itIh	 imE 	 tM	 kM	 “
 192	 tM	 d	 yA
 :1	
 193	 i	 t	 sO	 ay	 aAcr:2	 ev
@@ -537,7 +537,7 @@
 :3	 t	 n	 nI	 pv	 yO
 :4	 a
 :5	
-197	 e	 aT	 “	 y	 ^	 ev	 “acV:1	 abVB:1	 ayY
+197	 e	 aT	 “	 y	 – ‘	 ev	 “acV:1	 abVB:1	 ayY
 198	 nIsj	 “	 “i	 ‘	 ev	 ‘acV:1	 abVB:1	 ayM
 199	 “
 :1	 ‘	 y
@@ -617,7 +617,7 @@
 :2	 “
 :3	 a
 :4	
-229	 e	 aT	 “	 ^	 ev	 ^f28:1	 yEn 	 pYVc:2	 “ev	 “p	 ‘aDI:1	 yEn c:1	 pYVc:5	 aD
+229	 e	 aT	 “	 – ‘	 ev	 – ‘a	 yEn 	 pYVc:2	 “ev	 “p	 ‘aDI:1	 yEn c:1	 pYVc:5	 aD
 230	 aT	 aT K:1	 ekmn:1
 :1	 ‘	 ek	 ‘m	 y	 i	 “	 “m	 ‘y	 “y	 td
 :2	 i	 k	 mU	 up	 ay
@@ -717,7 +717,7 @@
 254	 ks	 ttVr	 ‘	 i
 255	 sEy	 e	 tt	 ‘	 ktM	 yAv	 sO	 i
 :1	 y	 ‘	 ‘ekn:1	 yA
-256	 “	 “skV:1	 “sE	 kt	 iD	 tM	 ^	 as
+256	 “	 “skV:1	 “sE	 kt	 iD	 tM	 – ‘	 as
 :1	 ‘	 aT	 yE	 ‘e	 rAjA:4	 ‘pA	 yE K:1
 257	 dkVK:1	cVCI:1
 :1	 ‘	 rAjA:1	 ‘p	 yE
@@ -1192,7 +1192,7 @@
 :23	 l
 :24	 u
 :25	
-383	 e	 t	 aT	 “	 ^	 sO	 yEn c	 ^f46:1	 sO a	 ev	 ‘s
+383	 e	 t	 aT	 “	 – ‘	 sO	 yEn c	 – ‘a:1	 sO a	 ev	 ‘s
 :1	 “	 sO B	 yEn c	 “anA:1	 sO a	 ev	 ‘	 aD
 384	 “
 :1	 sE	 n m	 sEyV:1	 n mE:1	 sEyV:2	 n mE:2	 sEyV:3	 n mE:3
@@ -1244,7 +1244,7 @@
 :1	 a
 :2	
 395	 e	 aT	 “	 “t	 “e	 BgvA:3
-:1	 t	 ts	 ^
+:1	 t	 ts	 ‘
 :2	 G	 j	 k	 m	 t	 ts	 ‘
 :3	 t	 ts	 ‘
 :4	 G	 j	 k	 m	 t	 ts	 ‘

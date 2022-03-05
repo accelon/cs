@@ -507,7 +507,7 @@
 :7	 ‘	 sO
 :8	 ‘	 sO
 :9	 ‘	 sO v	 aT
-:10	 ^f16:1	 e	 sE	 evmE:1	 sEyV:1	 evmE:2	 aT	 c
+:10	 –	 e	 sE	 evmE:1	 sEyV:1	 evmE:2	 aT	 c
 66	 e	 a	 “	 tM	 ‘	 sA
 :1	
 :2	 t	 ap	 tEp	 tEs	 ‘	 “	 kNVK:2
@@ -532,7 +532,7 @@
 :21	
 :22	 k
 :23	 e
-:24	 ^	 m	 yd	 ‘i	 itI 
+:24	 –	 m	 yd	 ‘i	 itI 
 :25	 y	 ‘
 :26	 a
 :27	
@@ -720,7 +720,7 @@
 :3	 m	 mOhE:1	 mUUL:1	 mOhE:3	 mUUL:2	 mOhE:5	 mOhO	 i	 idM d	 idM m
 :4	 “	 “k	 “ay	 sm	 ay	 “B	 al	 pX
 73	 aT
-:1	 k	 kE l:1	 ^	 tM	 yE	 kT	 “y	 ev
+:1	 k	 kE l:1	 “	 tM	 yE	 kT	 “y	 ev
 :2	 y	 kT	 “	 ev
 :3	 y	 kT	 “	 ev
 :4	 ‘	 tyAv:1	 ‘yE,:1	 tyAv:2	 ‘yEs

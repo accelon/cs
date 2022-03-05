@@ -3,8 +3,7 @@ import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/align';
 const {yellow,red} =kluer;
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
-import doInlineTag from './src/doinlinetag.js';
-
+import {serializeNotes} from './src/notes.js';
 import transliterate from './src/transliterate.js';
 // import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
@@ -41,14 +40,17 @@ const breaklines=(buf,ctx)=>{
     }
     return out.join('\n');
 }
-const Steps=[ transliterate, doInlineTag, offtextgen, breaklines];
+const Steps=[ transliterate, offtextgen, breaklines];
 const ctx={};
 let  processed=0;  
 
 filelist.forEach(fn=>{
     ctx.fn=fn;
-    ctx.notes=[];
+    ctx.notes={};
+    ctx.notecount=0;
+    ctx.offnote=!paramode;
     const bkid=fn.replace('.xml','');
+    ctx.bkid=bkid;
     let buf=readTextContent(srcfolder+fn);
     const pinfn=brkfolder+fn.replace('.xml','.cs.txt');
     if (!paramode&&fs.existsSync(pinfn) ) {
@@ -60,20 +62,16 @@ filelist.forEach(fn=>{
     processed++;
     Steps.forEach(step=>buf=step(buf,ctx));
     buf=buf.trim();
-    
     const ofn=desfolder+bkid+'.cs.off';
 
-    if (ctx.notes.length) { //將校勘移出本文, 先用流水號，之後再處理
-        const notefn=desfolder+bkid+'.cs.notes';
-        ctx.notes.unshift('^bk#'+bkid+'.notes');
-        if (writeChanged(notefn,ctx.notes.join('\n'))){
-            console.log('written notes',notefn,ctx.notes.length)
-        }
-        ctx.notes=[];
+    const notefn=desfolder+bkid+'.cs.notes';
+    const notesout=serializeNotes(ctx.notes);
+    if (writeChanged(notefn,notesout)){
+        console.log('written notes',notefn)
     }
     const sccontent=readTextLines(scfolder+bkid+'.ms.off');
     const lines=buf.split('\n');
-    const linecountwarning=lines.length!==sccontent.length?red("!="+sccontent.length):'';
+    const linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
 
     if (writeChanged(ofn, buf)) {
         console.log('written',ofn,lines.length,linecountwarning);

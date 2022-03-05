@@ -822,7 +822,7 @@
 :8	 t	 s	 ‘	 evmA
 :9	 d
 143	 a	 t	 “	 kt	 h	 im
-:1	 ^	 ad	 dI	 “a	 ys
+:1	 –	 ad	 dI	 “a	 ys
 :2	
 :3	 aD	 aT	 “	 “i	 ‘	 kt	 h	 im
 :4	 p	 kt	 t	 tTAg:1	 tTAg:2	 tTAg:3	 ktY	 i	 tt
@@ -990,7 +990,7 @@
 :2	 “	 y	 ‘	 n	 m	 ts	 kI	 evY	 ys	 ym	 ymVp:1	 ymVp:2	 ymVp:3	 ymVp:4	 ysVm:1
 :3	 y	 ym	 ymVp:1	 ymVp:2	 ymVp:3	 ymVp:4	 ysVm:1	 C
 177	 k	 s	 i	 stVt:1
-178	 a	 ‘	 tm	 “	 “s	 my	 ‘ayM:1	 tmEn:1	 apI c	 ^f34:1	 tmEn:2	 apI n:1	 “d
+178	 a	 ‘	 tm	 “	 “s	 my	 ‘ayM:1	 tmEn:1	 apI c	 – ‘a:2	 tmEn:2	 apI n:1	 “d
 :1	 a	 ‘	 tm	 “	 “s	 my	 ‘ayM:1	 tmEn:1	 apI c	 ‘ayM:2	 tmEn:2	 apI n:1	 “d
 :2	 a	 ‘	 tm	 “	 “s	 my	 ‘ayM:1	 tmEn:1	 apI c	 ‘ayM:2	 tmEn:2	 apI n:1	 “d
 :3	 a	 ‘	 tm	 “	 “s	 my	 ‘ayM:1	 tmEn:1	 apI c	 ‘ayM:2	 tmEn:2	 apI n:1	 “d

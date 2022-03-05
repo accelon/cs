@@ -134,7 +134,7 @@
 :2	
 :3	
 :4	
-:5	 ytM ^:1
+:5	 ytM ac
 :6	 ytm
 :7	 y
 :8	 K
@@ -343,7 +343,7 @@
 :6	 Y
 :7	 p
 :8	 kt
-:9	 ^	 p
+:9	 ,	 p
 36	 d	 adVd	 dI	 “	 n	 aT	 aT K:1	 dIsV:1
 :1	 “	 “g	 “n K:1	 “y	 “n K:2	 “m	 “n K:3
 :2	 ‘	 ‘g	 ‘n K:1	 ‘y	 ‘n K:2	 ‘m	 ‘n K:3	 aT
@@ -1218,7 +1218,7 @@
 :1	 ‘	 s	 ‘b	 smNO:1	 ‘m	 smNO:2	 ‘y	 smNO:3
 :2	 s	 dU
 183	 a	 smVm:1
-:1	 ^	 evM 	 y	 evM m:1	 yO k:1	 evM m:2	 yO k:2	 evM m:3
+:1	 –	 evM 	 y	 evM m:1	 yO k:1	 evM m:2	 yO k:2	 evM m:3
 :2	 n	 nA	 n pn:1	 nAhM:1	 n pn:2	 nAhM:2	 n pn:3
 :3	 y
 :4	 y

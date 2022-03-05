@@ -306,7 +306,7 @@
 :8	 k	 d	 n	 nO c:1	 nO c:3	 nO c:6	 nO c:10	 nO c:15	 evM B	 t
 185	 t	 “	 “aAv:1	 aAys:3
 :1	 k	 stI	 i	 imEs	 yEn y:1	 yEn y:2	 stIs:1	 sc	 upEk:1	 scEp:1
-:2	 s	 yYVY:1	 yYVY:2	 e	  	 yEn y:2	 stI	 sc	 u	 scEp:1	 ct
+:2	 s	 yYVY:1	 yYVY:2	 e	 yEn y:1	 yEn y:2	 stI	 sc	 u	 scEp:1	 ct
 186	 a	 “	 k	 “b	 i	 tsVs	 vImU:3	 ‘K	 bOD	 pY
 187	 aT	 smVm:1	 “	 ts	 aArA:1	 sO	 ‘	 “v
 :1	 “	 “k	 “c	 “ktm:1	 “t	 “ktm:2	 “i
@@ -654,14 +654,14 @@
 :5	 ‘	 am
 :6	 t	 tT	 e	 ts	 sO 	 vEd	 cItV:1	 D	 tsVs:1	 sO t:1
 :7	 t	 tT	 a
-375	 e	 ^	 “	 i	 “ev	 BgvA:2
+375	 e	 t	 “	 i	 “ev	 BgvA:2
 :1	 t	 aT	 “	 yM	 aT K:1	 (
 :2	 aT	 “	 d	 dIWV:1	 ap	 apI c:1	 ‘
 :3	 dE	 n	 y	 ‘	 tTAg:1	 ‘ahM:1	 s 	 et	 aAs	 sE	 evmE
 :4	 tsVm:1
 :5	 i	 vE	 c	 DmVm:2	 e	 y	 n
 376	 aT
-:1	 ^f56	 y	 ‘
+:1	 “	 y	 ‘
 :2	 aT
 :3	 aT	 ‘	 ev	 ‘e	 yO
 :4	 y	 ‘
@@ -730,7 +730,7 @@
 :1	 ct
 :2	 i	 vE	 cI	 D	 im	 imEs:1
 :3	 “	 u	 pY
-392	 ^	 smVm:1	 “	 kI	 “c
+392	 aT	 smVm:1	 “	 kI	 “c
 :1	 i	 vE	 cI	 D	 im	 C
 393	 e	 “	 k	 “c
 :1	 i	 vE	 cI	 D	 im	 stV
@@ -996,7 +996,7 @@
 527	 aT	 “	 k	 sd	 vII	 st	 smA	 pYVY	 i
 :1	 aT	 “	 pY	 kt	 sd	 i
 :2	 t	 ‘	 sO	 ttVr:1	 ‘b	 “	 ah	 st
-528	 t	 “	 ^	 “s	 an
+528	 t	 “	 “a	 “s	 an
 :1	 “	 vI	 st	 smA	 pY	 ay	 “s	 e
 :2	 “	 a	 “s	 e	 aW
 529	 “	 k	 sd	 im	 nv
@@ -1510,7 +1510,7 @@
 999	 t	 aT	 “	 ‘	 sO	 e	 ‘s	 “ev	 “d	 sO B:1	 evYV:1	 ‘sAD:1	 aD
 :1	 “	 “n	 “t	 ‘	 D	 sN	 arI	 evY
 :2	 ahYV:1	 DmVm:2	 sN	 ar	 “	 iD	 e
-:3	 ahYV:1	 ap	 ‘	 ^	 i
+:3	 ahYV:1	 ap	 ‘	 “	 i
 :4	 a	 aT K:1	 “	 ts	 “p	 dIIG:4	 ttI
 1000	 aT	 “	 “c
 :1	 i	 it	 D	 sN	 arIy:1	 im	 ctUt
@@ -1535,7 +1535,7 @@
 :15	 al	 c
 :16	 i	 it	 D	 sN	 v	 im
 :17	 i	 D	 sN	 y	 tM k	 kt	 dA	 “	 yEs	 C
-1003	 e	 a	 “	 tM	 ‘	f1	 sO D	 sAD
+1003	 e	 a	 “	 tM	 ‘	 sO im	 sO D	 sAD
 :1	 “	 pU	 tEs
 :2	 t	 “	 BgvA
 :3	 i	 ‘	 y	 ah	 yO K:1	 yO K:2	 sO	 e
@@ -1850,7 +1850,7 @@
 1078	 ‘	 tM k	 nE
 :1	 tM	 e
 :2	 a
-1079	 ^	 tM	 nE
+1079	 –	 tM	 nE
 :1	 y	 n
 1080	 r	 tM	 nE
 :1	 tM	 e
@@ -1944,13 +1944,13 @@
 1099	 k	 d	 i	 imE
 :1	 d
 :2	 n
-1100	 ^f20:1	 “
+1100	 t	 “
 :1	 “	 ‘	 y	 yO d:1	 yO d:2	 ds
 :2	
 :3	
 :4	 a
 :5	 p
-1101	 ^	 “	 kt	 y	 “a	 aT K:1	 “e	 ks	 n 	 t
+1101	 a	 “	 kt	 y	 “a	 aT K:1	 “e	 ks	 n 	 t
 :1	 ‘
 :2	 e	 t
 :3	 pX
@@ -1976,7 +1976,7 @@
 :1	 n	 aT r	 e	 anVD:2	 nEv t:1
 :2	 n	 aT K	 k	 dU
 :3	 a
-1109	 ‘a	 ^
+1109	 ‘a	 –
 :1	 tm	 tM	 lhUk:1	 e	 ‘a	 ‘ayM:1	 tM k:1	 ad
 :2	 ‘a	 ‘ayM:1
 :3	 p	 t	 gmVB:1	 e	 ayM	 ‘a	 tM k:1	 sUd	 kt	 dUkV:2

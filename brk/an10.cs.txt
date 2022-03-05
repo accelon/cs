@@ -355,7 +355,7 @@
 :10	 s	 i	 t	 ‘	 ttVT:1	 ‘imM:1	 ‘g	 sEvI:3	 itI y
 :11	 s	 i	 t	 ‘	 ttVT:1	 ‘imM:1	 ‘j	 sEvI:3	 itI y
 :12	 s	 i	 t	 ‘	 ttVT:1	 ‘imM:1	 ‘p	 sEvI:3	 itI y	 c
-55	 “	 ^	 aAys:2
+55	 “	 “aAv:1	 aAys:2
 :1	 ‘	 k	 “	 sAD	 aAys:1
 :2	 “	 aAys:1
 :3	 i	 e
@@ -973,7 +973,7 @@
 :11	 an
 :12	 t	 C
 119	
-:1	 d	 “	 k	 ^f18:1
+:1	 d	 “	 k	 “p
 :2	 “	 tE	 ‘	 bh	 ts	 e
 :3	 “	 s
 :4	 “	 BgvA

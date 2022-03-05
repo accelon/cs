@@ -238,7 +238,7 @@
 :5	 t	 ay
 :6	 s	 ay
 :7	 s	 nO c	 ay
-:8	 ‘	 e	 ‘v	 n 	 ^	 ay
+:8	 ‘	 e	 ‘v	 n 	 – ‘m	 ay
 :9	 ay	 i	 n 	 kt
 :10	 a	 ekmn:1
 :11	 y	 imEh:1	 pX

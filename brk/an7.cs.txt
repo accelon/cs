@@ -207,7 +207,7 @@
 41	 k	 i	 im	 d
 42	 aT	 “	 y	 aT K:1	 smVm:1	 tEn 	 “y
 :1	 an	 “	 aT
-:2	 t	 ‘	 y	 aT	 smVm:1	 tEn 	 ‘y	 aT K:1	 an	 ^	 sk
+:2	 t	 ‘	 y	 aT	 smVm:1	 tEn 	 ‘y	 aT K:1	 an	 – ‘B	 sk
 :3	 st
 :4	 i	 im	 imE	 ct	 C	 e
 43	 e	 a	 aT K:1	 “	 y	 aT K:2	 smVm:1
