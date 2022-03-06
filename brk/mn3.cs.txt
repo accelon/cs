@@ -250,7 +250,7 @@
 :2	 a
 :3	
 105	 e	 t	 “	 “Bd	 BgvA:2	 “s	 tM	 “e	 BgvA:3
-:1	 i	 s	 ‘	 sO t	 ay	 sp	 ‘n	 nO	 sO c	 sO p	 ayM,
+:1	 i	 s	 ‘	 sO t	 ay	 sp	 ‘n	 nO	 sO c	 sO p	 ayM,:1
 :2	 mhAB	 u	 s	 ‘	 sO t	 ay	 sp	 ‘n	 nO	 sO c	 sO p	 aymV:1
 106	 s	 ‘	 sO t	 ay	 sp	 ‘n	 n	 sO c	 sO p	 aymV:1
 :1	 s	 ‘	 sO t	 ay	 sp	 ‘n	 nO	 sO c	 sO p	 aymV:1

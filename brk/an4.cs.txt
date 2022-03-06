@@ -134,7 +134,7 @@
 :2	
 :3	
 :4	
-:5	 ytM ac
+:5	 ytM:1
 :6	 ytm
 :7	 y
 :8	 K
@@ -343,7 +343,7 @@
 :6	 Y
 :7	 p
 :8	 kt
-:9	 ,	 p
+:9	 “(m	 p
 36	 d	 adVd	 dI	 “	 n	 aT	 aT K:1	 dIsV:1
 :1	 “	 “g	 “n K:1	 “y	 “n K:2	 “m	 “n K:3
 :2	 ‘	 ‘g	 ‘n K:1	 ‘y	 ‘n K:2	 ‘m	 ‘n K:3	 aT

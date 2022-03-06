@@ -1,4 +1,72 @@
-import { pinTailNote } from "pitaka/align";
+import {toParagraphs} from 'pitaka/align'
+import { linePN, makeLocalAddress } from 'pitaka/offtext';
+import { pinTailNote } from 'pitaka/align';
+/* before breakline */
+export const stepStripNotes=(buf,ctx)=>{
+    const paragraphs=toParagraphs(buf.split('\n'));
+    const out=[];
+    for (let i=0;i<paragraphs.length;i++) {
+        let [pn,para]=paragraphs[i];
+        for (let i=0;i<para.length;i++) {
+            out.push(stripNotes(pn+(i?':'+i:''),para[i],ctx.notes));
+        }
+    }
+    return out.join('\n');
+}
+/* after  breakline */
+export const stepPinNotes=(buf,ctx)=>{
+    const lines=buf.split('\n');
+    let pn='',subparacount=0,paraoffset=0,vakyacount=0;
+    /*
+        ctx.notes is keyed with id,
+        group it with PN to speed up pinning
+    */
+    const pn_notes={};
+    for (let nid in ctx.notes) {
+        const [pnsub]=ctx.notes[nid];
+        if (!pn_notes[pnsub]) pn_notes[pnsub]=[];
+        pn_notes[pnsub].push(ctx.notes[nid]);
+    }
+
+    for (let i=0;i<lines.length;i++) {
+        const line=lines[i];
+        const m=linePN(line);
+        vakyacount++
+        if (m) {
+            const npn=m[1].trim();
+            if (npn) {
+                pn=npn; //有號段
+                subparacount=0;
+            } else subparacount++;
+            vakyacount=0;
+            paraoffset=0;
+        }
+        const pnsub=makeLocalAddress('',pn,subparacount);
+        pinNotes(makeLocalAddress(ctx.bkid,pn,vakyacount),paraoffset,lines[i], pn_notes[pnsub]);
+        paraoffset+=lines[i].length;
+    }
+    return buf;
+}
+
+
+
+export const pinNotes=(loc,paraoffset,linetext,notes)=>{
+    for (let nid in notes) {
+        const off=notes[nid][1];
+        if (typeof off==='string') continue;//resolved;
+       
+
+        if (off-paraoffset>linetext.length) continue;
+        if (paraoffset>off) continue;
+        const pin=pinTailNote(linetext,off-paraoffset);
+        if (pin) {
+            notes[nid][0]=loc;
+            notes[nid][1]=pin;
+        } else {
+            console.log('cannot pin',off,paraoffset)
+        }
+    }
+}
 export const addNote=(notetext,ctx)=>{
     const nnote=ctx.notecount++;
     if (ctx.notes[nnote]) {
@@ -7,22 +75,16 @@ export const addNote=(notetext,ctx)=>{
     ctx.notes[nnote]=[0,0,notetext];
     return (ctx.offnote?'⚓':'^f')+nnote; //paramode will not remove the note 
 }
-export const pinNotes=(pn,paraline,notes)=>{ //should not be call in paramode
+//strip the notes and save the offset in ctx.notes
+export const stripNotes=(pn,paraline,notes)=>{ //should not be call in paramode
     let offset=0,accwidth=0;
-    const noteid=[];
+
     paraline=paraline.replace(/⚓(\d+)/g,(m,m1,off)=>{
         offset=off-accwidth;
-        noteid.push(m1);
         notes[m1][0]=pn;
         notes[m1][1]=offset;
         accwidth+=m.length
         return '';
-    })
-
-    noteid.forEach(nid=>{
-        const off=notes[nid][1]
-        const pin=pinTailNote(paraline,off);
-        notes[nid][1]=pin;
     })
     return paraline;
 }
@@ -30,7 +92,9 @@ export const pinNotes=(pn,paraline,notes)=>{ //should not be call in paramode
 export const serializeNotes=notes=>{
     const out=[];
     for (let key in notes) {
-        out.push([...notes[key] ]);
+        const [loc,pin,text]=notes[key];
+        out.push({loc,pin,text});
     }
-    return out.map(it=>it.join('\t')).join('\n')
+    const s='['+out.map( item=>JSON.stringify(item)).join(',').replace(/\},\{/g,'},\n{')+']';
+    return s;
 }

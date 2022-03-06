@@ -258,7 +258,7 @@
 :6	 aT	 ‘	 vIm	 ay
 :7	 ‘	 vI	 ay	 ev	 C
 38	 smVm:1
-:1	 ‘	 sO	 ‘a	 ay	 ‘crt:1	 sO e:1	 ‘ahM:1	 i
+:1	 ‘	 sO	 ‘a	 ay	 ‘crt:1	 sO:1	 ‘ahM:1	 i
 :2	 t	 ‘	 D	 tM	 “	 BgvA
 :3	 t	 evrU:1	 aT	 ‘	 sO	 aT p:1	 aT u	 aT d	 ‘ahM:1	 sO a:1	 tM	 nAh	 n 
 :4	 kt	 c	 s	 G	 j	 kAy	 im

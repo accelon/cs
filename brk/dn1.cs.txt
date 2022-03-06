@@ -632,7 +632,7 @@
 400	 “	 “i	 By
 401	 i	 id
 :1	 sE	 i	 id
-:2	 sE	 evm	 sO i	 evM K	 ay	 pX	 id	 d	 t	 ct	 idmV:1	 ayM K:1
+:2	 sE	 evm	 sO 	 evM K	 ay	 pX	 id	 d	 t	 ct	 idmV:1	 ayM K:1
 :3	 Y	 i	 n	 idmV:1	 ay
 :4	
 402	 t	 y	 aT
@@ -719,7 +719,7 @@
 :1	 oLAr:1	 y	 mnOm:2	 ysVm:1	 arUU:3
 438	 ‘	 B	 atV	 evM p:1
 :1	 ‘	 Bv	 atV	 evM p:1	 ‘ahO:1	 BvIs:2	 atVT:1	 evM p:2
-:2	 ‘	 y	 yO t:1	 evM p:1
+:2	 ‘	 y	 yO t:1	evM p:1
 :3	 ‘	 y	 yO t:1	 evM p:1	 ‘yO m	 yO m	 yO m:1	 evM p:2
 439	 oLAr:1	 ysVm:1	 ysVm:2	 arUU:2
 440	 y	 KIIr:3	 ysVm:1	 nvnI:3	 spVp:5	 spVp:6	 spVp:8	 e	 ysVm:3	 ysVm:4	 arUU:1	 i
@@ -739,7 +739,7 @@
 :1	 sO	 sO D	 tM	 sO t	 sO t:1	 ‘	 n	 y	 sO a	 sO e
 451	 i	 y	 id
 :1	 sE	 i	 y	 sEyV:1	 itI v:1	 id
-452	 sE	 evm	 sO i	 evM K
+452	 sE	 evm	 sO 	 evM K
 453	 at
 :1	 s	 e	 evM p:1	 ‘	 aT	 ‘at
 454	

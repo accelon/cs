@@ -1,9 +1,10 @@
 import {kluer,glob,nodefs,DELTASEP,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
 import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/align';
+
 const {yellow,red} =kluer;
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
-import {serializeNotes} from './src/notes.js';
+import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
 import transliterate from './src/transliterate.js';
 // import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
@@ -40,7 +41,9 @@ const breaklines=(buf,ctx)=>{
     }
     return out.join('\n');
 }
-const Steps=[ transliterate, offtextgen, breaklines];
+
+const Steps=[ transliterate, offtextgen, stepStripNotes,breaklines];
+
 const ctx={};
 let  processed=0;  
 
@@ -56,6 +59,9 @@ filelist.forEach(fn=>{
     if (!paramode&&fs.existsSync(pinfn) ) {
         ctx.pins=readTextLines(pinfn);
     } else ctx.pins=null;
+    if (ctx.offnote) {
+        Steps.push(stepPinNotes);
+    }
     ctx.outfn=bkid;
     // ctx.cluster=ClusterStarts[outfn]||0;
     // ctx.validateClusterNum= !fn.match(/^mn/)
@@ -64,7 +70,7 @@ filelist.forEach(fn=>{
     buf=buf.trim();
     const ofn=desfolder+bkid+'.cs.off';
 
-    const notefn=desfolder+bkid+'.cs.notes';
+    const notefn=desfolder+bkid+'.notes.json';
     const notesout=serializeNotes(ctx.notes);
     if (writeChanged(notefn,notesout)){
         console.log('written notes',notefn)
