@@ -42,15 +42,13 @@ export const stepPinNotes=(buf,ctx)=>{
             paraoffset=0;
         }
         const pnsub=makeLocalAddress('',pn,subparacount);
-        pinNotes(makeLocalAddress(ctx.bkid,pn,vakyacount),paraoffset,lines[i], pn_notes[pnsub]);
+        pinNotes(i,paraoffset,lines[i], pn_notes[pnsub]);
         paraoffset+=lines[i].length;
     }
     return buf;
 }
 
-
-
-export const pinNotes=(loc,paraoffset,linetext,notes)=>{
+export const pinNotes=(y,paraoffset,linetext,notes)=>{
     for (let nid in notes) {
         const off=notes[nid][1];
         if (typeof off==='string') continue;//resolved;
@@ -60,7 +58,7 @@ export const pinNotes=(loc,paraoffset,linetext,notes)=>{
         if (paraoffset>off) continue;
         const pin=pinTailNote(linetext,off-paraoffset);
         if (pin) {
-            notes[nid][0]=loc;
+            notes[nid][0]=y;
             notes[nid][1]=pin;
         } else {
             console.log('cannot pin',off,paraoffset)
@@ -92,8 +90,8 @@ export const stripNotes=(pn,paraline,notes)=>{ //should not be call in paramode
 export const serializeNotes=notes=>{
     const out=[];
     for (let key in notes) {
-        const [loc,pin,text]=notes[key];
-        out.push({loc,pin,text});
+        const [y,pin,val]=notes[key];
+        out.push({y,pin,val});
     }
     const s='['+out.map( item=>JSON.stringify(item)).join(',').replace(/\},\{/g,'},\n{')+']';
     return s;
