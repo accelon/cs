@@ -6,6 +6,6 @@
     "lang":"pl",
     "label":"end,trailer,cite",
     "homepage":"https://github.com/accelon/cs",
-    "notesjson":true,
+    "notesjson":"note",
     "files":"dn?.cs.off,mn?.cs.off,sn?.cs.off,an?.cs.off,an??.cs.off"
 }

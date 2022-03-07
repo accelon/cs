@@ -1,6 +1,6 @@
 import {toParagraphs} from 'pitaka/align'
 import { linePN, makeLocalAddress } from 'pitaka/offtext';
-import { pinTailNote } from 'pitaka/align';
+import { pinPos } from 'pitaka/align';
 /* before breakline */
 export const stepStripNotes=(buf,ctx)=>{
     const paragraphs=toParagraphs(buf.split('\n'));
@@ -56,7 +56,7 @@ export const pinNotes=(y,paraoffset,linetext,notes)=>{
 
         if (off-paraoffset>linetext.length) continue;
         if (paraoffset>off) continue;
-        const pin=pinTailNote(linetext,off-paraoffset);
+        const pin=pinPos(linetext,off-paraoffset,{backward:true,wholeword:true});
         if (pin) {
             notes[nid][0]=y;
             notes[nid][1]=pin;
