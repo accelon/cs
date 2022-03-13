@@ -19,6 +19,7 @@ const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb, parseCite ]
 filelist.forEach(file=>{
   const nn=cst4rename(file);
   let buf=fs.readFileSync(srcfolder+file,'utf8');
+
   buf=buf.replace(/\r?\n/g,'\n').replace(/>\n\n/g,'>\n'); //normalize crlf
   Steps.forEach(step=>{
     //   console.log(step,buf.length)

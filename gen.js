@@ -1,10 +1,11 @@
-import {kluer,glob,nodefs,DELTASEP,writeChanged,readTextContent, readTextLines,LOCATORSEP} from 'pitaka/cli';
+import {kluer,glob,nodefs,writeChanged,readTextContent, readTextLines} from 'pitaka/cli';
 import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/align';
 
 const {yellow,red} =kluer;
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
+import {guidedBreakLines} from 'pitaka/breaker.js'
 import transliterate from './src/transliterate.js';
 // import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
@@ -17,30 +18,7 @@ let paramode=process.argv[3]==='p';
 const desfolder=paramode?'par/':'off/';
 
 const filelist= glob(srcfolder,pat);
-const breaklines=(buf,ctx)=>{
-    if (!ctx.pins) return buf;
-    const lines=buf.split('\n');
-    const out=[];
-    let pn='';
-    for (let i=0;i<lines.length&&i<ctx.pins.length;i++) {
-        const m=lines[i].match(/\^n([\d\-]+)/);
-        if (m) pn=m[1];
-        const id=ctx.fn.replace('.xml','')+LOCATORSEP+pn;
-        if (!ctx.pins[i].length) {
-            throw `empty pin entry of ${id}, #${i+1}`
-        }
-        const pins=ctx.pins[i].split('\t');
-        const pinpn=pins.shift();
-        if (pn!==pinpn && pinpn[0]!==DELTASEP) {
-            throw `pin paranum missmatch ${id} != ${pinpn}, #${i+1}`
-        }
-        const before=beforePN(lines[i]);
-        let sentences=breakByPin(afterPN(lines[i]), pins,id);
-        sentences[0]=before+sentences[0]
-        out.push( ...sentences  );
-    }
-    return out.join('\n');
-}
+const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 
 const Steps=[ transliterate, offtextgen, stepStripNotes,breaklines];
 

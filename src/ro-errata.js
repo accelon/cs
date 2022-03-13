@@ -278,6 +278,24 @@ const Errata={
         ['<p rend="hangnum" n="21"><hi rend="paranum">21</hi><hi rend="dot">.</hi></p>\n<p rend="gatha1">‘‘phalā',
 		'<p rend="hangnum" n="22"><hi rend="paranum">22</hi><hi rend="dot">.</hi></p>\n<p rend="gatha1">‘‘phalā'],
     ],
+    /*  */
+    'abh07t.nrf.xml':[ //攝阿毘達磨義釋
+        [' n="95"><hi rend="paranum">95</hi><hi rend="dot">.</hi> ','>'], //取消這三個號，第五章 102 變成99段
+        [' n="96"><hi rend="paranum">96</hi><hi rend="dot">.</hi> ','>'],
+        [' n="97"><hi rend="paranum">97</hi><hi rend="dot">.</hi> ','>'],
+
+        ['n="98"><hi rend="paranum">98','n="95"><hi rend="paranum">95'],
+        ['n="99"><hi rend="paranum">99','n="96"><hi rend="paranum">96'],
+        ['n="100"><hi rend="paranum">100','n="97"><hi rend="paranum">97'],
+        ['n="101"><hi rend="paranum">101','n="98"><hi rend="paranum">98'],
+        ['n="102"><hi rend="paranum">102','n="99"><hi rend="paranum">99'], //不超過兩位. 章作為前綴共三位數字
+    ],
+    'abh07t1.nrf.xml':[ // 阿毗達摩義廣釋 , 從 cst4 abh07t.nrf 的後半
+        ['n="98"><hi rend="paranum">98','n="95"><hi rend="paranum">95'],
+        ['n="99"><hi rend="paranum">99','n="96"><hi rend="paranum">96'],
+        ['n="101"><hi rend="paranum">101','n="98"><hi rend="paranum">98'],
+        ['n="102"><hi rend="paranum">102','n="99"><hi rend="paranum">99'],
+    ],
     'e0102n.mul.xml':[
         ['<p rend="bodytext" n="561"><hi rend="paranum">561</hi><hi rend="dot">.</hi> ayaṃ',
         '<p rend="bodytext" n="591"><hi rend="paranum">591</hi><hi rend="dot">.</hi> ayaṃ']

@@ -41,14 +41,14 @@ const newname={
 	
 	abh06t: 'adv' ,//入阿毘達磨論' abhidhammāvatāro
 	//abh07 Abhidhammatthasaṅgaho and Abhidhammatthavibhāvinīṭīkā
-	abh07t1:'ads',//攝阿毘達摩義論。 abhidhammatthasaṅgaho
-	abh07t: 'ads0a' ,//阿毘達摩廣釋  Abhidhammatthavibhāvinīṭīkā
+	abh07t: 'ads',//攝阿毘達摩義論。 abhidhammatthasaṅgaho
+	abh07t1:'ads0a' ,//阿毘達摩廣釋  Abhidhammatthavibhāvinīṭīkā
 	abh08t: 'advpt',//入阿毘達磨論古注 abhidhammāvatāra-purāṇaṭīkā
 	abh09t: 'adt',//阿毘達摩注  abhidhammamātikāpāḷi
 
 	e0105n:'vsnk',//Visuddhimagga nidānakathā
 	e0201n:'ndn',//Niruttidīpanīpāṭha
-	e0301n:'pmdp',//Paramatthadīpanī 究竟燈注 ledi sayadaw
+	e0301n:'pmdp',//Paramatthadīpanī 究竟燈注 ledi sayadaw  ads 的注
 	e0401n:'adn',//Anudīpanīpāṭha
 	e0501n:'ptdp',//Paṭṭhānuddesa dīpanīpāṭha
 	e0601n:'nmkr',//Namakkārapāḷi
