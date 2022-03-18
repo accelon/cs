@@ -280,6 +280,13 @@ const Errata={
     ],
     /*  */
     'abh07t.nrf.xml':[ //攝阿毘達磨義釋
+    //cst 漏了一句，依 bb 譯文補
+        ['<p rend="bodytext" n="2"><hi rend="paranum">2</hi>.<hi rend="dot">.</hi> vīthimuttānaṃ',
+        '<p rend="bodytext" n="2"><hi rend="paranum">2</hi><hi rend="dot">.</hi>Cha vatthūni, cha dvārāni, cha ālambanāni, cha viññāṇāni, cha vīthiyo, chadhā visayappavatti cā ti vīthisangahe cha chakkāni veditabbāni.</p>\n'+
+        '<p rend="bodytext" n="3"><hi rend="paranum">3</hi><hi rend="dot">.</hi> vīthimuttānaṃ'],
+
+        ['<p rend="chapter">1. cittaparicchedo</p>\n',''],//move chapter to top
+        ['<p rend="subsubhead">ganthā','<p rend="chapter">1. cittaparicchedo</p>\n<p rend="subhead">ganthā'],
         [' n="95"><hi rend="paranum">95</hi><hi rend="dot">.</hi> ','>'], //取消這三個號，第五章 102 變成99段
         [' n="96"><hi rend="paranum">96</hi><hi rend="dot">.</hi> ','>'],
         [' n="97"><hi rend="paranum">97</hi><hi rend="dot">.</hi> ','>'],
@@ -291,6 +298,14 @@ const Errata={
         ['n="102"><hi rend="paranum">102','n="99"><hi rend="paranum">99'], //不超過兩位. 章作為前綴共三位數字
     ],
     'abh07t1.nrf.xml':[ // 阿毗達摩義廣釋 , 從 cst4 abh07t.nrf 的後半
+        ['<p rend="chapter">1. cittaparicchedavaṇṇanā</p>\n',''],
+        ['<p rend="bodytext" n="1"><hi rend="paranum">1</hi><hi rend="dot">.</hi>','<p rend="bodytext">'],
+
+        ['<p rend="subsubhead">ganthārambhakathā</p>\n<p rend="gatha1">',
+        '<p rend="chapter">1. cittaparicchedavaṇṇanā</p>\nganthārambhakathā</p>\n<p rend="gatha1" n="1"><hi rend="paranum">1</hi><hi rend="dot">.</hi>'],
+
+
+
         ['n="98"><hi rend="paranum">98','n="95"><hi rend="paranum">95'],
         ['n="99"><hi rend="paranum">99','n="96"><hi rend="paranum">96'],
         ['n="101"><hi rend="paranum">101','n="98"><hi rend="paranum">98'],

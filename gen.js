@@ -5,8 +5,9 @@ const {yellow,red} =kluer;
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
-import {guidedBreakLines} from 'pitaka/breaker.js'
+import {guidedBreakLines} from 'pitaka/align'
 import transliterate from './src/transliterate.js';
+import {reparanum} from './src/reparanum.js'
 // import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
 const srcfolder='./books/'; 
@@ -20,7 +21,7 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 
-const Steps=[ transliterate, offtextgen, stepStripNotes,breaklines];
+const Steps=[ transliterate,reparanum , offtextgen, stepStripNotes,breaklines];
 
 const ctx={};
 let  processed=0;  
@@ -43,6 +44,8 @@ filelist.forEach(fn=>{
     ctx.outfn=bkid;
     // ctx.cluster=ClusterStarts[outfn]||0;
     // ctx.validateClusterNum= !fn.match(/^mn/)
+
+
     processed++;
     Steps.forEach(step=>buf=step(buf,ctx));
     buf=buf.trim();
@@ -53,14 +56,18 @@ filelist.forEach(fn=>{
     if (writeChanged(notefn,notesout)){
         console.log('written notes',notefn)
     }
-    const sccontent=readTextLines(scfolder+bkid+'.ms.off');
-    const lines=buf.split('\n');
-    const linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
+    const msfn=scfolder+bkid+'.ms.off';
+    let linecountwarning='';
+    if (fs.existsSync(msfn)) {
+        const sccontent=readTextLines(guidefn);
+        const lines=buf.split('\n');
+        linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
+    }
 
     if (writeChanged(ofn, buf)) {
-        console.log('written',ofn,lines.length,linecountwarning);
+        console.log('written',ofn,buf.length,linecountwarning);
     } else {
-        console.log('same',ofn,lines.length,linecountwarning);
+        console.log('same',ofn,buf.length,linecountwarning);
     }
 })
 process.stdout.write('\n');

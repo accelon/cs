@@ -27,8 +27,10 @@ const newname={
 	abh03a:"pt0a",
 	e0103n:"vs1a",e0104n:"vs2a",
 	// vin01t1:"sd0t",
-	vin01t:"pj0t",  //這樣才對得上 pj0m pj0a
-	vin02t:"pc0t"/*vin02t2:bhikkhuni vibhanga */,vin02t3:"mv0t",vin02t4:"cv0t",vin02t:"pvr0t",
+	vin01t1:"sd0t", 
+	vin01t2:"pj0t",  //這樣才對得上 pj0m pj0a
+	//vin02t split into 4 books
+	vin02t1:"pc0t"/*vin02t2:bhikkhuni vibhanga */,vin02t3:"mv0t",vin02t4:"cv0t",vin02t:"pvr0t",
 
     // s0101t:"dn1t",s0102t:"dn2t",s0103t:"dn3t",
 	s0104t:"dn1u1", //戒蘊品新注1-149
@@ -41,10 +43,10 @@ const newname={
 	
 	abh06t: 'adv' ,//入阿毘達磨論' abhidhammāvatāro
 	//abh07 Abhidhammatthasaṅgaho and Abhidhammatthavibhāvinīṭīkā
-	abh07t: 'ads',//攝阿毘達摩義論。 abhidhammatthasaṅgaho
-	abh07t1:'ads0a' ,//阿毘達摩廣釋  Abhidhammatthavibhāvinīṭīkā
-	abh08t: 'advpt',//入阿毘達磨論古注 abhidhammāvatāra-purāṇaṭīkā
-	abh09t: 'adt',//阿毘達摩注  abhidhammamātikāpāḷi
+	abh07t: 'aas',//攝阿毘達摩義論。 abhidhammatthasaṅgaho
+	abh07t1:'aas0a' ,//阿毘達摩廣釋  Abhidhammatthavibhāvinīṭīkā
+	abh08t: 'aas0u',//入阿毘達磨論古注 abhidhammāvatāra-purāṇaṭīkā
+	abh09t: 'aas0t',//阿毘達摩注  abhidhammamātikāpāḷi
 
 	e0105n:'vsnk',//Visuddhimagga nidānakathā
 	e0201n:'ndn',//Niruttidīpanīpāṭha

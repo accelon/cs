@@ -76,7 +76,7 @@ export const handlers={
         if (el.attrs.rend=='bold') {
             return '^b[ '
         } else {
-            console.log(ctx.bkid,{text:ctx.snippet},'error hi tag '+el.innerText())
+            console.log(ctx.bkid,{text:ctx.snippet},'pn',ctx.pn, 'error hi tag '+el.innerText())
         }
     },
     "*":(el,ctx)=>{

@@ -1,7 +1,7 @@
 import {glob,nodefs,patchBuf, writeChanged} from 'pitaka/cli';
 await nodefs; //export fs to global
 import {enumTransliteration, deva2IAST} from 'provident-pali';
-
+import { splitBook } from './src/splitbook.js';
 import {getErrata} from './src/cst4-errata.js'
 console.log('conv-romn [filepat]')
 // console.log('available transliteration: ro,',enumTransliteration().join(','));
@@ -12,19 +12,7 @@ if (!fs.existsSync(srcfolder)) throw 'cst4 xml not found '+srcfolder;
 if (!fs.existsSync(desfolder)) fs.mkdirSync(desfolder);
 
 let allfiles=glob(fs.readdirSync(srcfolder),  process.argv[2]);
-const splitBook=(fn,buf)=>{
-    if (fn!=='abh07t.nrf.xml') {
-        return [[fn,buf]];
-    } else {
-        const at1=buf.indexOf('<p rend="book">');//second book
-        const at2=buf.indexOf('<p rend="book">',at1+1);//second book
-        const header=buf.slice(0,at1);
-        return [    
-            ['abh07t.nrf.xml',buf.slice(0,at2)+'</body>\n<back></back>\n</text>\n</TEI.2>'],
-            ['abh07t1.nrf.xml',header+buf.slice(at2)]
-        ]
-    }
-}
+
 console.log('processing',allfiles.length,'files')
 allfiles.forEach(file=>{
     let buf=fs.readFileSync(srcfolder+file , 'ucs2');

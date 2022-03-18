@@ -27,5 +27,10 @@ export const removeparanum=(content,fn)=>{
 			if (m1!=m2) throw "hanganum unmatch "+m1+"<>"+m2+" ,"+fn;
 			return '<p hn="'+m1+'">';
 	});
+	content=content.replace(/<p rend="gatha\d?" n="([\-\d]+)"><hi rend="paranum">([\-\d]+)<\/hi> ?/g,
+	(m,m1,m2)=>{
+		if (m1!=m2) throw "hanganum unmatch "+m1+"<>"+m2+" ,"+fn;
+		return '<p class="gatha" hn="'+m1+'">';
+});
 	return content;
 }
