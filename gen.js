@@ -10,6 +10,7 @@ import transliterate from './src/transliterate.js';
 import {reparanum} from './src/reparanum.js'
 // import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
+const bbfolder='../bb/off/'
 const srcfolder='./books/'; 
 const brkfolder='./brk/'
 const testfn='dn1.xml';
@@ -25,6 +26,13 @@ const Steps=[ transliterate,reparanum , offtextgen, stepStripNotes,breaklines];
 
 const ctx={};
 let  processed=0;  
+
+const getSameParaFilename=bkid=>{
+    if (bkid==='ass') {
+        return bbfolder+bkid+'.bb.off'
+    }
+    return scfolder+bkid+'.ms.off'
+} 
 
 filelist.forEach(fn=>{
     ctx.fn=fn;
@@ -56,10 +64,10 @@ filelist.forEach(fn=>{
     if (writeChanged(notefn,notesout)){
         console.log('written notes',notefn)
     }
-    const msfn=scfolder+bkid+'.ms.off';
+    const checkfn=getSameParaFilename(bkid);
     let linecountwarning='';
-    if (fs.existsSync(msfn)) {
-        const sccontent=readTextLines(guidefn);
+    if (fs.existsSync(checkfn)) {
+        const sccontent=readTextLines(checkfn);
         const lines=buf.split('\n');
         linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
     }

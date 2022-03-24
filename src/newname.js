@@ -10,7 +10,7 @@ const newname={
 	abh03m2:"pp",abh03m3:"kv",
 	abh03m4:"ya1",abh03m5:"ya2",abh03m6:"ya3",
 	abh03m7:"pt1",abh03m8:"pt2",abh03m9:"pt3",abh03m10:"pt4",abh03m11:"pt5",
-	e0101n:'vs1',e0102n:'vs2',
+	e0101n:'vs',e0102n:'vs', //合併為一本
 
 	vin01a:"pj0a",vin02a1:"pc0a",vin02a2:"mv0a",vin02a3:"cv0a",vin02a4:"pvr0a",
 
@@ -25,7 +25,7 @@ const newname={
 	abh01a:"ds0a",abh02a:"vb0a",abh03a1:"dt0a",
 	abh03a2:"pp0a",abh03a3:"kv0a",abh03a4:"ya0a",
 	abh03a:"pt0a",
-	e0103n:"vs1a",e0104n:"vs2a",
+	e0103n:"vs0a",e0104n:"vs0a",
 	// vin01t1:"sd0t",
 	vin01t1:"sd0t", 
 	vin01t2:"pj0t",  //這樣才對得上 pj0m pj0a
@@ -92,7 +92,8 @@ const checknewname=()=>{
 	const keys={};
 	for (let n in newname) {
 		const k=newname[n];
-		if (keys[k]) throw "Repeated new file name "+k+ "for "+n;
+		if (k=='vs' ||k=='vs0a') continue;
+		if (keys[k]) console.warn("Repeated new file name "+k+ " for "+n);
 		keys[k]=n;
 	}
 }

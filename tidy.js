@@ -15,17 +15,36 @@ let pat=process.argv[2]||testfn;
 const filelist= glob(srcfolder,pat);
 
 const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb, parseCite ]
+const removetail=buf=>{
+  console.log('remove tail',buf.length)
+  return buf.replace('</body>\n<back></back>\n</text>\n</TEI.2>',''); //remove the tail
+}
+const removehead=buf=>{
+  console.log('removehead',buf.length)
+  let at=buf.indexOf('<p rend="book">');
+  if (at==-1) {
+    throw "not a book";
+  }
+  at=buf.indexOf('</p>',at+1);
 
-filelist.forEach(file=>{
-  const nn=cst4rename(file);
+  return buf.slice(at+5);
+}
+
+filelist.forEach((file,idx)=>{
+  const newname=cst4rename(file);
+
   let buf=fs.readFileSync(srcfolder+file,'utf8');
-
   buf=buf.replace(/\r?\n/g,'\n').replace(/>\n\n/g,'>\n'); //normalize crlf
-  Steps.forEach(step=>{
-    //   console.log(step,buf.length)
-      buf=step(buf,file);
-  })
-  if (writeChanged(desfolder+nn+'.xml',buf)){
-      console.log('written',nn,buf.length);
+  Steps.forEach(step=>buf=step(buf,file));
+  if ( cst4rename(filelist[idx+1])===newname) { //same name
+    buf=removetail(buf);
+  }
+  if (cst4rename(filelist[idx-1])===newname) { 
+    buf=removehead(buf);
+    fs.appendFileSync(desfolder+newname+'.xml',buf);
+  } else {
+    if (writeChanged(desfolder+newname+'.xml',buf)){
+        console.log('written',newname,buf.length);
+    }
   }
 })

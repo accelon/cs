@@ -4,6 +4,7 @@ const AN={ '2-1':2,'2-2':3,'2-3':4,'3-1':5,'3-2':6,'3-3':7,'4-1':8,'4-2':9,'4-3'
 
 
 export const cst4rename=fn=>{
+    if (!fn) return;
     const ch0=fn.substr(0,1);
     if (fn=='sample.xml') return 'sample';
     if (ch0=='s') {

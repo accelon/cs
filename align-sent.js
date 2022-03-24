@@ -60,7 +60,6 @@ const dofile=fn=>{
             sents=breakSentence(cslines,breakpos);
             // if (id=="sn5.134-138") console.log(cs[i],sents);
         }
-
         ensureArrayLength(sents,sclines.length,failmarker)
         // sents=sents.map(it=>it.trim());
         out.push(...sents  ) ;
