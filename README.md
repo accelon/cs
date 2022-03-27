@@ -114,7 +114,7 @@ off/dn2.cs.off
    以下數據庫將會與 cs 逐句對齊
 
 * sc [Sutta Central，已完成](https://github.com/accelon/sc)
-* hz [杭州佛學院及北大譯文，長部完成逐句](https://github.com/accelon/sutta-mobi)
+* hz [杭州佛學院及北大譯文，長部已完成逐句](https://github.com/accelon/sutra-mobi)
 * ccc [莊春江，段對齊](https://github.com/accelon/ccc)
 * cb-n [元亨寺漢譯，段對齊](https://github.com/accelon/cb-n)
 * bb [菩提比丘，部份段對齊](https://github.com/accelon/bb)
