@@ -3,7 +3,7 @@ await nodefs; //export fs to global
 import {enumTransliteration, deva2IAST} from 'provident-pali';
 import { splitBook } from './src/splitbook.js';
 import {getErrata} from './src/cst4-errata.js'
-console.log('conv-romn [filepat]')
+console.log('conv-ro [filepat]')
 // console.log('available transliteration: ro,',enumTransliteration().join(','));
 const srcfolder='./Cst4/Xml/'; //download Cst4 from tipitaka.org
 const desfolder='./ro/';

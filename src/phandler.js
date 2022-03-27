@@ -163,16 +163,15 @@ export default { //key is bkid or bkpf , bkid has precedence
             return '^ck'+mat+'m'+sutta+'['+text+']';  
         }
     },
-    'vs':{//visuddhimagga , vs1,vs2
+    'vs':{//visuddhimagga 
         'chapter':(el,ctx,text,mat)=>{
             if (ctx.bkid.substr(2,1)=='2' && ctx.chunkCount==0) ctx.chunkCount=11;
             ctx.chunkCount++;
-            return  '^ck'+mat+'vs'+ctx.chunkCount+'['+text+']';  
+            if (ctx.chunkCount==1) return '' //skip ck1,n1
+            return  '^ck'+ctx.chunkCount+'['+text+']';  
         },
         'book':(el,ctx,text,mat)=>{
-            if (ctx.bkid.substr(2,1)=='1') {
-                return '^bk'+mat+'vs['+text+']';//去掉 1a,2a
-            } else return ''; //雖分為兩檔(vs1:1-365, vs2:366-896)，但段落連號 ，合併為一書號 vs
+            return '^bk#vs^ck1[1. '+text+']^n1 ';//去掉 1a,2a
         }
     }
 }

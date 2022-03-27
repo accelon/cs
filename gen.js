@@ -1,5 +1,4 @@
 import {kluer,glob,nodefs,writeChanged,readTextContent, readTextLines} from 'pitaka/cli';
-import {beforePN,afterPN, breakByPin,sentenceRatio} from 'pitaka/align';
 
 const {yellow,red} =kluer;
 await nodefs; //export fs to global
@@ -8,6 +7,7 @@ import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
 import {guidedBreakLines} from 'pitaka/align'
 import transliterate from './src/transliterate.js';
 import {reparanum} from './src/reparanum.js'
+import {epilog} from './src/epilog.js'
 // import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
 const bbfolder='../bb/off/'
@@ -22,17 +22,17 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 
-const Steps=[ transliterate,reparanum , offtextgen, stepStripNotes,breaklines];
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines];
 
 const ctx={};
 let  processed=0;  
 
 const getSameParaFilename=bkid=>{
-    if (bkid==='ass') {
+    if (bkid==='aas') { //abhidhammattha-sangaha
         return bbfolder+bkid+'.bb.off'
     }
     return scfolder+bkid+'.ms.off'
-} 
+}
 
 filelist.forEach(fn=>{
     ctx.fn=fn;
@@ -57,6 +57,7 @@ filelist.forEach(fn=>{
     processed++;
     Steps.forEach(step=>buf=step(buf,ctx));
     buf=buf.trim();
+    buf=epilog(buf,bkid)
     const ofn=desfolder+bkid+'.cs.off';
 
     const notefn=desfolder+bkid+'.notes.json';
