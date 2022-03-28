@@ -16,11 +16,11 @@ const filelist= glob(srcfolder,pat);
 
 const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb, parseCite ]
 const removetail=buf=>{
-  console.log('remove tail',buf.length)
+  // console.log('remove tail',buf.length)
   return buf.replace('</body>\n<back></back>\n</text>\n</TEI.2>',''); //remove the tail
 }
 const removehead=buf=>{
-  console.log('removehead',buf.length)
+  // console.log('removehead',buf.length)
   let at=buf.indexOf('<p rend="book">');
   if (at==-1) {
     throw "not a book";

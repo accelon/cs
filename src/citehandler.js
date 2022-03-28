@@ -30,7 +30,7 @@ const mat=function(para,fulllink){ //mul , att, tik with multivol
 			console.error("mat:invalid para",fulllink);
 			return;
 		}
-		volpg="/"+para;
+		volpg="."+para;
 		bk+= a_t?("0"+a_t):"";
 	}
 

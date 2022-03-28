@@ -12,6 +12,8 @@ const doInlineTag=(buf,ctx)=>{
             return '^b['+boldtext+']';
         });
     }
+
+    buf=buf.replace(/<link target="([^>\"]+)"\/>/g,'^t@$1')
     return buf;
 }
 

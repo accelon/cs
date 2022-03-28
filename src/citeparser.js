@@ -1,7 +1,7 @@
 /* from cap/cs0/linkparser.js*/
 
 import CiteHandler from "./citehandler.js";
-
+/*
 const linkpatterns=[
 	/sārattha\. ṭī\. [āīūḷṁṃñṇṅṭḍa-y\.]+ [\-\d\.]+/gi,
 	/sārattha\. ṭī\. [\-\d\.]+/gi,
@@ -17,10 +17,10 @@ const linkpatterns=[
 	/[āīūḷṁṃñṇṅṭḍa-y]+\. [āīūḷṁṃñṇṅṭḍa-y\.]+ [\-\d\.]+/gi,
 	/[āīūḷṁṃñṇṅṭḍa-y\.]+ [\-\d\.]+/gi,
 ]
+*/
 
-
-const hyperlink_regex=/#([sabhvine]+\d+[mat]\d?)_(\d+);/
-const hyperlink_regex_g=/#([sabhvine]+\d+[mat]\d?)_(\d+);/g
+// const hyperlink_regex=/#([sabhvine]+\d+[mat]\d?)_(\d+);/
+// const hyperlink_regex_g=/#([sabhvine]+\d+[mat]\d?)_(\d+);/g
 
 const recognise=link=>{
 	for (var i=0;i<CiteHandler.length;i++){
@@ -29,7 +29,7 @@ const recognise=link=>{
 		if (m) {
 			const translated=pat[1](m[1] , link);
 			if (!translated)return link;
-			return link.replace(pat[0],'#'+translated+';');
+			return link.replace(pat[0],'<link target="'+translated+'"/>');
 		}
 	}
 	return link;
@@ -61,7 +61,7 @@ const parseTextWithLinks=link_with_texts=>{ //text in ( ) or <note>
 		if (!parsed || parsed==note) {
 			out.push({raw:note,idx});
 		} else {
-			let caplink=parsed.match(/#(.+?);/)[1];
+			let caplink=parsed.match(/<link target="(.+?)"\/>/)[1];
 			if (caplink.indexOf(" ")>-1) {
 				console.log("link has space",caplink);
 				caplink=caplink.replace(/ /g,'');
@@ -87,5 +87,5 @@ const parseCite=(buf,fn)=>{
 	})
 }
 
-export {recognise,linkpatterns,hyperlink_regex
-,hyperlink_regex_g,parseTextWithLinks,parseCite}
+export {recognise, parseTextWithLinks, parseCite}
+//linkpatterns,//hyperlink_regex,hyperlink_regex_g,

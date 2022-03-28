@@ -281,6 +281,7 @@ const Errata={
     /*  */
     'abh07t.nrf.xml':[ //攝阿毘達磨義釋
     //cst 漏了一句，依 bb 譯文補
+        ['vīthisangahe','vīthisaṅgahe'],
         ['<p rend="bodytext" n="2"><hi rend="paranum">2</hi>.<hi rend="dot">.</hi> vīthimuttānaṃ',
         '<p rend="bodytext" n="2"><hi rend="paranum">2</hi><hi rend="dot">.</hi>Cha vatthūni, cha dvārāni, cha ālambanāni, cha viññāṇāni, cha vīthiyo, chadhā visayappavatti cā ti vīthisangahe cha chakkāni veditabbāni.</p>\n'+
         '<p rend="bodytext" n="3"><hi rend="paranum">3</hi><hi rend="dot">.</hi> vīthimuttānaṃ'],

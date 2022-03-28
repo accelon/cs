@@ -21,7 +21,7 @@ const desfolder=paramode?'par/':'off/';
 
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
-
+//todo , offtext gen transclusion link
 const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines];
 
 const ctx={};

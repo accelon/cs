@@ -1,0 +1,791 @@
+1	
+:1	
+2-102	
+:1	
+103	 rUU	 arU	 lOk
+104	 sOm	 ssN	 sOm:1	 ssN:1	 upE	 ssN:2	 upE:1	 ssN:3	 imA
+105	 ssN	 imA
+106	 upE	 imA
+107	
+108	
+:1	
+109	 tTA	 GAn	 jIv	 dUk	 upE	 upE:1	 imA
+110	 tTA	 GAn	 jIv	 sUK	 upE	 sOm	 upE:1	 imA
+111	 tTA	 sOm	 imA
+112	
+113	
+:1	
+114	
+:1	
+115	 ssN	 sOm	 ssN:1	 upE	 ssN:2	 upE:1	 ssN:3	 imA
+116	 ssN	 sOm	 ssN:1	 upE	 ssN:2	 upE:1	 ssN:3	 imA
+117	 ssN	 sOm	 ssN:1	 upE	 ssN:2	 upE:1	 ssN:3	 imA
+118	
+119	
+:1	
+120	
+:1	
+121	 vIc	 pII	 sUK	 upE	 imA
+122	 vIc	 pII	 sUK	 upE	 imA
+123	 vIc	 pII	 sUK	 upE	 imA
+124	
+125	
+:1	
+126	 vIY	 aAk	 nEv	 imA
+127	 vIY	 aAk	 nEv	 imA
+128	 vIY	 aAk	 nEv	 imA
+129	
+130	
+:1	
+131	 skd	 anA	 arh	 imA
+132	 skd	 anA	 arh	 imA
+133	
+134	
+:1	
+135	
+:1	
+136	
+:1	
+137	
+:1	
+138	 vIt	 vIc	 pII	 sUK	 upE	 imA
+139	
+140	
+141	
+:1	
+142	
+:1	
+:2	
+:3	
+143-200	
+:1	
+:2	
+:3	
+201	
+:1	
+202	 stV
+203	 C i
+204	
+205	 dOs	 cUd
+206	 kAy	 kAy:3	 ekU
+207	
+208	 sbV
+209	
+:1	
+:2	
+210	
+:1	
+211	
+:1	
+212	
+213	
+214	
+215	
+216	
+217	
+218	
+219	
+:1	
+:2	
+:3	
+:4	
+220	 sbV:1
+221	
+222	
+223	
+224	
+225	
+226	
+227	
+:1	
+:2	
+:3	
+:4	
+:5	
+228	
+229	
+230	
+231	
+232	
+:1	
+:2	
+:3	
+233	
+:1	
+234	
+:1	
+235	 pYV
+:1	
+:2	 dVv
+:3	
+236	 apV	 tTA	 ttI	 ctU	 pYV	 aWV:1
+237	
+:1	
+238	 vIr	 krU	 tTA	 ttI	 ctU	 pYV:1	 sbV
+239	
+:1	
+240	 pYV	 apV	 tTA	 ttI	 ctU	 kIr	 tTA:1	 sbV
+241	
+:1	
+:2	
+:3	
+242	
+:1	
+:2	
+:3	
+243	 akU
+244	
+245	
+246	
+247	 isV:1
+248	
+249	
+250	 sbV
+251	
+:1	
+252	
+:1	
+253	
+254	
+255	
+256	
+257	
+258	
+:1	
+259	
+:1	
+260-300	
+:1	
+:2	
+:3	
+301	
+:1	
+302	
+:1	
+303	 sUK:1
+304	 tTA
+305	 dVv	 sUK	 aWV	 dVv:2
+306	
+307	
+308	
+:1	
+309	
+:1	
+310	
+311	
+312	
+313	
+314	
+315	
+316	
+:1	
+:2	
+:3	
+317	
+:1	
+318	 pWI
+319	
+320	 ekU
+321	
+322	
+323	
+324	
+325	
+326	
+327	
+328	
+329	
+330	
+331	
+332	
+333	
+:1	
+334	
+:1	
+335	
+336	
+337	
+338	
+339	 Cct	 tTA	 sbV
+340	
+341	
+342	
+343	
+344	
+345	
+346	
+347	
+:1	
+:2	
+:3	
+348	
+349	
+350	
+351	 tTA
+352	
+353	
+354	
+355	
+356	
+357	
+358	
+359	
+360	
+361	
+362	
+363	
+:1	
+:2	
+:3	
+364	
+365	
+366	
+367	
+368	
+369	
+370	
+371	
+372	
+373	
+:1	
+374-400	
+:1	
+:2	
+:3	
+401	
+:1	
+:2	
+:3	
+402	 C d	 C a	 C v	 C v:1	 CDA	 cA 
+403	
+404	
+405	
+406	 ckV	 sOt	 GAn	 jIv	 kAy	 mnO	 dVv	 ckV:1	 sOt:1	 GAn:1	 jIv:1	 kAy:1	 mnO:1	 vIY
+407	 mnO	 CDA
+408	
+409	
+410	 tsV	 ttO	 ttO:1	 smV	 snV	 vvt	 ttO:2	 jvn	 ttO:3
+411	 ttO
+412	 ttV
+413	 ttV	 ttO
+414	 ttV
+415	 sbV	 tdA	 ctU
+416	
+:1	
+:2	
+417	
+418	
+419	
+:1	
+:2	
+420	 tTA
+421	 nIr	 ttO
+422	 upE	 ttV	 kIr
+423	
+:1	
+424	
+:1	
+:2	
+425	
+426	
+427	 ttV	 upE
+428	 tsV	 tdA:2	 tmn
+429	
+430	
+:1	
+:2	
+431	
+432	
+433	
+434	
+435	 ttO	 ttO:1
+436	
+437	 nIr
+438	 ktV
+439	
+:1	
+:2	
+440	
+441	
+442	
+443	
+444	
+445	
+446	
+447	
+448	
+:1	
+:2	
+449	
+450	
+451	
+452	
+453	
+454	
+:1	
+:2	
+455-500	
+:1	
+:2	
+501	
+:1	
+502	 ctU	 ctV	 ctU:1	 vII
+503	 apAyBUUm	 kAm	 rUU	 arU	 cts
+504	 nIryO tI	 tIr	 pEt	 asU	 ^b[
+505	 cAtUmhArAjI	 tAv	 yAm	 tUs	 nIm	 prn	 ^b[
+506	
+507	
+508	
+509	
+510	
+511	
+512	 vIY	 aAk	 nEv	 ^b[
+513	
+:1	
+514	
+:1	
+:2	
+515	 kAm	 rUU	 arU	 ^b[
+516	
+517	
+518	
+519	
+520	
+521	
+522	 mnU	 ttO	 ttO:1	 ttO:2	 ttO:3	 ttO:4
+523	
+:1	
+524	
+525	
+526	
+527	
+528	 tTA	 imA
+529	
+530	
+531	
+532	
+533	
+534	
+535	
+536	
+537	
+538	
+539	
+540	
+541	
+542	
+543	
+544	 imA
+545	
+546	
+547	
+548	
+549	
+:1	
+:2	
+550	 uptVTmVB	 upp	 upG	 ^b[
+551	 aAsnVnM a	 aAc	 kWt	 ^b[
+552	 upp	 apr	 ahO	 ^b[
+553	 kAm	 rUU	 arU	 ^b[
+554	
+555	
+556	
+557	
+558	
+559	
+560	
+561	
+562	
+563	
+564	
+565	
+566	
+567	 tYV
+568	 tmV	 aAr
+569	 pvt
+570	 ahE
+571	
+572	
+573	
+574	
+:1	
+:2	
+:3	
+575	
+576	
+577	
+578	
+579	
+580	
+581	
+582	
+583	
+584	
+585	
+586	
+587	
+588	
+:1	
+:2	
+589	 kmV	 uBy	 upc	 ^b[
+590	 tMk	 ann	 kmV:2	 ttO	 tmE:1
+591	 tsV:1
+592	 tsV	 tdA	 ktV	 kmV:1	 tAn
+593	
+594	
+:1	 tsV
+:2	
+:3	
+595	
+:1	
+:2	
+:3	
+:4	
+596	 Bvs
+597	
+598	
+599-600	
+:1	
+:2	
+:3	
+:4	
+:5	
+601	
+:1	
+602	
+:1	
+603	 ^b[
+604	
+605	
+606	
+607	
+608	
+609	
+610	
+611	
+612	
+613	
+614	
+615	
+616	 ekA
+617	
+:1	
+:2	
+:3	
+:4	
+:5	
+618		
+619	
+620	
+621	
+622	
+623	
+624	
+625	
+626	
+627	
+628	
+:1	
+:2	
+629	
+630	
+631	 cIt
+632	
+633	
+634	
+635	
+636	
+637	
+638	
+639	
+640	
+641	
+642	
+643	
+:1	
+644	
+:1	
+:2	
+645	
+646	 tTA	 avI:1	 imE
+647	 tdE	 vcI	 lhU	 kAy:2	 vcI:2	 ^b[
+648	
+649	
+650	 avs
+651	
+:1	
+:2	
+:3	
+:4	
+652	
+653	 omk	 tsV
+654	 ttV	 ttO
+655	
+656	 pUr	 ttO	 ttO:1
+657	
+:1	
+658	 tsV	 pvt
+659	 tTA	 tsV	 pvt
+660	
+661	
+:1	
+:2	
+:3	
+:4	
+662	 mgV
+663	
+664	
+665-700	
+:1	
+:2	
+:3	
+:4	
+:5	
+701	
+:1	
+702	 mIs	 bOD	 sbV	 smU
+703	
+704	
+705	
+706	
+707	
+708	 udV
+709	 mAn
+710	 mAn
+711	 mAn
+712	
+713	 sII
+714	
+:1	
+:2	
+:3	
+:4	
+:5	
+715	
+716	
+717	 smV:6
+718	 sUK	 anY
+719	
+720	
+721	
+722	
+723	
+724	
+725	
+726	
+727	
+728	
+729	
+:1	
+:2	
+:3	
+730	
+731	
+732	
+733	
+734	
+735	
+736	
+737	
+738	
+739	
+:1	
+:2	
+:3	
+740	
+:1	
+:2	
+:3	
+:4	
+:5	
+741	
+:1	
+742	
+743	
+744	 rUU
+745	 rUU	 ckV:1	 mnO
+746	 dUk:1	 dUk:2	 dUk:3
+747	
+748	
+749	
+:1	
+750	
+:1	
+751	
+:1	
+752	
+:1	
+753-800	
+:1	
+:2	
+:3	
+801	
+:1	
+802	 pWV	 pcV
+803	 pWV	 uBy
+804	 sNV:1	 vIY:1	 nAm:1	 sLA:1	 PsV:1	 vEd:1	 tNV:1	 upA:1	 Bvp	 jAt:1	 evm	 ^b[
+805	
+806	 jAt	 mjV	 tyO
+807	
+808	
+809	 tTA	 jAt
+810	
+:1	
+:2	
+811	 kmV	 upp	 tII
+812	
+813	
+:1	
+:2	
+:3	
+:4	
+814	 ann	 shj	 nIs	 pUr	 aAs	 aAh	 JAn	 smV	 atV	 vIg	 aym
+815	 pYV
+:1	
+:2	
+:3	 CbV
+816	 pUr	 shj	 ^b[
+817	 shj:1	 nAn	 vIp	 ^b[
+818	
+819	
+820	
+821	
+822	 aAr
+823	
+824	
+825	 kmV
+826	
+827	 shj	 c d
+828	 mhA	 pWI	 tIv
+829	 mhA	 pWI	 tIv
+830	 mhA	 C v	 tIv
+831	 arU	 dUv
+832	 rUU	 arU	 tIv
+833	 cIt	 pcV	 tIv
+834	
+:1	
+:2	
+835	
+836	 pWI
+837	
+:1	
+:2	
+:3	
+838	 cIt	 nIb	 nAm
+839	
+840	 smV	 KnV	 cnV	 asm	 tMt:1	 evm	 tM 	 ayM
+841	 sA 	 vIj:1	 avI:2	 vIj:3	 avI:3	 CbV
+842	 ydA:1	 uBI
+843-900	
+:1	
+:2	
+:3	
+:4	
+:5	
+901	
+:1	
+902	 ds 	 ekA	 stV
+903	
+904	 upc	 apV	 tIs
+905	 ugV	 pWI	 tII
+906	 aAp	 tEj	 vAy	 nII	 pII	 lOh	 odA	 aAk	 aAl	 imA
+907	 vIn	 vIp	 vIc	 vIk	 vIk:1	 htv	 lOh	 pUL	 aWV	 imE
+908	 DmV	 sMG	 sII	 cAg	 dEv	 ups	 mrN	 kAy	 aAn	 imA
+909	
+910	
+911	
+912	 sbV
+913	
+914	
+915	
+916	
+917	
+918	 ttV
+:1	
+919	 bUd
+920	
+921	
+922	
+923	
+924	 CbV
+925	
+:1	
+926	
+927	
+928	
+929	
+930	 ydA	 tdA
+931	
+932	
+933	 imA
+934	
+935	
+936	
+937	
+938	
+939	
+940	
+941	
+942	
+:1	 dIb	 prc
+:2	 dIb
+:3	
+:4	
+:5	
+943	 sII	 cIt	 dIW	 kNV	 mgV	 pWI	 YAN	 stV
+944	
+945	
+946	 udy	 BNV	 ByY	 aAd	 nIb	 mUc	 pWI	 sNV	 anU	 ds 
+947	
+948	
+949	 pAtImOkV	 inV	 aAj	 pcV	 ctU
+950	
+951	
+952	
+953	 “an	 tEs
+:1	
+:2	
+:3	
+954	 nv 
+955	 “id	 upV:1	 prI
+956	
+957	
+958	 nIr	 mgV:1
+959	 pUn
+960	
+:1	
+:2	
+:3	
+:4	
+961	
+962	
+963	
+964	
+965	
+966	 c m	 tTA
+967	 aAr
+:1	
+968	
+969	
+970	
+971	
+:1	
+972	
+973	 ttV	 ttV:2	 tsV	 ttO:1
+974	 arh	 ttO
+:1	
+:2	
+975	
+:1	
+:2	
+:3	
+:4	
+:5	
+:6	
+:7	
+:8	
+:9	
+:10	
+:11	
+:12	
+:13	
