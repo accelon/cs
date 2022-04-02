@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Download cst4-2020 (tested on cst4-2020-05-07-4.0.0.15.msi) from tipitaka.org, install it and make a junction or symbolic link Xml to /Cst4/Xml",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/dhamma/cs/issues"
   },
-  "homepage": "https://github.com/dhamma/cs#readme"
+  "homepage": "https://github.com/dhamma/cs#readme",
+  "dependencies": {
+    "pitaka": "^0.1.1",
+    "provident-pali": "^0.1.0"
+  }
 }

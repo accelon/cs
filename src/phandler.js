@@ -101,7 +101,7 @@ export default { //key is bkid or bkpf , bkid has precedence
     'dn':{
         'chapter':(el,ctx,text,mat)=>{
             const sutta=DN_SUTTA[ctx.bkid.substr(2)] + parseInt(text);
-            return '^ck'+mat+'d'+ sutta+'['+text+']';
+            return '^ck#d'+ sutta+'['+text+']';
         }
     },
     'mn':{
@@ -113,7 +113,7 @@ export default { //key is bkid or bkpf , bkid has precedence
                 //MN 中經名必有數字，無數字的如 MN10 uddeso不是經名
                 ctx.chunkCount++; //reset on each file
                 const sutta=MN_SUTTA[ctx.bkid.substr(2)] + (ctx.chunkCount);
-                return '^ck'+mat+'m'+sutta+'['+text+']';
+                return '^ck#m'+sutta+'['+text+']';
             } else {
                 return '^h['+text+']';
             }
@@ -123,10 +123,10 @@ export default { //key is bkid or bkpf , bkid has precedence
         'chapter': (el,ctx,text,mat)=>{ //samyutta
             ctx.samy=SN_SAMYUTTA[ctx.bkid.substr(2)] + parseInt(text);
             ctx.vaggo=-1;
-            return '^ck'+mat+'s'+ctx.samy+'['+text+']';
+            return '^ck#s'+ctx.samy+'['+text+']';
         },
         'title': (el,ctx,text,mat)=>{
-            return '^ck'+mat+'s'+ctx.samy+  toBase26(++ctx.vaggo)+'['+text+']';
+            return '^ck#s'+ctx.samy+  toBase26(++ctx.vaggo)+'['+text+']';
         },          //big samyutta has vaggo
         'subhead':(el,ctx,text,mat)=>{         //sutta
             return '^h' +'['+text+']';
@@ -141,7 +141,7 @@ export default { //key is bkid or bkpf , bkid has precedence
             const nipata= parseInt(ctx.bkid.substr(2));
             if (text[0]=='(')t=text.substr(1);
             ctx.vaggo++;
-            return '^ck'+mat+'a'+nipata+toBase26(ctx.vaggo)+'['+text+']';
+            return '^ck#a'+nipata+toBase26(ctx.vaggo)+'['+text+']';
         },
         'title': (el,ctx,text,mat)=>{return ""},//skip pannasaka 不輸出文字(SC版無)
         'subhead':(el,ctx,text,mat)=>{         //sutta
@@ -160,18 +160,24 @@ export default { //key is bkid or bkpf , bkid has precedence
         },
         'subhead':(el,ctx,text,mat)=>{ //JA 以 本生為 chunk
             const sutta=JA_JATAKA[ctx.bkid] + parseInt(text);
-            return '^ck'+mat+'m'+sutta+'['+text+']';  
+            return '^ck#m'+sutta+'['+text+']';  
         }
+    },
+    'aas':{//abhidhammattha sangaha
+        'chapter':(el,ctx,text,mat)=>{
+            ctx.chunkCount++;
+            return  '^ck#aas'+ctx.chunkCount+'['+text+']';  
+        },
     },
     'vs':{//visuddhimagga 
         'chapter':(el,ctx,text,mat)=>{
             if (ctx.bkid.substr(2,1)=='2' && ctx.chunkCount==0) ctx.chunkCount=11;
             ctx.chunkCount++;
             if (ctx.chunkCount==1) return '' //skip ck1,n1
-            return  '^ck'+ctx.chunkCount+'['+text+']';  
+            return  '^ck#vs'+ctx.chunkCount+'['+text+']';  
         },
         'book':(el,ctx,text,mat)=>{
-            return '^bk#vs^ck1[1. '+text+']^n1 ';//去掉 1a,2a
+            return '^bk#vs^ck#vs1[1. '+text+']^n1 ';//去掉 1a,2a
         }
     }
 }
