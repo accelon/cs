@@ -80,7 +80,7 @@ export const handlers={
         }
     },
     "*":(el,ctx)=>{
-        console.log("unknown tag",ctx.bkid,el.name,el.attrs);
+        console.log("unknown tag",ctx.bkid,el.name,el.attrs,ctx.div_id,'pn',ctx.pn);
     },
     "pb":(el,ctx)=>{},
 }

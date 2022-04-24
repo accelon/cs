@@ -1,5 +1,13 @@
 /* errata after convert TEI to ro */
 /* use single crlf */
+/*
+  wrong decomposition
+mn3
+  gilā- nappaccaya
+should be gilāna-p-paccaya
+*/
+
+
 const Errata={
     'vin01m.mul.xml':[
         ['[ ]',''], //mess up with off tag

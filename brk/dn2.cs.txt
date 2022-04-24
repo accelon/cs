@@ -632,7 +632,7 @@
 :1	 ‘	 e
 261	 vIt	 pIIt:2	 sUKs
 262	 mE	 kr	 mU	 up
-263	 ctUr:1	 ctUr:2	 ctUr:3	 ctUr:4	 ctUr:5	 ctUr:6	 ctUr:7	 ctUr:8	 ctUr:9	 ctUr:10	 ctUr:11	 ctUr:12	 (
+263	 ctUr:1	 ctUr:2	 ctUr:3	 ctUr:4	 ctUr:5	 ctUr:6	 ctUr:7	 ctUr:8	 ctUr:9	 ctUr:10	 ctUr:11	 ctUr:12	 (r
 264	 aT	 ‘	 aT K:1	 ‘imA:1	 ‘e	 aT K:2
 265	 ‘	 aT	 ‘e	 c	 ‘ev	 aT K:1	 ‘k	 ‘evM:1	 ‘kpV:1	 ys	 aT K:2	 upsN:4	 aT K:3	 ‘kI	 ‘et	 aT K:4	 ‘eh	 ‘evM:2	 aT K:5
 266	 ‘

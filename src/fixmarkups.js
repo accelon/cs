@@ -10,6 +10,7 @@
 //for xmlhandlers/p/subhead to get the jataka number
 */
 import {getErrata} from './ro-errata.js'; //errata in romanized
+import {getUntease} from './ro-untease.js'; //recover unwanted or wrong tease of compound
 import {patchBuf} from 'pitaka/cli';
 export const fixJataka=(buf,fn)=>{
     const m=fn.match(/s051[34]a/);
@@ -45,6 +46,10 @@ export const fixMarkups=(buf,fn)=>{
     buf=fixJataka(buf,fn);
     const errata=getErrata(fn);
     buf=patchBuf(buf,errata,fn);
+
+    const untease=getUntease(fn);
+    buf=patchBuf(buf,untease,fn);
+
     buf=headchapter(buf,fn);
     buf=headbook(buf,fn);
     buf=headtitle(buf,fn);

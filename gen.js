@@ -8,7 +8,6 @@ import {guidedBreakLines} from 'pitaka/align'
 import transliterate from './src/transliterate.js';
 import {reparanum} from './src/reparanum.js'
 import {epilog} from './src/epilog.js'
-// import { shortenBodytext } from './buildutils.js';
 const scfolder='../sc/pli/'
 const bbfolder='../bb/off/'
 const srcfolder='./books/'; 

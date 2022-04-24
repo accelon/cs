@@ -4,6 +4,7 @@ import {handlers,closeHandlers} from './xmlhandlers.js';
 import { addNote } from './notes.js';
 
 const doInlineTag=(buf,ctx)=>{
+	buf=buf.replace(/<link target="([^>\"]+)"\/>/g,'^t@$1');//note 可能夾 <link>
     buf=buf.replace(/<pb [^>]+>/g,'');//note 可能夾有pb ，先去掉 pc.xml Thai 5.1080
     buf=buf.replace(/ ?<note>([^>]+)<\/note>/g,(m,notetext,offset,str)=>addNote(notetext,ctx));
 
@@ -13,7 +14,7 @@ const doInlineTag=(buf,ctx)=>{
         });
     }
 
-    buf=buf.replace(/<link target="([^>\"]+)"\/>/g,'^t@$1')
+    
     return buf;
 }
 
