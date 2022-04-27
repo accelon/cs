@@ -12,13 +12,13 @@
 :1	
 11	 sUBn:1	 p
 12	 pWIG:1	 d
-13	 lIIn:1	 tt
-14	 avUU:1	 ct
+13	 lIAn:1	 tt
+14	 avUA:1	 ct
 15	 ayOn:1	 p
 16	 asUB:1	 C
 17	 mEtV:1	 st
 18	 aArd	 aW
-19	 vUUp:1	 nv
+19	 vUAp:1	 nv
 20	 yOnI:1	 d
 :1	
 21	 cItV:1	 p
@@ -91,7 +91,7 @@
 82	 pmAd:1	 d
 83	 apVp:1	 t
 84	 kOsj:1	 c
-85	 vIIr:1	 p
+85	 vIAr:1	 p
 86	 mhIc:1	 C
 87	 apVp:1	 st
 88	 asnV:1	 aW
@@ -108,7 +108,7 @@
 98	 pmAd:1	 pX
 99	 apVp:1	 d
 100	 kOsj:1	 t
-101	 vIIr:1	 c
+101	 vIAr:1	 c
 102-109	
 110	 pApm:1	 t
 111	 klVy:1	 c
@@ -117,7 +117,7 @@
 114	 pmAd:1	 st
 115	 apVp:1	 aW
 116	 kOsj:1	 ekU
-117	 vIIr:1	 vIIs
+117	 vIAr:1	 vIAs
 118-128	 anUy:1	 ekt
 129	 anUy:1	 c	 b
 130	 bhUY	 tEt

@@ -295,7 +295,7 @@
 :8	 at	 i	 sO	 n	 “	 yt
 :9	 at	 y	 “	 ytV
 :10	 at	 y	 “
-:11	 at	 i	 vIt	 pIIt:2	 sUKs	 “
+:11	 at	 i	 vIt	 pIAt:2	 sUKs	 “
 :12	 at	 y	 “
 :13	 d
 :14	
@@ -477,8 +477,8 @@
 :42	
 :43	 t
 :44	 m
-65	 inVd:1	 sIIl:1	 smVm:1	 yTAB:1	 nIbV:1	 sE	 t	 e	 inVd:4	 sIIl:4	 smVm:4	 yTAB:4	 nIbV:4
-:1	 inVd:1	 sIIl:1	 smVm:1	 yTAB:1	 nIbV:1	 sE	 e	 vImU:1	 pX
+65	 inVd:1	 sIAl:1	 smVm:1	 yTAB:1	 nIbV:1	 sE	 t	 e	 inVd:4	 sIAl:4	 smVm:4	 yTAB:4	 nIbV:4
+:1	 inVd:1	 sIAl:1	 smVm:1	 yTAB:1	 nIbV:1	 sE	 e	 vImU:1	 pX
 66	 e	 t	 “	 “Bd	 BgvA:2
 :1	 a	 an	 y
 :2	 h	 dEvE	 e	 evM a:1	 al
@@ -514,7 +514,7 @@
 :14	 e	 hIrI:3	 sA	 sU	 i
 :15	 e	 otVt:3	 sA	 sU	 i
 :16	 e	 sUt	 sA	 sUd	 i
-:17	 h	 e	 vII	 sA	 sUd	 i
+:17	 h	 e	 vIA	 sA	 sUd	 i
 :18	 e	 stId	 sA	 sU	 i
 :19	 e	 pYVY:2	 sA	 sU	 i	 imE
 :20	 s	 e	 at
@@ -612,7 +612,7 @@
 :6	 e	 nt
 :7	 e
 :8	 t	 sI	 sO	 ‘
-:9	 ‘	 e	 vsVs:1	 utUs:1	 tIIN:1	 ct	 dVvA:1	 aW	 ctUv:1	 dVvA:2	 CtVt:1	 ctUv:2
+:9	 ‘	 e	 vsVs:1	 utUs:1	 tIAN:1	 ct	 dVvA:1	 aW	 ctUv:1	 dVvA:2	 CtVt:1	 ctUv:2
 :10	 i	 y	 kt	 ds
 :11	
 :12	

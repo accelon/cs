@@ -8,7 +8,7 @@
 :7	 “
 :8	 “
 :9	 “
-:10	 avIp:2	 pAmO:2	 pIIt:2	 psVs:2	 sUKM	 smAD:2	 yTAB:2	 nIbV:2	 vIrA:2	 i	 pX
+:10	 avIp:2	 pAmO:2	 pIAt:2	 psVs:2	 sUKM	 smAD:2	 yTAB:2	 nIbV:2	 vIrA:2	 i	 pX
 2	 ‘	 D
 :1	 ‘	 D
 :2	 ‘	 D
@@ -20,18 +20,18 @@
 :8	 ‘	 D
 :9	 ‘	 D
 :10	 i	 d
-3	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+3	 avIp:1	 pAmO:1	 pIAt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :1	 e	 avIp:1	 v
-:2	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:2	 avIp:1	 pAmO:1	 pIAt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :3	 e	 avIp:1	 v	 tt
 4	 “	 “aAv:1	 aAys:2
-:1	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:1	 avIp:1	 pAmO:1	 pIAt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :2	 e	 avIp:1	 v
-:3	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:3	 avIp:1	 pAmO:1	 pIAt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :4	 e	 avIp:1	 v	 c
-5	 “	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+5	 “	 avIp:1	 pAmO:1	 pIAt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :1	 e	 avIp:1	 v
-:2	 avIp:1	 pAmO:1	 pIIt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
+:2	 avIp:1	 pAmO:1	 pIAt:1	 psVs:1	 sUKE	 smVm:1	 yTAB:1	 nIbV:1	 vIrA:1
 :3	 e	 avIp:1	 v	 pY
 6	
 :1	 a	 aD	 s	 sdVD:1	 anB	 aY	 sI	 g	 u	 sm	 kAy	 y

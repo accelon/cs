@@ -18,7 +18,7 @@
 :2	 yt	 aT
 :3	 yt	 aT
 :4	 yt	 aT	 C
-7	 a	 t	 lb	 yE	 sE	 tm	 sIIG:2	 n	 tM k:1	 ‘a	 nE	 krN	 yt	 ‘atV:1
+7	 a	 t	 lb	 yE	 sE	 tm	 sIAG:2	 n	 tM k:1	 ‘a	 nE	 krN	 yt	 ‘atV:1
 :1	 yt	 ‘	 st
 8	 k	 a	 ah	 an	 kU	 d	 i
 :1	 k	 sdVD:1	 h	 o	 a	 pYVY	 i	 aW
@@ -39,9 +39,9 @@
 :1	 i	 ‘	 id
 :2	 i	 id
 :3	 i	 id
-:4	 i	 vIt	 pIIt:2	 sUKs	 id
+:4	 i	 vIt	 pIAt:2	 sUKs	 id
 :5	 i	 id	 im	 c
-15	 k	 s	 ktV	 ct	 e	 ktVT:1	 ctUU:1	 etVT:1	 ktVT:2	 ctUU:2	 etVT:2	 ktVT:3	 ctUU:3	 etVT:3	 ktVT:4	 ctUU:4	 etVT:4	 i	 pYVc:2
+15	 k	 s	 ktV	 ct	 e	 ktVT:1	 ctUA:1	 etVT:1	 ktVT:2	 ctUA:2	 etVT:2	 ktVT:3	 ctUA:3	 etVT:3	 ktVT:4	 ctUA:4	 etVT:4	 i	 pYVc:2
 16	 k	 s	 i	 imE	 sE	 ev	 C
 17	 k	 i	 atVt:2	 atVt:3	 atVt:4	 atVt:5	 im	 st
 18	 k	 i	 atVt:2	 atVt:3	 atVt:4	 atVt:5	 im	 aW
@@ -68,11 +68,11 @@
 25	
 :1	 i	 im	 pYVc:2
 26	
-:1	 i	 y	 tsVs:1	 pm	 pIIt:1	 psVs:1	 sUKI	 id
-:2	 yTA 	 tsVs	 pm	 pIIt:1	 psVs:1	 sUKI	 i
-:3	 yTA 	 tsVs	 pm	 pIIt:1	 psVs:1	 sUKI	 i
-:4	 ap	 yTA 	 tsVs	 pm	 pIIt:1	 psVs:1	 sUKI	 i
-:5	 ap	 yTA 	 tsVs	 pm	 pIIt:1	 psVs:1	 sUKI	 i
+:1	 i	 y	 tsVs:1	 pm	 pIAt:1	 psVs:1	 sUKI	 id
+:2	 yTA 	 tsVs	 pm	 pIAt:1	 psVs:1	 sUKI	 i
+:3	 yTA 	 tsVs	 pm	 pIAt:1	 psVs:1	 sUKI	 i
+:4	 ap	 yTA 	 tsVs	 pm	 pIAt:1	 psVs:1	 sUKI	 i
+:5	 ap	 yTA 	 tsVs	 pm	 pIAt:1	 psVs:1	 sUKI	 i
 :6	 C
 27	 s	 k	 ‘	 ‘ayM:1	 ‘ayM:2	 ‘ayM:3	 ‘s
 :1	 s	 st
@@ -196,7 +196,7 @@
 :5	 P
 :6	 sd
 :7	 s
-:8	 vIIt:1
+:8	 vIAt:1
 :9	 s
 :10	 s
 :11	 p	 aW
@@ -470,7 +470,7 @@
 65	 k	 i	 atVt:1	 atVt:2	 atVt:3	 atVt:4	 im	 pYVc:2
 66	 k	 i	 atVt:1	 atVt:2	 atVt:3	 atVt:4	 im	 C
 67	 dI
-:1	 i	 v	 c	 vIIm	 u	 y	 dI	 stV
+:1	 i	 v	 c	 vIAm	 u	 y	 dI	 stV
 68	 k	 C	 sO	 t
 :1	 t
 :2	 t	 aW
@@ -725,8 +725,8 @@
 128	 k	 i	 im
 :1	 k	 i	 im	 aW
 129	 k	 m	 i	 nv
-130	 k	 Y	 n	 sIIl:1	 i
-:1	 k	 Y	 n	 sIIl:1	 i	 ds
+130	 k	 Y	 n	 sIAl:1	 i
+:1	 k	 Y	 n	 sIAl:1	 i	 ds
 :2	
 :3	
 :4	 d
@@ -890,7 +890,7 @@
 :5	 dUpV:1	 t	 tY	 ts	 i
 :6	 kt	 sd	 sI	 b	 c	 pYVY
 :7	 sdVD:2	 t	 tY	 ts
-:8	 sIIl:2	 t	 tY	 ts
+:8	 sIAl:2	 t	 tY	 ts
 :9	 bhUs:1	 t	 tY	 ts
 :10	 cAgv:1	 t	 tY	 ts
 :11	 pYVY:2	 t	 tY	 ts	 i	 st

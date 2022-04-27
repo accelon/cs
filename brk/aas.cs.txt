@@ -2,7 +2,7 @@
 :1	
 2-102	
 :1	
-103	 rUU	 arU	 lOk
+103	 rUA	 arU	 lOk
 104	 sOm	 ssN	 sOm:1	 ssN:1	 upE	 ssN:2	 upE:1	 ssN:3	 imA
 105	 ssN	 imA
 106	 upE	 imA
@@ -25,9 +25,9 @@
 :1	
 120	
 :1	
-121	 vIc	 pII	 sUK	 upE	 imA
-122	 vIc	 pII	 sUK	 upE	 imA
-123	 vIc	 pII	 sUK	 upE	 imA
+121	 vIc	 pIA	 sUK	 upE	 imA
+122	 vIc	 pIA	 sUK	 upE	 imA
+123	 vIc	 pIA	 sUK	 upE	 imA
 124	
 125	
 :1	
@@ -48,7 +48,7 @@
 :1	
 137	
 :1	
-138	 vIt	 vIc	 pII	 sUK	 upE	 imA
+138	 vIt	 vIc	 pIA	 sUK	 upE	 imA
 139	
 140	
 141	
@@ -329,8 +329,8 @@
 :2	
 501	
 :1	
-502	 ctU	 ctV	 ctU:1	 vII
-503	 apAyBUUm	 kAm	 rUU	 arU	 cts
+502	 ctU	 ctV	 ctU:1	 vIA
+503	 apAyBUAm	 kAm	 rUA	 arU	 cts
 504	 nIryO tI	 tIr	 pEt	 asU	 ^b[
 505	 cAtUmhArAjI	 tAv	 yAm	 tUs	 nIm	 prn	 ^b[
 506	
@@ -345,7 +345,7 @@
 514	
 :1	
 :2	
-515	 kAm	 rUU	 arU	 ^b[
+515	 kAm	 rUA	 arU	 ^b[
 516	
 517	
 518	
@@ -386,7 +386,7 @@
 550	 uptVTmVB	 upp	 upG	 ^b[
 551	 aAsnVnM a	 aAc	 kWt	 ^b[
 552	 upp	 apr	 ahO	 ^b[
-553	 kAm	 rUU	 arU	 ^b[
+553	 kAm	 rUA	 arU	 ^b[
 554	
 555	
 556	
@@ -554,7 +554,7 @@
 710	 mAn
 711	 mAn
 712	
-713	 sII
+713	 sIA
 714	
 :1	
 :2	
@@ -602,8 +602,8 @@
 :1	
 742	
 743	
-744	 rUU
-745	 rUU	 ckV:1	 mnO
+744	 rUA
+745	 rUA	 ckV:1	 mnO
 746	 dUk:1	 dUk:2	 dUk:3
 747	
 748	
@@ -632,7 +632,7 @@
 810	
 :1	
 :2	
-811	 kmV	 upp	 tII
+811	 kmV	 upp	 tIA
 812	
 813	
 :1	
@@ -660,7 +660,7 @@
 829	 mhA	 pWI	 tIv
 830	 mhA	 C v	 tIv
 831	 arU	 dUv
-832	 rUU	 arU	 tIv
+832	 rUA	 arU	 tIv
 833	 cIt	 pcV	 tIv
 834	
 :1	
@@ -687,10 +687,10 @@
 902	 ds 	 ekA	 stV
 903	
 904	 upc	 apV	 tIs
-905	 ugV	 pWI	 tII
-906	 aAp	 tEj	 vAy	 nII	 pII	 lOh	 odA	 aAk	 aAl	 imA
+905	 ugV	 pWI	 tIA
+906	 aAp	 tEj	 vAy	 nIA	 pIA	 lOh	 odA	 aAk	 aAl	 imA
 907	 vIn	 vIp	 vIc	 vIk	 vIk:1	 htv	 lOh	 pUL	 aWV	 imE
-908	 DmV	 sMG	 sII	 cAg	 dEv	 ups	 mrN	 kAy	 aAn	 imA
+908	 DmV	 sMG	 sIA	 cAg	 dEv	 ups	 mrN	 kAy	 aAn	 imA
 909	
 910	
 911	
@@ -732,7 +732,7 @@
 :3	
 :4	
 :5	
-943	 sII	 cIt	 dIW	 kNV	 mgV	 pWI	 YAN	 stV
+943	 sIA	 cIt	 dIW	 kNV	 mgV	 pWI	 YAN	 stV
 944	
 945	
 946	 udy	 BNV	 ByY	 aAd	 nIb	 mUc	 pWI	 sNV	 anU	 ds 

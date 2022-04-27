@@ -172,12 +172,12 @@
 :7	 ay
 :8	 ay	 i	 c
 25	 ‘
-:1	 ‘	 ‘vII:1	 ‘vII:2	 ‘a	 ‘asd	 ‘asm	 ‘an	 ‘anA:1	 ‘anA:2	 y	 ‘K	 pYVc
+:1	 ‘	 ‘vIA:1	 ‘vIA:2	 ‘a	 ‘asd	 ‘asm	 ‘an	 ‘anA:1	 ‘anA:2	 y	 ‘K	 pYVc
 26	ek	 t	“d	 ‘	 ‘K
-:1	 “	 ‘	 KI	 evY	 ‘ytO:1	 KIIN:1
-:2	 “	 ‘	 KI	 dU	 “n	 ‘ytO:1	 KIIN:1	 evY	 ‘ytO:2	 KIIN:2
-:3	 “	 ‘	 KI	 tt	 “n	 ‘ytO:1	 KIIN:1	 evY	 ‘ytO:2	 KIIN:2
-:4	 ‘	 ‘vII:1	 ‘vII:2	 ‘a	 ‘asd	 ‘asm	 ‘an	 ‘anA:1	 ‘anA:2	 e	 am
+:1	 “	 ‘	 KI	 evY	 ‘ytO:1	 KIAN:1
+:2	 “	 ‘	 KI	 dU	 “n	 ‘ytO:1	 KIAN:1	 evY	 ‘ytO:2	 KIAN:2
+:3	 “	 ‘	 KI	 tt	 “n	 ‘ytO:1	 KIAN:1	 evY	 ‘ytO:2	 KIAN:2
+:4	 ‘	 ‘vIA:1	 ‘vIA:2	 ‘a	 ‘asd	 ‘asm	 ‘an	 ‘anA:1	 ‘anA:2	 e	 am
 :5	 t	 aT	 aT p:1	 aT u	 aT d	 tM	 g	 e	 am
 :6	 G	 j	 k	 m	 am	 C
 27	
@@ -268,11 +268,11 @@
 :8	 sbVb:1	 sbVb:2	 ay	 t	 ‘ay	 ah	 ‘aym:1
 :9	 ay	 st
 39	 t	 prAj:1	 aT	 ‘	 y	 dUtI:1	 dUtI:2	 prAj:3
-:1	 ‘	 y	 ttIy:1	 ttIy:2	 prAj:1	 dEvp:1	 ‘B	 asUr:5	 ‘BII:1
+:1	 ‘	 y	 ttIy:1	 ttIy:2	 prAj:1	 dEvp:1	 ‘B	 asUr:5	 ‘BIA:1
 :2	 t	 prAj:1	 aT	 ‘	 y	 dUtI:1	 dUtI:2	 prAj:3
-:3	 ‘	 y	 ttIy:1	 ttIy:2	 prAj:1	 asUr:5	 ‘B	 dEvA:2	 ‘BII:1
-:4	 t	 ‘	 mArs:1	 ‘BII:1
-:5	 t	 c	 ts	 ‘	 mArs:1	 ‘BII:1
+:3	 ‘	 y	 ttIy:1	 ttIy:2	 prAj:1	 asUr:5	 ‘B	 dEvA:2	 ‘BIA:1
+:4	 t	 ‘	 mArs:1	 ‘BIA:1
+:5	 t	 c	 ts	 ‘	 mArs:1	 ‘BIA:1
 :6	 ay
 :7	 sbVb:1	 sbVb:2	 sbVb:3	 ay	 aW
 40	 y	 ysVm:1	 ysVm:2
@@ -396,10 +396,10 @@
 :1	 k	 i	 u	 anUp:2	 upVp:2	 im	 d
 :2	
 83	 k	 pA	 i
-:1	 k	 iD	 v	 cI	 vIIm	 im	 pX
+:1	 k	 iD	 v	 cI	 vIAm	 im	 pX
 84-91	
 92	 k	 i	 im
-:1	 k	 iD	 v	 cI	 vIIm	 imEs	 d
+:1	 k	 iD	 v	 cI	 vIAm	 imEs	 d
 :2	
 :3	 p
 :4	 t

@@ -22,7 +22,7 @@
 12	 k	 p	 ktmY	 i	 ‘	 s	 id
 :1	 i	 id	 im
 13	 k	 p	 ktmY	 i	 ‘	 s	 id
-:1	 i	 vIt	 pIIt:2	 sUKs	 id	 im
+:1	 i	 vIt	 pIAt:2	 sUKs	 id	 im
 14	 k	 s	 i
 15	 d	 y	 n d
 :1	 i	 ‘	 m	 n	 y	 dI	 antV:1	 antV:3	 antV:5	 itI m	 e
@@ -32,7 +32,7 @@
 :1	 “
 :2	 s	 es	 up
 17	 smVm:1	 “	 “kt	 ev	 “kO p	 “ktt:1	 evmI:1	 “n	 sAD	 “t	 “e	 BgvA:1
-:1	 v	 m	 ev	 i	 vcII:2	 mnOs:1	 evM K:1
+:1	 v	 m	 ev	 i	 vcIA:2	 mnOs:1	 evM K:1
 :2	
 18	 “	 “y	 “ymI:1	 at	 an	 pAp	 s	 kAys	 ym
 :1	 “	 “ymI:1	 at	 an	 kl	 as	 kAys:3	 y

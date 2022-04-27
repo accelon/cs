@@ -453,7 +453,7 @@
 314	 “	 ‘	 sc	 ‘b
 315	 “	 aT	 “m	 ‘	 n
 316	 aT	 “	 “e	 “a	 aNVg:2	 ah	 aNVg:3	 ahms:1	 aNVg:4	 yt	 pN	 imE	 ‘
-317	 ‘	 “	 sI	 y	 sIIl:4	 sIIl:6	 sE	 ev	 ytVT:2	 sIIl:11	 sIIl:13	 “e	 ytVT:4	 sIIl:18	 sIIl:20	 sEyV:1	 evmE:2	 ytVT:6	 sIIl:25	 sIIl:27
+317	 ‘	 “	 sI	 y	 sIAl:4	 sIAl:6	 sE	 ev	 ytVT:2	 sIAl:11	 sIAl:13	 “e	 ytVT:4	 sIAl:18	 sIAl:20	 sEyV:1	 evmE:2	 ytVT:6	 sIAl:25	 sIAl:27
 318	 k	 “	 sAD	 “t	 “ev	 BgvA	 “i	 ev	 i	 pX	 d	 tt	 c	 Y	 idm	 n	 idmV:1	 ay
 319	 “	 sE	 es	 up	 aD	 aDIv:1
 320	 aT	 “	 aT K:1	 aT K:2
@@ -467,7 +467,7 @@
 327	 t	 ‘	 tm
 328	 “	 ‘	 n	 i	 yM
 329	 “	 ‘	 “a	 “e	 “k	 ‘a
-330	 “	 as	 “kUU:1	 aT
+330	 “	 as	 “kUA:1	 aT
 331	 “	 “e	 ‘
 :1	 n	 sc	 ym	 smNO
 :2	 ym	 smNO
@@ -639,9 +639,9 @@
 :1	 tE	 y	 aT
 :2	 t	 y	 aT
 :3	 t	 y	 aT
-403	 ‘	 tE	 ‘sII:1
-:1	 ‘	 t	 ‘sII:1
-:2	 ‘	 pYVh:1	 pYVh:3	 pYVh:5	 sOtb:1	 sUtV:1	 psnV:1	 tTtV:1	 tE	 ‘sII:1
+403	 ‘	 tE	 ‘sIA:1
+:1	 ‘	 t	 ‘sIA:1
+:2	 ‘	 pYVh:1	 pYVh:3	 pYVh:5	 sOtb:1	 sUtV:1	 psnV:1	 tTtV:1	 tE	 ‘sIA:1
 404	 t	 ts	 bVyA:1	 “	 ahm	 aB	 sE	 es	 l
 405	 ap	 “
 :1	 acI	 ‘	 aY
@@ -680,8 +680,8 @@
 :5	 “
 :6	 “	 t	 “ev	 y	 aT
 421	 “	 ‘	 n	 ‘s
-:1	 “	 ‘	 ‘n	 ap	 BUUt:1
-422	 pOWV:1	 ekmn:2	 “	 ‘	 ‘evm:1	 n 	 “s	 evM	 ‘a	 “ssV:1	 “nEv:1	 ap	 BUUt:1
+:1	 “	 ‘	 ‘n	 ap	 BUAt:1
+422	 pOWV:1	 ekmn:2	 “	 ‘	 ‘evm:1	 n 	 “s	 evM	 ‘a	 “ssV:1	 “nEv:1	 ap	 BUAt:1
 423	 t	 ekM	 anE
 :1	 ‘	 ‘a	 ‘an	 ‘ann	 ‘t	 ‘aY	 ‘h	 n	 ‘hOt:1	 ‘n
 :2	 n	 ts
@@ -703,7 +703,7 @@
 :3	 ‘	 i	 tV	 ‘apI:1	 itI p:1
 :4	 ‘	“sU	 my	 i
 :5	 “
-428	 o	 k	 r	 ktmO:1	 rUUp:1	 ktmO:2	 arUU:2
+428	 o	 k	 r	 ktmO:1	 rUAp:1	 ktmO:2	 arUA:2
 429	 y	 sI	 sMkI:1	 n	 sMkI:2
 430	 y	 sI	 ‘	 n	 sMkI:1
 431	 y	 sI	 ‘	 n	 sMkI:1
@@ -715,14 +715,14 @@
 :1	 n	 “
 436	 ‘	 k	 ktmO:1	 tE	 ‘a
 :1	 “
-437	 “	 oLAr:1	 y	 mnOm:2	 ysVm:1	 arUU:3
-:1	 oLAr:1	 y	 mnOm:2	 ysVm:1	 arUU:3
+437	 “	 oLAr:1	 y	 mnOm:2	 ysVm:1	 arUA:3
+:1	 oLAr:1	 y	 mnOm:2	 ysVm:1	 arUA:3
 438	 ‘	 B	 atV	 evM p:1
 :1	 ‘	 Bv	 atV	 evM p:1	 ‘ahO:1	 BvIs:2	 atVT:1	 evM p:2
 :2	 ‘	 y	 yO t:1	evM p:1
 :3	 ‘	 y	 yO t:1	 evM p:1	 ‘yO m	 yO m	 yO m:1	 evM p:2
-439	 oLAr:1	 ysVm:1	 ysVm:2	 arUU:2
-440	 y	 KIIr:3	 ysVm:1	 nvnI:3	 spVp:5	 spVp:6	 spVp:8	 e	 ysVm:3	 ysVm:4	 arUU:1	 i
+439	 oLAr:1	 ysVm:1	 ysVm:2	 arUA:2
+440	 y	 KIAr:3	 ysVm:1	 nvnI:3	 spVp:5	 spVp:6	 spVp:8	 e	 ysVm:3	 ysVm:4	 arUA:1	 i
 441	 “	 s	 es	 up
 442	 “	 s	 es	 l
 443	 ac	 ‘	 aY
