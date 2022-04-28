@@ -1,15 +1,16 @@
 import {kluer,glob,nodefs,writeChanged,readTextContent, readTextLines} from 'pitaka/cli';
-
+import {guidedBreakLines} from 'pitaka/align'
+import {Formula} from 'pitaka/pali'
 const {yellow,red} =kluer;
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
-import {guidedBreakLines} from 'pitaka/align'
 import transliterate from './src/transliterate.js';
 import {reparanum} from './src/reparanum.js'
 import {epilog} from './src/epilog.js'
+import {factorizeOfftext,printFactorizeStat} from './src/factorization.js'
 const scfolder='../sc/pli/'
-const bbfolder='../bb/off/'
+const bbfolder='../bb/off/' 
 const srcfolder='./books/'; 
 const brkfolder='./brk/'
 const testfn='dn1.xml';
@@ -21,9 +22,10 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 //todo , offtext gen transclusion link
-const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines];
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines, factorizeOfftext];
 
-const ctx={};
+const formula=new Formula('./formula.json');
+const ctx={formula, orth:{} };
 let  processed=0;  
 
 const getSameParaFilename=bkid=>{
@@ -78,5 +80,6 @@ filelist.forEach(fn=>{
         console.log('same',ofn,buf.length,linecountwarning);
     }
 })
+printFactorizeStat(ctx);
 process.stdout.write('\n');
 console.log('processed',processed,'all',filelist.length);
