@@ -25,7 +25,7 @@ const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines, factorizeOfftext];
 
 const formula=new Formula('./formula.json');
-const ctx={formula, orth:{} };
+const ctx={formula, orth:{},unknownOrth:[] };
 let  processed=0;  
 
 const getSameParaFilename=bkid=>{

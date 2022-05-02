@@ -1,0 +1,4 @@
+﻿{
+"lexicon":"../kmj/entries.txt",//
+"decomposes":["../kmj/decompose.txt"]
+}
