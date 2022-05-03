@@ -29,6 +29,7 @@ const Untease={'s0101m.mul.xml':[
 ['khudda-dijātha-sahampatiyācaṃ','khuddadijāthasahampatiyācaṃ'],
 ['nāḷaka-raññikiṭāgirināmo','nāḷakaraññikiṭāgirināmo'],
 ['puṇḍarī-aggisaha-kathināmo','puṇḍarīaggisahakathināmo'],
+['cīvara-piṇḍapāta-senāsana','cīvarapiṇḍapātasenāsana']
  ]
 
 //search pattern  [^\d<>’]-[^<>\d] for all s*.mul.xml not done
@@ -36,6 +37,12 @@ const Untease={'s0101m.mul.xml':[
  's0203m.mul.xml':[
      ['cīvarapiṇḍapātasenāsanagilā- nappaccayabhesajjaparikkhārānuppadānena','cīvarapiṇḍapātasenāsanagilānappaccayabhesajjaparikkhārānuppadānena',4]
  ],
+
+ 's0302m.mul.xml':[
+ ['sāmīcikammacīvarapiṇḍapātasenāsanagilā- nappaccayabhesajjaparikkhārānuppadānena',
+ 'sāmīcikamma cīvarapiṇḍapātasenāsanagilānappaccayabhesajjaparikkhārānuppadānena',3]
+
+ ]
 }
 
  export const getUntease=fn=>{

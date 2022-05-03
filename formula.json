@@ -1,4 +1,4 @@
 ﻿{
 "lexicon":"../kmj/entries.txt",//
-"decomposes":["../kmj/decompose.txt"]
+"decomposes":["../kmj/decompose.txt","decompose-manual.txt","decompose-aux.txt"]
 }
