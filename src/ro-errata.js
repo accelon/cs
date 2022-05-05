@@ -33,9 +33,13 @@ const Errata={
             //對應 pli-tv-pvr9_root-pli-ms
         ['<p rend="subhead">atthavasapakaraṇaṃ</p>','<p rend="chapter">atthavasapakaraṇaṃ</p>'],
         //改為chapter 以便與 sc 對應 (pvr 分為 21 chapter, 頭兩個chapter各分為16節)
-        ['<p rend="title">samathabhedo</p>','<p rend="chapter">samathabhedo</p>']
-    ], 
+        ['<p rend="title">samathabhedo</p>','<p rend="chapter">samathabhedo</p>'],
 
+        ['chauuna','chaūna',4]
+    ], 
+    's0101m.mul.xml':[
+        [' uekaṃ',' ekaṃ']
+    ],
     's0102m.mul.xml':[
         ['<p rend="centre">‘‘kinti te, ānanda, sutaṃ, ‘vajjī yāni tāni</p>\n<p rend="bodytext">',
         '<p rend="bodytext">‘‘kinti te, ānanda, sutaṃ, ‘vajjī yāni tāni '],//not a title ,
@@ -51,8 +55,12 @@ const Errata={
         '<p rend="bodytext" n="119-135"><hi rend="paranum">119-135'],
 
         //sc 和an5.194 都沒拆那麼細
-        ['</p>\n<p rend="bodytext">‘‘paṇḍito maññe’’ti।</p>',' ‘‘paṇḍito maññe’’ti।</p>']
+        ['</p>\n<p rend="bodytext">‘‘paṇḍito maññe’’ti।</p>',' ‘‘paṇḍito maññe’’ti।</p>'],
+        ['passatāe','passato',2]
     ],
+    's0203m.mul.xml':[
+    	['anapāyāe','anapāyo'],
+    ],		
     's0201a.att.xml':[
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']
     ],
@@ -152,7 +160,8 @@ const Errata={
         ['<p rend="centre">saḷāyatanavaggo catuttho।</p>'
          ,'<trailer rend="centre">abyākatasaṃyuttaṃ <pb ed="P" n="4.0403"/> samattaṃ।</trailer>\n</div>'],
 
-        ['<p rend="gathalast">abyākatanti dasadhāti॥</p>','<p rend="gathalast">abyākatanti dasadhāti॥</p>\n<p rend="centre">saḷāyatanavaggo catuttho।</p>']
+        ['<p rend="gathalast">abyākatanti dasadhāti॥</p>','<p rend="gathalast">abyākatanti dasadhāti॥</p>\n<p rend="centre">saḷāyatanavaggo catuttho।</p>'],
+        ['auum','aūm',5]
     ],
     's0305m.mul.xml':[//fill the gap for passing sequencial number check
         ['<p rend="centre">(gaṅgāpeyyālī)।</p>\n<p rend="centre">dutiyagaṅgāpeyyālavaggo dutiyo।</p>'
@@ -244,16 +253,19 @@ const Errata={
         ['<p rend="bodytext">(chaṭṭhaṃ uttānatthamevāti','<p rend="bodytext" n="106"><hi rend="paranum">106</hi><hi rend="dot">.</hi>(chaṭṭhaṃ uttānatthamevāti'],
         
         //需要這個
-        ['<trailer rend="centre">catukkanipātapāḷi','<p rend="centre">pañcamo paṇṇāsako samatto।</p>\n<trailer rend="centre">catukkanipātapāḷi']
+        ['<trailer rend="centre">catukkanipātapāḷi','<p rend="centre">pañcamo paṇṇāsako samatto।</p>\n<trailer rend="centre">catukkanipātapāḷi'],
+
+        ['attānuvādauumi','attānuvādaūmi']
     ],
-    's0403m1.mul.xml':[
+    's0403m1.mul.xml':[ //an5
         ['<p rend="bodytext">‘‘katame pañca? saddhābalaṃ',
         //according to an5.308-1152_reference.json
         '<p rend="bodytext" n="1152"><hi rend="paranum">1152</hi><hi rend="dot">.</hi>‘‘katame pañca? saddhābalaṃ'],
 
     ],
-    's0403m2.mul.xml':[
+    's0403m2.mul.xml':[ //an6
         ['<p rend="hangnum">  </p>\n',''],
+        ['vigatauumiko','vigataūmiko']
     ],
     's0404m1.mul.xml':[//an8
         ['[ ]',''], // miss up with offtag
@@ -271,6 +283,12 @@ const Errata={
         '<p rend="bodytext" n="502"><hi rend="paranum">502</hi><hi rend="dot">.</hi> …pe…</p>\n</div>\n<div id="an11_4"']
 
     ],
+    's0504m.mul.xml':[
+        ['auum','aūm',3],
+    ],
+    's0508m.mul.xml':[
+        ['vedauuuu','vedagū'] //SC thag1.10:1.2
+    ],
     's0513a1.att.xml':[  //first 3 subhead is not jataka
         ['<p rend="subhead">1','<p rend="subsubhead">1'],
         ['<p rend="subhead">2','<p rend="subsubhead">2'],
@@ -287,6 +305,12 @@ const Errata={
     's0514m.mul.xml':[
         ['<p rend="hangnum" n="21"><hi rend="paranum">21</hi><hi rend="dot">.</hi></p>\n<p rend="gatha1">‘‘phalā',
 		'<p rend="hangnum" n="22"><hi rend="paranum">22</hi><hi rend="dot">.</hi></p>\n<p rend="gatha1">‘‘phalā'],
+    ],
+    's0518m.nrf.xml':[
+        ['auumi','aūmi',2]
+    ],
+    's0519m.mul.xml':[
+        ['sauumiṃ','saūmiṃ',3]
     ],
     /*  */
     'abh07t.nrf.xml':[ //攝阿毘達磨義釋

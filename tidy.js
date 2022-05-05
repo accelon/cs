@@ -5,7 +5,7 @@ import {fixMarkups} from './src/fixmarkups.js'
 import {backmovepb} from './src/backmovepb.js'
 import {cst4rename} from './src/cst4rename.js';
 import {parseCite} from './src/citeparser.js'
-import {teaseXML} from './src/teaser.js'
+//import {teaseXML} from './src/teaser.js'
 const srcfolder='./ro/'; 
 const desfolder='./books/';
 const testfn='s0101m.mul.xml';
@@ -15,7 +15,7 @@ let pat=process.argv[2]||testfn;
 // const files=readdirSync(srcfolder);
 const filelist= glob(srcfolder,pat);
 
-const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb, parseCite, teaseXML ]
+const Steps=[fixMarkups, changequotepunc, removeparanum, backmovepb, parseCite ]
 const removetail=buf=>{
   // console.log('remove tail',buf.length)
   return buf.replace('</body>\n<back></back>\n</text>\n</TEI.2>',''); //remove the tail

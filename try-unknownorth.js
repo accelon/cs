@@ -3,7 +3,7 @@ import {writeChanged,nodefs,readTextLines} from 'pitaka/cli'
 await nodefs;
 
 const formula=new Formula('./formula.json');
-const lines=readTextLines('unknownorth-4n.txt');
+const lines=readTextLines('unknownorth.txt');
 let count=0;
 const tryOtherBases=orth=>{
 	const bases=enumBases(orth);
@@ -36,18 +36,18 @@ let guess=0;
 const fullmatch=[],remaining=[],partialmatch=[];
 lines.forEach(orth=>{
 	const lex=formula.guess(orth);
-	if (lex) {
-		if (typeof lex=='string') {
-			console.log(orth+'='+lex)
-			fullmatch.push(orth+'='+lex);	
-		} else {
-			partialmatch.push(orth+'='+ lex.join('-'));
-		}
-		guess++;
+	if (typeof lex=='string') {
+		console.log(orth+'='+lex)
+		fullmatch.push(orth+'='+lex);	
 	} else {
-		remaining.push(orth);
+		if (lex.length) {
+			partialmatch.push(orth+'='+ lex.join('-'));				
+		} else {
+			remaining.push(orth);
+		}
 	}
 })
+remaining.sort((a,b)=>b.length-a.length)
 writeChanged('unk-fullmatch.txt',fullmatch.join('\n'))
 writeChanged('unk-partialmatch.txt',partialmatch.join('\n'))
 writeChanged('unk-remaining.txt',remaining.join('\n'))

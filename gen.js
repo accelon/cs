@@ -34,7 +34,7 @@ const getSameParaFilename=bkid=>{
     }
     return scfolder+bkid+'.ms.off'
 }
-
+const writeoutput=false;
 filelist.forEach(fn=>{
     ctx.fn=fn;
     ctx.notes={};
@@ -54,31 +54,36 @@ filelist.forEach(fn=>{
     // ctx.cluster=ClusterStarts[outfn]||0;
     // ctx.validateClusterNum= !fn.match(/^mn/)
 
-
     processed++;
     Steps.forEach(step=>buf=step(buf,ctx));
     buf=buf.trim();
     buf=epilog(buf,bkid)
-    const ofn=desfolder+bkid+'.cs.off';
 
-    const notefn=desfolder+bkid+'.notes.json';
-    const notesout=serializeNotes(ctx.notes);
-    if (writeChanged(notefn,notesout)){
-        console.log('written notes',notefn)
-    }
-    const checkfn=getSameParaFilename(bkid);
-    let linecountwarning='';
-    if (fs.existsSync(checkfn)) {
-        const sccontent=readTextLines(checkfn);
-        const lines=buf.split('\n');
-        linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
+    if (writeoutput){
+        const ofn=desfolder+bkid+'.cs.off';
+
+        const notefn=desfolder+bkid+'.notes.json';
+        const notesout=serializeNotes(ctx.notes);
+        if (writeChanged(notefn,notesout)){
+            console.log('written notes',notefn)
+        }
+
+        const checkfn=getSameParaFilename(bkid);
+        let linecountwarning='';
+
+        if (fs.existsSync(checkfn)) {
+            const sccontent=readTextLines(checkfn);
+            const lines=buf.split('\n');
+            linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
+        }
+
+        if (writeChanged(ofn, buf)) {
+            console.log('written',ofn,buf.length,linecountwarning);
+        } else {
+            console.log('same',ofn,buf.length,linecountwarning);
+        }
     }
 
-    if (writeChanged(ofn, buf)) {
-        console.log('written',ofn,buf.length,linecountwarning);
-    } else {
-        console.log('same',ofn,buf.length,linecountwarning);
-    }
 })
 printFactorizeStat(ctx);
 process.stdout.write('\n');

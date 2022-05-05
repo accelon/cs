@@ -684,8 +684,8 @@
 124	 a	 “	 kO p:1
 :1	 t	 s	 sn	 snVt:1	 tYVc:1	 supA:1	 ay
 :2	 t	 anU	 s	 snVt:1	 tYVc:1	 anUp:1	 ay	 pX
-125	 a	 “	 kO p:1	 (	A pU:1	 dU
-126	 a	 “	 kO p:1	 (	A pU:1	 tt
+125	 a	 “	 kO p:1	 (	ay	 dU
+126	 a	 “	 kO p:1	 (	ay	 tt
 127	 aT	 smVm:1	 “	 “v	 ‘	 ay
 :1	 a	 at
 :2	 ‘	 at	 ay	 “	 yE 	 ap	 atVT:1

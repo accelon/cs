@@ -4,11 +4,7 @@ const Untease={'s0101m.mul.xml':[
  	['anupubbābhisaññānirodha-sampajāna-samāpatti','anupubbābhisaññānirodhasampajānasamāpatti',3],
  	['vivekajapītisukhasukhuma-saccasaññīyeva','vivekajapītisukhasukhumasaccasaññīyeva'],
  	['aniccucchādanaparimaddanabhedana-viddhaṃsanadhammo','aniccucchādanaparimaddanabhedanaviddhaṃsanadhammo'],
- 	['puthusippāyatanāni-','puthusippāyatanāni –'],
  	['saddaṃ suṇātha-','saddaṃ suṇātha –'],
-   ['nirodha-sampajāna-samāpatti','nirodhasampajānasamāpatti'],
-
-
  ],
  's0102m.mul.xml':[
  	['kusalākusalasāvajjānavajjasevitabbāsevitabbahīna-','kusalākusalasāvajjānavajjasevitabbāsevitabbahīna – '],
@@ -30,7 +26,6 @@ const Untease={'s0101m.mul.xml':[
 ['nāḷaka-raññikiṭāgirināmo','nāḷakaraññikiṭāgirināmo'],
 ['puṇḍarī-aggisaha-kathināmo','puṇḍarīaggisahakathināmo'],
 ['cīvara-piṇḍapāta-senāsana','cīvarapiṇḍapātasenāsana']
- ]
 
 //search pattern  [^\d<>’]-[^<>\d] for all s*.mul.xml not done
  ],

@@ -719,7 +719,7 @@
 :1	 y	 ‘	 ‘ekn:1	 yA
 256	 “	 “skV:1	 “sE	 kt	 iD	 tM	 – ‘	 as
 :1	 ‘	 aT	 yE	 ‘e	 rAjA:4	 ‘pA	 yE K:1
-257	 dkVK:1	cVCI:1
+257	 dkVK:1	pcVCI:1
 :1	 ‘	 rAjA:1	 ‘p	 yE
 :2	 rYVY:2
 258	 s	 t	 ‘	 a	 BU	 rYVY:2

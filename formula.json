@@ -1,4 +1,5 @@
 ﻿{
 "lexicon":"../kmj/entries.txt",//
-"decomposes":["../kmj/decompose.txt","decompose-manual.txt","decompose-aux.txt"]
+"decomposes":["../kmj/decomp.txt","decomp-manual.txt","decomp-aux.txt"],
+"encoding":"iast"
 }

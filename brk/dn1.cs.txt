@@ -563,7 +563,7 @@
 358	
 :1	 a	 ekmn:1
 :2	
-359	 u	 t	 a	 “	 tM	 ‘	 sO i	 sO D	 sAD
+359	 ek	 t	 a	 “	 tM	 ‘	 sO i	 sO D	 sAD
 360	 tEn 	 aT	 “	 d	 “a	 aT K:1	 “d
 361	 “	 d	 “a	 oWVX:1	 “d
 362	 “

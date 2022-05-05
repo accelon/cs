@@ -27,6 +27,7 @@ allfiles.forEach(file=>{
     }).join('\n');
 
     //remove style sheet and change encoding
+
     outbuf=outbuf.replace('<?xml-stylesheet type="text/xsl" href="tipitaka-deva.xsl"?>','')
       .replace('encoding="UTF-16"','encoding="UTF-8"');
 

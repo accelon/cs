@@ -11,6 +11,7 @@ export const factorizeOfftext=(buf,ctx)=>{
 			if (o) {
 				ctx.orth[m1]=o;
 			} else {
+				// console.log('unknown',m1)
 				ctx.unknownOrth.push(m1);
 				ctx.orth[m1]=m1;
 			}
