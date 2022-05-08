@@ -1,5 +1,5 @@
 ﻿{
 "lexicon":"../kmj/entries.txt",//
-"decomposes":["../kmj/decomp.txt","decomp-manual.txt","decomp-aux.txt"],
+"decomposes":["decomp-manual.txt","../kmj/decomp.txt"], // decompo-manual has precedency
 "encoding":"iast"
 }

@@ -34,7 +34,7 @@ const getSameParaFilename=bkid=>{
     }
     return scfolder+bkid+'.ms.off'
 }
-const writeoutput=false;
+const writeoutput=true;
 filelist.forEach(fn=>{
     ctx.fn=fn;
     ctx.notes={};

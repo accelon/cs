@@ -29,7 +29,7 @@ formula.forEach((orth,parts,raw)=>{
 			pass++;
 		}
 	}	
-},0)
+})
 const arr=sortObj(commonsandhi);
 console.log(arr.slice(0,30))
 console.log('sandhi ok',pass,'failed',fail)
