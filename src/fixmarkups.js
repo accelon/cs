@@ -11,7 +11,7 @@
 */
 import {getErrata} from './ro-errata.js'; //errata in romanized
 import {getUntease} from './ro-untease.js'; //recover unwanted or wrong tease of compound
-import {patchBuf} from 'pitaka/cli';
+import {patchBuf} from 'ptk/nodebundle.cjs';
 export const fixJataka=(buf,fn)=>{
     const m=fn.match(/s051[34]a/);
     if (!m) return buf;

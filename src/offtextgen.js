@@ -1,5 +1,5 @@
 // import cst4files from './cst4files.js';
-import {walkDOMOfftext,DOMFromString,xpath } from 'pitaka/xmlparser'
+import {walkDOMOfftext,DOMFromString,xpath } from 'ptk/nodebundle.cjs'
 import {handlers,closeHandlers} from './xmlhandlers.js';
 import { addNote } from './notes.js';
 

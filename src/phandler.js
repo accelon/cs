@@ -1,4 +1,4 @@
-import { toBase26 } from "pitaka/utils";
+import { toBase26 } from "ptk/nodebundle.cjs";
 const DN_SUTTA = {1:0,2:13,3:23}
 const MN_SUTTA = {1:0,2:50,3:100}
 const SN_SAMYUTTA = {1:0,2:11,3:21,4:34,5:44}

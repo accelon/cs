@@ -1,6 +1,6 @@
 import {PALIWORD_REG_G} from 'provident-pali'
-import {bsearch,alphabetically} from 'pitaka/utils'
-import {writeChanged} from 'pitaka/cli'
+import {bsearch,alphabetically,writeChanged} from 'ptk/nodebundle.cjs'
+
 export const factorizeOfftext=(buf,ctx)=>{
 	if (!buf) return buf;
 	return buf.replace(PALIWORD_REG_G,(m,m1,idx)=>{

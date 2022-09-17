@@ -1,4 +1,4 @@
-import {nodefs,glob, writeChanged} from 'pitaka/cli';
+import {nodefs,glob, writeChanged} from 'ptk/nodebundle.cjs';
 await nodefs; //export fs to global
 import {changequotepunc, removeparanum  } from './src/replaces.js';
 import {fixMarkups} from './src/fixmarkups.js'
@@ -44,8 +44,6 @@ filelist.forEach((file,idx)=>{
     buf=removehead(buf);
     fs.appendFileSync(desfolder+newname+'.xml',buf);
   } else {
-    if (writeChanged(desfolder+newname+'.xml',buf)){
-        console.log('written',newname,buf.length);
-    }
+    writeChanged(desfolder+newname+'.xml',buf,true);
   }
 })

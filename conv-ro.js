@@ -1,4 +1,4 @@
-import {glob,nodefs,patchBuf, writeChanged} from 'pitaka/cli';
+import {glob,nodefs,patchBuf, writeChanged} from 'ptk/nodebundle.cjs';
 await nodefs; //export fs to global
 import {enumTransliteration, deva2IAST} from 'provident-pali';
 import { splitBook } from './src/splitbook.js';

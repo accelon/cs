@@ -7,5 +7,6 @@
     "label":"end,trailer,cite",
     "homepage":"https://github.com/accelon/cs",
     "notesjson":"note",
-    "files":"dn?.cs.off,mn?.cs.off,sn?.cs.off,an?.cs.off,an??.cs.off"
+    "textOnly":false,
+    "files":"an1.cs.off" // dn?.cs.off,mn?.cs.off,sn?.cs.off,an?.cs.off,an??.cs.off
 }

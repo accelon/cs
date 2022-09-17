@@ -1,6 +1,8 @@
-import {toParagraphs} from 'pitaka/align'
-import { linePN, makeLocalAddress } from 'pitaka/offtext';
-import { pinPos } from 'pitaka/align';
+import {toParagraphs, linePN,  pinPos} from 'ptk/nodebundle.cjs'
+
+const makeLocalAddress=(bkid='',loc='',dy=0)=>{
+    return (bkid?bkid+'.':'')+loc+(dy?':'+dy:'')
+}
 /* before breakline */
 export const stepStripNotes=(buf,ctx)=>{
     const paragraphs=toParagraphs(buf.split('\n'));

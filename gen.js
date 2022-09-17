@@ -1,7 +1,8 @@
-import {kluer,glob,nodefs,writeChanged,readTextContent, readTextLines} from 'pitaka/cli';
-import {guidedBreakLines} from 'pitaka/align'
-import {Formula} from 'pitaka/pali'
-const {yellow,red} =kluer;
+import {glob,nodefs,writeChanged,readTextContent, readTextLines
+, guidedBreakLines //ptk/align
+,Formula } from 'ptk/nodebundle.cjs'; //ptk/pali
+
+const {yellow,red} ='ptk/cli/colors.cjs';
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
@@ -64,9 +65,7 @@ filelist.forEach(fn=>{
 
         const notefn=desfolder+bkid+'.notes.json';
         const notesout=serializeNotes(ctx.notes);
-        if (writeChanged(notefn,notesout)){
-            console.log('written notes',notefn)
-        }
+        writeChanged(notefn,notesout,true);
 
         const checkfn=getSameParaFilename(bkid);
         let linecountwarning='';
@@ -77,11 +76,8 @@ filelist.forEach(fn=>{
             linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
         }
 
-        if (writeChanged(ofn, buf)) {
-            console.log('written',ofn,buf.length,linecountwarning);
-        } else {
-            console.log('same',ofn,buf.length,linecountwarning);
-        }
+        writeChanged(ofn, buf,true);
+        if (linecountwarning) console.log(linecountwarning);
     }
 
 })
