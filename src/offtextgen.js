@@ -10,7 +10,7 @@ const doInlineTag=(buf,ctx)=>{
 
     if (buf.indexOf('<hi rend="bold">')>-1) {
         buf=buf.replace(/<hi rend="bold">([^>]+)<\/hi>/g,(m,boldtext)=>{
-            return '^b['+boldtext+']';
+            return '^b('+boldtext+')';
         });
     }
 

@@ -1,8 +1,6 @@
 import {glob,nodefs,writeChanged,readTextContent, readTextLines
 , guidedBreakLines //ptk/align
 ,Formula } from 'ptk/nodebundle.cjs'; //ptk/pali
-
-const {yellow,red} ='ptk/cli/colors.cjs';
 await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
@@ -23,7 +21,7 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 //todo , offtext gen transclusion link
-const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines, factorizeOfftext];
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines];//factorizeOfftext
 
 const formula=new Formula('./formula.json');
 const ctx={formula, orth:{},unknownOrth:[] ,orthCount:0, tokenCount:0};
@@ -36,6 +34,7 @@ const getSameParaFilename=bkid=>{
     return scfolder+bkid+'.ms.off'
 }
 const writeoutput=true;
+
 filelist.forEach(fn=>{
     ctx.fn=fn;
     ctx.notes={};
@@ -56,7 +55,10 @@ filelist.forEach(fn=>{
     // ctx.validateClusterNum= !fn.match(/^mn/)
 
     processed++;
-    Steps.forEach(step=>buf=step(buf,ctx));
+    Steps.forEach(step=>{
+	buf=step(buf,ctx);
+    });
+
     buf=buf.trim();
     buf=epilog(buf,bkid)
 
@@ -73,7 +75,7 @@ filelist.forEach(fn=>{
         if (fs.existsSync(checkfn)) {
             const sccontent=readTextLines(checkfn);
             const lines=buf.split('\n');
-            linecountwarning=!paramode && lines.length!==sccontent.length?red("!="+sccontent.length):'';
+            linecountwarning=!paramode && lines.length!==sccontent.length?lines.length+"!="+sccontent.length:'';
         }
 
         writeChanged(ofn, buf,true);

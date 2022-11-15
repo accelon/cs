@@ -24,7 +24,7 @@ export const handlers={
         
         let newline=true;
         if (rend==='subhead'){ 
-            t='^h['+text+']';
+            t='^h('+text+')';
             //副標與段合併，方便顯示
             newline=false;// combine subhead with <p n=
         } else if ( rend==='gatha1' || rend==='gatha2'|| rend==='gatha3'|| rend==='gathalast') {
@@ -35,16 +35,16 @@ export const handlers={
               else return '^end '+text+'\n';
             } else if (rend==='nikaya') {
                 return '';
-                // return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'['+text+']';
+                // return '^bk'+getMAT(ctx.bkid)+ctx.bkid+'('+text+')';
             } else if (rend==='book') {
                 //att,tik 以數字表達，最後的 a,t 去掉
                 if (ctx.div_id==='vin2_5') return ''; //pc 有兩個 book 標記
-                return '^bk'+getMAT(ctx.bkid)+ctx.bkid.replace(/(\d+)[at]$/,'$1')+'['+text+']';
+                return '^bk'+getMAT(ctx.bkid)+ctx.bkid.replace(/(\d+)[at]$/,'$1')+'('+text+')';
             }
-            t='^'+rend+'['+text+']';
+            t='^'+rend+'('+text+')';
         } else if (el.attrs.rend==='chapter') {
             ctx.chunkCount++;
-            return '^ck'+ctx.chunkCount+'['+text+']';
+            return '^ck'+ctx.chunkCount+'('+text+')';
         } else {
             t=text;
         }
@@ -74,18 +74,19 @@ export const handlers={
     "trailer":(el)=>{return '^trailer '+el.innerText()+'\n'},
     "hi":(el,ctx)=>{
         if (el.attrs.rend=='bold') {
-            return '^b[ '
+            return '^b( '
         } else {
             console.log(ctx.bkid,{text:ctx.snippet},'pn',ctx.pn, 'error hi tag '+el.innerText())
         }
     },
     "*":(el,ctx)=>{
+	if (typeof el=='string') return;
         console.log("unknown tag",ctx.bkid,el.name,el.attrs,ctx.div_id,'pn',ctx.pn);
     },
     "pb":(el,ctx)=>{},
 }
 export const closeHandlers={
     "hi":(el,ctx)=>{
-        if (el.attrs.rend==='bold') return ctx.snippet+']';
+        if (el.attrs.rend==='bold') return ctx.snippet+')';
     },
 }
