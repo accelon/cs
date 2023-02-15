@@ -24,6 +24,7 @@ const AK={
 }
 const prependAK=(buf,bkid)=>{
     const ak=AK[bkid]||'';
+console.log('prepend',ak);
     return ak+buf;
 }
 

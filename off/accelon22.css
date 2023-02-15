@@ -1,8 +1,11 @@
+.cs.parallel {color:burlywood}
 .cs {
     font-family: 'ProvidentPali';
+    font-size:1.2em;
 }
 .cs-iast {
-    font-family: 'consolas, san-serif'
+    font-family: 'Tahoma';
+    font-size:1em;
 }
 .cs .bk 
 { 
