@@ -2,11 +2,11 @@
 
 ## prerequisite
 
-Download cst4-2020 (tested on cst4-2020-05-07-4.0.0.15.msi) from tipitaka.org, install it and make a junction or symbolic link Xml to /Cst4/Xml
+Download [cst4-2022](https://tipitaka.org/cst/cst4-2022-04-05-4.1.0.3.msi) from tipitaka.org, install it and make a junction or symbolic link Xml to /Cst4/Xml
 
 copy ProvidentPaliSegoe.otf from github.com/dhamma/provident-pali/www/
 
-install pitaka CLI https://github.com/accelon/pitaka
+install ptk CLI https://github.com/accelon/ptk
 
 ## Build steps
     
@@ -114,11 +114,11 @@ off/dn2.cs.off
    以下數據庫將會與 cs 逐句對齊
 
 * sc [Sutta Central，已完成](https://github.com/accelon/sc)
-* hz [杭州佛學院及北大譯文，長部已完成逐句](https://github.com/accelon/sutra-mobi)
-* ccc [莊春江，段對齊](https://github.com/accelon/ccc)
-* cb-n [元亨寺漢譯，段對齊](https://github.com/accelon/cb-n)
+* ccc [莊春江，對齊中](https://github.com/accelon/ccc)
+* cb-n [元亨寺漢譯，對齊中](https://github.com/accelon/cb-n)
+* hz [杭州佛學院，對齊中](https://github.com/accelon/sutra-mobi)
+* xsq [志蓮淨苑蕭式球，對齊中](https://github.com/accelon/xsq)
 * bb [菩提比丘，部份段對齊](https://github.com/accelon/bb)
-* cl [志蓮淨苑蕭式球，未對齊](https://github.com/accelon/cl)
 * cs-zh [其他作者之巴利藏漢譯，逐句對齊](https://github.com/accelon/cs-zh)
 * cs-en [其他作者之巴利藏英譯，逐句對齊](https://github.com/accelon/cs-en)
 * cs-mm [緬譯巴利藏，段對齊](https://github.com/accelon/cs-mm)
@@ -127,6 +127,8 @@ off/dn2.cs.off
 ## 前端程式
    
    https://github.com/accelon/accelon2021
+   https://github.com/accelon/accelon2022
+   https://github.com/accelon/sanzang
 
 
 

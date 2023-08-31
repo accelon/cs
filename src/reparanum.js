@@ -39,3 +39,6 @@ export const reparanum=(buf,ctx)=>{
     }
 }
 
+export const removePureN=(buf,ctx)=>{
+    return buf.replace(/\^n /g,'');
+}

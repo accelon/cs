@@ -9,43 +9,51 @@ const InvalidTransliteration={ // ः
     'abh03m8.mul.xml':[
         ['चेतोपरियञाणंठ्चेतोपरियञाणं','चेतोपरियञाणं',1], //cetopariyañāṇaṃṭhcetopariyañāṇaṃ ==> cetopariyañāṇaṃ 他心通
     ],
-    's0102m.mul.xml':[
-        ['सीलवन्त्त','सीलवन्त',1], // Sīlavantta =>Sīlavanta   "dn16:1.24.0": "6. Sīlavantaānisaṁsa ",
+    's0102m.mul.xml':[  //fixed in cst4 2022
+        //['सीलवन्त्त','सीलवन्त',1], // Sīlavantta =>Sīlavanta   "dn16:1.24.0": "6. Sīlavantaānisaṁsa ",
     ],
     's0201m.mul.xml':[
-        ['दियढ्डसतं','दियड्ढसतं',1], //diyaḍhḍasataṃ ==> diyaḍḍhasataṃ
-        ['नत्थ्त्थ्थि','नत्थि',1] ,//Natthtththi==>natthi
+        //fixed in version cst4 2022
+        //['दियढ्डसतं','दियड्ढसतं',1], //diyaḍhḍasataṃ ==> diyaḍḍhasataṃ
+        //['नत्थ्त्थ्थि','नत्थि',1] ,//Natthtththi==>natthi
     ],
     's0202m.mul.xml':[
         ['मालुङ्क्यपुत्तस्स','मालुन्क्यपुत्तस्स',1],// Māluṅkyaputtassa==>Mālunkyaputtassa
     ],
     's0203m.mul.xml':[
         [/\u0903/g,';',3], //據 bilara-data mn107_root-pli-ms.json 修正
-        ['ज्ठितो','ठितो',1], //jṭhito==>ṭhito "mn143:17.2": Ekamantaṁ ṭhito kho anāthapiṇḍiko
+        
+        //fixed in version cst4 2022
+        //['ज्ठितो','ठितो',1], //jṭhito==>ṭhito "mn143:17.2": Ekamantaṁ ṭhito kho anāthapiṇḍiko
     ],
-    's0301m.mul.xml':[     
-        ['अत्थ्त्थ्थि','अत्थि',1], //Atthtththi ==> Atthi ,
-        ['अत्थ्त्थि','अत्थि',1], //Atthtthi ==> atthi
+    's0301m.mul.xml':[      //fixed in version cst4 2022
+        //['अत्थ्त्थ्थि','अत्थि',1], //Atthtththi ==> Atthi ,
+        //['अत्थ्त्थि','अत्थि',1], //Atthtthi ==> atthi
     ],
     's0304m.mul.xml':[
         ['मालुङ्क्यपुत्तो','मालुन्क्यपुत्तो',1], // 'māluṅkyaputto ==> mālunkyaputto'
-        [ 'अट्ठसतम्प्म्प्पि','अट्ठसतम्पि',1], // aṭṭhasatampmppi==>aṭṭhasatampi
-        [' तम्प्म्प्पि',' तम्पि',1],//Tampmppi==>tampi
+
+        //fixed in version cst4 2022
+        //[ 'अट्ठसतम्प्म्प्पि','अट्ठसतम्पि',1], // aṭṭhasatampmppi==>aṭṭhasatampi
+        //[' तम्प्म्प्पि',' तम्पि',1],//Tampmppi==>tampi
     ],
     's0305m.mul.xml':[
         ['सकुणग्धि','सकुणग्घि',1]      //sakuṇagdhi ==> sakuṇagghi , typo see context
     ],
     's0402m2.mul.xml':[
-        ['नेसोहमस्म्स्म्मि','नेसोहमस्मि',1],// Nesohamasmsmmi==> nesohamasmi //"an4.177:3.2": "‘Taṁ netaṁ mama, nesohamasmi, na meso attā’ti,
+        //fixed in version cst4 2022
+        //['नेसोहमस्म्स्म्मि','नेसोहमस्मि',1],// Nesohamasmsmmi==> nesohamasmi //"an4.177:3.2": "‘Taṁ netaṁ mama, nesohamasmi, na meso attā’ti,
     ],
     's0402m3.mul.xml':[
         ['मालुङ्क्यपुत्तो','मालुन्क्यपुत्तो',1], // 'māluṅkyaputto ==> mālunkyaputto'
     ],
     's0403m3.mul.xml':[
-        ['जब्मुदीपस्स','जम्बुदीपस्स',1], //Jabmudīpassa ==> Jambudīpassa in <note> , invalid combi , probably typo
+        //fixed in version cst4 2022
+        //['जब्मुदीपस्स','जम्बुदीपस्स',1], //Jabmudīpassa ==> Jambudīpassa in <note> , invalid combi , probably typo
     ],
     's0404m3.mul.xml':[
-        ['ड्तण्हासुत्तं','तण्हासुत्तं',1], //ḍtaṇhāsuttaṃ , extra ḍ, "an10.62:0.3": "62. Taṇhāsutta ",
+        //fixed in version cst4 2022
+        //['ड्तण्हासुत्तं','तण्हासुत्तं',1], //ḍtaṇhāsuttaṃ , extra ḍ, "an10.62:0.3": "62. Taṇhāsutta ",
     ],
     's0504m.mul.xml':[/\u0903/g,';',6],
     's0508m.mul.xml':[

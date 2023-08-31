@@ -38,7 +38,8 @@ const Errata={
         ['chauuna','chaūna',4]
     ], 
     's0101m.mul.xml':[
-        [' uekaṃ',' ekaṃ']
+        //fixed in cst4 2022
+        //[' uekaṃ',' ekaṃ']
     ],
     's0102m.mul.xml':[
         ['<p rend="centre">‘‘kinti te, ānanda, sutaṃ, ‘vajjī yāni tāni</p>\n<p rend="bodytext">',
@@ -56,10 +57,13 @@ const Errata={
 
         //sc 和an5.194 都沒拆那麼細
         ['</p>\n<p rend="bodytext">‘‘paṇḍito maññe’’ti।</p>',' ‘‘paṇḍito maññe’’ti।</p>'],
-        ['passatāe','passato',2]
+        
+        //fixed in cst4 2022
+        //['passatāe','passato',2]
     ],
     's0203m.mul.xml':[
-    	['anapāyāe','anapāyo'],
+        //fixed in cst4 2022
+    	//['anapāyāe','anapāyo'],
     ],		
     's0201a.att.xml':[
         ['<p rend="bodytext" n="01"><hi rend="paranum">0</hi>','<p rend="bodytext">']

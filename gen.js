@@ -5,7 +5,7 @@ await nodefs; //export fs to global
 import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
 import transliterate from './src/transliterate.js';
-import {reparanum} from './src/reparanum.js'
+import {reparanum,removePureN} from './src/reparanum.js'
 import {epilog} from './src/epilog.js'
 import {factorizeOfftext,printFactorizeStat} from './src/factorization.js'
 const scfolder='../sc/pli/'
@@ -21,7 +21,7 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 //todo , offtext gen transclusion link
-const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines];//factorizeOfftext
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN];//factorizeOfftext
 
 const formula=new Formula('./formula.json');
 const ctx={formula, orth:{},unknownOrth:[] ,orthCount:0, tokenCount:0};
