@@ -24,13 +24,12 @@ const AK={
 }
 const prependAK=(buf,bkid)=>{
     const ak=AK[bkid]||'';
-console.log('prepend',ak);
     return ak+buf;
 }
 
-export const epilog=(buf,bkid)=>{
-    if (bkid==='vs' || bkid==='vs0a') {
+export const addEpilog=(buf,ctx)=>{
+    if (ctx.bkid==='vs' || ctx.bkid==='vs0a') {
         buf=buf.replace('\n^n1 ','\n^n ');
     }
-    return prependAK(buf,bkid);
+    return prependAK(buf,ctx.bkid);
 }

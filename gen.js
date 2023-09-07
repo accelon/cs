@@ -6,7 +6,7 @@ import offtextgen from './src/offtextgen.js';
 import {serializeNotes,stepStripNotes,stepPinNotes} from './src/notes.js';
 import transliterate from './src/transliterate.js';
 import {reparanum,removePureN} from './src/reparanum.js'
-import {epilog} from './src/epilog.js'
+import {addEpilog} from './src/epilog.js'
 import {factorizeOfftext,printFactorizeStat} from './src/factorization.js'
 import {connectGrammar} from './src/komyoji.js'
 const scfolder='../sc/pli/'
@@ -22,7 +22,7 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 //todo , offtext gen transclusion link
-const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN,connectGrammar];//factorizeOfftext
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN,addEpilog,connectGrammar];//factorizeOfftext
 
 const formula=new Formula('./formula.json');
 const ctx={formula, orth:{},unknownOrth:[] ,orthCount:0, tokenCount:0,grammars:[]};
@@ -58,11 +58,11 @@ filelist.forEach(fn=>{
 
     processed++;
     Steps.forEach(step=>{
-	buf=step(buf,ctx);
+	    buf=step(buf,ctx);
     });
 
     buf=buf.trim();
-    buf=epilog(buf,bkid)
+    
 
     if (writeoutput){
         const ofn=desfolder+bkid+'.cs.off';

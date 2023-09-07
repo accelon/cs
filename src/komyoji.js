@@ -1,5 +1,5 @@
 const kmjfolder='../kmj/'
-import { readTextLines, toParagraphs,tokenizeOfftext } from "ptk/nodebundle.cjs"
+import { TokenType, toParagraphs,tokenizeOfftext } from "ptk/nodebundle.cjs"
 import {loadGrammar} from '../../kmj/src/grammar-format.js'
 const formatgrammar=(gcodes)=>{
     const parts=[];
@@ -25,10 +25,10 @@ export const connectGrammar=(buf,ctx)=>{
             const paliline=palilines[i];
             const rawtokens=tokenizeOfftext(paliline);
             
-            tokens.push(...rawtokens.map(it=>it.text))
+            tokens.push(...rawtokens)
             tokens.push('\n');//換行
         }
-
+        
         let now=0;
         if (!grammars[pn]) { //kmj has no correspondance
             console.log(ctx.fn,'no pn',pn);
@@ -41,16 +41,21 @@ export const connectGrammar=(buf,ctx)=>{
         const gcodes=grammars[pn].map(it=>it[1]);
         let out=[];
         for (let j=0;j<tokens.length;j++) {
-            const tk=tokens[j];
+            
             if (tokens[j]=='\n') {
                 ctx.grammars.push(out.join(',1,'));
                 out=[];
             } else {
-                const at=gtokens.indexOf( tk , now);
-                if (~at) {
+                const tk=tokens[j];
+                const at=gtokens.indexOf( tk.text , now);
+                if (~at && gcodes[at]) {
                     const [parts,codes]=formatgrammar(gcodes[at]||[]);
                     //if (parts.length>1) console.log(tokens[j],parts)
                     out.push(codes);
+                } else {
+                    if (tk.type>=TokenType.SEARCHABLE ) {                        
+                        out.push('3');//no grammar, add a placeholder
+                    }
                 }
             }
         }
