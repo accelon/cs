@@ -11,16 +11,16 @@
 }
 */
 const AK={
-   'pj':'^ak#sv(suttavibhaṅga)',
-   'mv':'^ak#mv(khandhaka)',
-   'pvr':'^ak#pvr(parivara)',
+//    'pj':'^ak#sv(suttavibhaṅga)',
+//    'mv':'^ak#mv(khandhaka)',
+//    'pvr':'^ak#pvr(parivara)',
    'dn1':'^ak#dn(dIIG)',
    'mn1':'^ak#mn(mjVJIm)',
    'sn1':'^ak#sn(sMyUtVt)',
-   'an1':'^ak#an(aṅguttara)',
-   'kd':'^ak#kn(khuddaka)',
-   'ds':'^ak#abh(abhidhamma)',
-   'pt':'^ak#pt(paṭṭhāna)',
+   'an1':'^ak#an(aNVGUtVtr)',
+//    'kd':'^ak#kn(khuddaka)',
+//    'ds':'^ak#abh(abhidhamma)',
+//    'pt':'^ak#pt(paṭṭhāna)',
 }
 const prependAK=(buf,bkid)=>{
     const ak=AK[bkid]||'';

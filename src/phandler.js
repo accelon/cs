@@ -126,7 +126,7 @@ export default { //key is bkid or bkpf , bkid has precedence
             return '^ck#s'+ctx.samy+'('+text+')';
         },
         'title': (el,ctx,text,mat)=>{
-            return '^ck#s'+ctx.samy+  toBase26(++ctx.vaggo)+'('+text+')';
+            return '^cksn#'+ctx.samy+  toBase26(++ctx.vaggo)+'('+text+')';
         },          //big samyutta has vaggo
         'subhead':(el,ctx,text,mat)=>{         //sutta
             return '^h' +'('+text+')';
@@ -141,7 +141,12 @@ export default { //key is bkid or bkpf , bkid has precedence
             const nipata= parseInt(ctx.bkid.substr(2));
             if (text[0]=='(')t=text.substr(1);
             ctx.vaggo++;
-            return '^ck#a'+nipata+toBase26(ctx.vaggo)+'('+text+')';
+            if (ctx.vaggo==0) {
+                return '^ck#a'+nipata+'('+text+')';
+            } else {
+                return '^ckan#a'+nipata+toBase26(ctx.vaggo)+'('+text+')';
+            }
+            
         },
         'title': (el,ctx,text,mat)=>{return ""},//skip pannasaka 不輸出文字(SC版無)
         'subhead':(el,ctx,text,mat)=>{         //sutta

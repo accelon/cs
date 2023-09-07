@@ -15,3 +15,5 @@ books
 off
 par
 romn
+*.num
+*.ptk
