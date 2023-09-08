@@ -54,6 +54,9 @@ filepat 必須是新的檔名，vri 檔名轉書名代碼 見 src/newname.js (�
     node gen dn          // output off/dn1.cs.off , off/dn2.cs.off off/dn3.cs.off
     node gen dn1         // output off/dn1.cs.off only
 
+    按 accelon/kmj/README.md 建置
+    
+
 ### 不分句
 
     node gen dn1 p       // output par/dn1.cs.off , no sentence break
@@ -155,4 +158,6 @@ off/dn2.cs.off
     
     記錄引導斷句的位息，一經段一行，pin 以tab隔開。
     未來 vri 如果修改經文，重新node gen 即可。
+
+
 
