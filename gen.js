@@ -22,7 +22,7 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 //todo , offtext gen transclusion link
-const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN,addEpilog,connectGrammar];//factorizeOfftext
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN,addEpilog];//factorizeOfftext//connectGrammar
 
 const formula=new Formula('./formula.json');
 const ctx={formula, orth:{},unknownOrth:[] ,orthCount:0, tokenCount:0,grammars:[]};
@@ -45,6 +45,7 @@ filelist.forEach(fn=>{
     ctx.bkid=bkid;
     let buf=readTextContent(srcfolder+fn);
     const pinfn=brkfolder+fn.replace('.xml','.cs.txt');
+    
     if (!paramode&&fs.existsSync(pinfn) ) {
         ctx.pins=readTextLines(pinfn);
     } else ctx.pins=null;

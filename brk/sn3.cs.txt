@@ -155,7 +155,7 @@
 39	 “	 y	 yO	 sO	 prIm:5	 st
 40	 “	 p	 aW
 41	 “	 p	 n
-42	 “	 yO
+42	 “	 yO	dsm
 :1	
 :2	
 :3	 B
@@ -421,9 +421,9 @@
 :1	 sO	 ‘	 k	 r	 v	 sY	 sN	 vI
 :2	 e	 vE	 sY	 sN	 vI
 :3	 ‘	 ‘a	 vE	 s	 sN	 vI	 ‘anI:1	 t	 e	 nA	 pU	 sO	 id	 pX
-84	 t	 “	 d	 D	 T	 an	 h
-:1	 “	 ‘	 d	 D	 T	 an	 h
-:2	 “	 “ev	 “s	 “evm	 “sc	 ‘	 h	 “evM:1	 “t	 r	 “evM:2
+84	 t	 “
+:1	 “	 ‘
+:2	 “	 “ev	 “s	 “evm	 “sc	 ‘	 “evM:1	 “t	 r	 “evM:2
 :3	 e	 y	 v	 sY	 sN	 tE	 “
 :4	 e	 y	 “
 :5	 e	 y	 tM k	 r	 “
@@ -1069,21 +1069,21 @@
 678	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 pv	 st
 679	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 pv	 a
 680	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 sEy	 ev	 ekU	 (
-681-688	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 u	 vI	 (
-689-695	 “	 k	 i	 smAD:2	 nE	 smAD:6	 t	 u	 a	 (
-696-701	 “	 smAD:1	 nE	 smAD:5	 t	 u	 pY	 (
+681-688	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 u	 vI	 (	XItImUUlkM
+689-695	 “	 k	 i	 smAD:2	 nE	 smAD:6	 t	 u	 a	 (	vUWVXAnmUUlkM
+696-701	 “	 smAD:1	 nE	 smAD:5	 t	 u	 pY	 (	klVlItmUUlkM
 702-706	 “	 smAD:1	 nE	 smAD:5	 t	 u	 e	 (	 aArm:5
-707	 “	 smAD:1	 nE	 smAD:5	 sE	 e	 u
-708	 v
-709	
+707	 “	 smAD:1	 nE	 smAD:5	 sE	 e	 u	CctVtAlIIsmM
+708	 v	stVtctVtAlIIsmM
+709	aWVX
 710	 e	 (
-711	 “	 smAD:1	 nE	 smAD:5	 t	 u
-712	
+711	 “	 smAD:1	 nE	 smAD:5	 t	 u	pYVYAsmM
+712	ekpYVYAsmM
 713	 d	 (
-714	 “	 smAD:1	 nE	 smAD:5	 t	 u
+714	 “	 smAD:1	 nE	 smAD:5	 t	 u	tEpYVYAsmM
 715	 c
-716	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 sEy	 ev	 id	 at	 pY
-:1	 K
+716	 “	 k	 i	 iD 	 iD p:1	 iD p:2	 t	 sEy	 ev	 id	 at	 pY	 (yTA
+:1
 :2	
 :3	 v
 :4	 sA
