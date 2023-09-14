@@ -1,6 +1,7 @@
 const kmjfolder='../kmj/'
 import { TokenType, toParagraphs,tokenizeOfftext } from "ptk/nodebundle.cjs"
 import {loadGrammar} from '../../kmj/src/grammar-format.js'
+import { lexify,formulate } from "provident-pali"
 const formatgrammar=(gcodes)=>{
     const parts=[];
     const out=gcodes.map(it=>{
@@ -18,6 +19,7 @@ export const connectGrammar=(buf,ctx)=>{
     const grammars=loadGrammar(kmjfolder+'grammar/'+ctx.bkid,kmjfolder);
     const lines=buf.split('\n');
     const paragraphs=toParagraphs(lines);
+    const out2=[];
     for (let i=0;i<paragraphs.length;i++) {
         const [pn,palilines]=paragraphs[i];
         const tokens=[];
@@ -35,13 +37,13 @@ export const connectGrammar=(buf,ctx)=>{
             for (let j=0;j<palilines.length;j++) {
                 ctx.grammars.push('');
             }
-            continue;
+//            continue;
         }
-        const gtokens=grammars[pn].map(it=>it[0]);
-        const gcodes=grammars[pn].map(it=>it[1]);
+
+        const gtokens=(grammars[pn]||[]).map(it=>it[0]);
+        const gcodes=(grammars[pn]||[]).map(it=>it[1]);
         let out=[];
         for (let j=0;j<tokens.length;j++) {
-            
             if (tokens[j]=='\n') {
                 ctx.grammars.push(out.join(',1,'));
                 out=[];
@@ -51,6 +53,13 @@ export const connectGrammar=(buf,ctx)=>{
                 if (~at && gcodes[at]) {
                     const [parts,codes]=formatgrammar(gcodes[at]||[]);
                     //if (parts.length>1) console.log(tokens[j],parts)
+                    const lex =lexify(tk.text,parts);
+                    const lexstr=formulate(lex);
+                    if (lexstr) {
+                        //put back tailing space
+                        const m=tokens[j].text.match(/([^A-Z]*)$/);
+                        tokens[j].text=lexstr+(m?m[1]:'')
+                    }
                     out.push(codes);
                 } else {
                     if (tk.type>=TokenType.SEARCHABLE ) {                        
@@ -59,7 +68,8 @@ export const connectGrammar=(buf,ctx)=>{
                 }
             }
         }
+        const newline=tokens.map(tk=>tk.text?tk.text:'\n').join('');
+        out2.push(newline)
     }
- 
-    return buf;
+    return out2.join('')
 }
