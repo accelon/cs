@@ -426,7 +426,7 @@
 :9	 tE	 yE	 yE u	 yE d
 :10	 tE	 yE	 pr
 :11	 tE	 yE	 yE u	 yE d
-:12	 s	 aT	 tm	 ‘	 sc	 pIvt	 aT K	 ‘s	 sO t	 sO t:1	 evmE	 tE 	 yE t	 yE u	 yE d
+:12	 s	 aT	 tm	 ‘	 sO c:1	 sc	 pIvt	 aT K	 ‘s	 sO t	 sO t:1	 evmE	 tE 	 yE t	 yE u	 yE d
 :13	 e	 tE	 yE	 yE u	 yE d	 C
 67	 aT	 smVm:1	 “	 “n	 apI
 :1	 “	 apI
@@ -456,7 +456,7 @@
 :3	 “	 as	 “s	 ‘	 aT	 smVm:1	 “sc	 ‘KII:1	 “e
 :4	 “
 :5	 “
-:6	 “
+:6	srAgM	 vIItrAgM	 sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sMKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 “
 :7	 “
 :8	 “
 :9	 “
@@ -471,7 +471,7 @@
 :18	 “	 “‘	 “evM:1	 “u	 t	 v	 P	 sL	 n	 vI	 sN	 a	 “evM:2
 :19	 “
 :20	 “
-:21	 “
+:21	 srAgM	 vImUtVtM	 “
 :22	 “
 :23	 “
 :24	 “
@@ -516,18 +516,18 @@
 :10	
 :11	 sNVK:1	 sNVK:3	 sNVK:5	 e
 :12	
-:13		
+:13	
 :14	
-:15	 y	
-:16	 C	
-:17	 u	
-:18	 ap	
-:19	 aA	
-:20	 v	
-:21	 s	
-:22	 s	
-:23	 s	
-:24	 ap	
+:15	 y
+:16	 C
+:17	 u
+:18	 ap
+:19	 aA
+:20	 v
+:21	 s
+:22	 s
+:23	 s
+:24	 ap
 :25	
 :26	
 :27	 C
@@ -710,7 +710,7 @@
 :1	 y	 yO t	 yO v	 s
 121	 “	 k	 p	 y	 n 
 :1	 t	 aW
-122	 “	 k	 p	 y	 pj	 sy	 nv
+122	 “	 k	 p	 y		 pj	 sy	 nv
 123	 “	 a	 t	 vAy	 n c
 :1	 y	 t	 vAy	 tE c:1	 ds
 :2	
@@ -843,7 +843,7 @@
 :8	 k
 :9	 ks
 :10	 k
-:11	 k
+:11	 srAgM	 vIItrAgM	 sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sMKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 k	 srAgM:2	 avImUtVtM:2
 :12	 k
 :13	 ks
 :14	 k	 n
