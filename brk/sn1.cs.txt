@@ -1234,11 +1234,11 @@
 :13	 pI
 :14	 m
 122	 t	 a
-:1	 aT	 “
+:1	 aT	 “	 rAjA:1
 :2	 “
 :3	
-:4	 t	 mn	 p	 sM	 tYVc:1	 mnsI:1	 pYVY:1	 aA	 sO 	 mnsI:2	 pYVY:2	 sA	 sA 	 mnsI:3	 pYVY:4
-:5	 y	 ‘	 i	 sM	 tY	 mn	 pY	 sMvO	 tYVc:1	 mnsI:1	 pYVY:1	 aA	 sO 	 mnsI:2	 pYVY:2	 sAk	 sA 	 mnsI:3	 pYVY:4
+:4	 sM	 aA	 sA
+:5	 y	 ‘	 i	 sM	 sMvO	 aA	 sAk
 :6	 t	 i
 :7	
 :8	
