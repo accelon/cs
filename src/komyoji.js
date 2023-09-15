@@ -16,6 +16,7 @@ const formatgrammar=(gcodes)=>{
     return [parts,serialized];
 }
 export const connectGrammar=(buf,ctx)=>{
+    
     const grammars=loadGrammar(kmjfolder+'grammar/'+ctx.bkid,kmjfolder);
     const lines=buf.split('\n');
     const paragraphs=toParagraphs(lines);
@@ -33,7 +34,7 @@ export const connectGrammar=(buf,ctx)=>{
         
         let now=0;
         if (!grammars[pn]) { //kmj has no correspondance
-            console.log(ctx.fn,'no pn',pn);
+            console.log('missing grammar',ctx.fn,'no pn',pn);
             for (let j=0;j<palilines.length;j++) {
                 ctx.grammars.push('');
             }

@@ -9,7 +9,7 @@ import {reparanum,removePureN} from './src/reparanum.js'
 import {addEpilog} from './src/epilog.js'
 import {factorizeOfftext,printFactorizeStat} from './src/factorization.js'
 import {connectGrammar} from './src/komyoji.js'
-const scfolder='../sc/pli/'
+const scfolder='../sc/sc-pli.offtext/'
 const bbfolder='../bb/off/' 
 const srcfolder='./books/'; 
 const brkfolder='./brk/'
@@ -22,7 +22,7 @@ const desfolder=paramode?'par/':'off/';
 const filelist= glob(srcfolder,pat);
 const breaklines=(buf,ctx)=>guidedBreakLines(buf,ctx.pins,ctx.fn);
 //todo , offtext gen transclusion link
-const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN,addEpilog];//factorizeOfftext//connectGrammar
+const Steps=[transliterate,reparanum , offtextgen, stepStripNotes,breaklines,removePureN,addEpilog,connectGrammar];//factorizeOfftext
 
 const formula=new Formula('./formula.json');
 const ctx={formula, orth:{},unknownOrth:[] ,orthCount:0, tokenCount:0,grammars:[]};

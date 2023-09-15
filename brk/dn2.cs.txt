@@ -363,7 +363,7 @@
 :2	 ad	 dI	 “	 ap	 u	 tAvt:1	 aT	 ekmn:1	 aT K:1	 “a	 aT K:2	 “aDI:1	 aT K:3	 “j	 aT K:4
 162	 “	 aT	 aT K:1	 aT K:2	 ekmn:1	 “i	 pWIg	 aT K:3	 tt	 “it	 sIIl:1	 smAD:2	 pYVY:3	 kAm
 163	 “	 “e	 aT	 tt	 ttVr:1	 “eT	 ah	 “evM:1	 BgvA:4
-164	 t	 aT	 “	 yM	 aT K:1	 aT K:2	 aT K:3	 aT K:4	 “d	 dIs	 D	 ‘
+164	 t	 aT	 “	 yM	 aT K:1	 aT K:2	 aT K:3	 aT K:4	 “d	 apI	 ‘
 165	 d	 n	 y	 ‘	 tTAg:1	 ‘ahM:1	 sk	 ah	 aAs	 sE	 evmE	 ysVm	 tsVm:1	 kT	 i	 vEdn:1	 cI	 DmVm:6	 evM K	 yE
 :1	
 166	 vEsA:1	 “	 y	 “e	 aT	 aAys:2
@@ -1248,7 +1248,7 @@
 :8	
 380	 i	 d	 a	 sA	 n	 sAmI:1	 nIrA:1	 sAmI:2	 nIrA:2	 it	 sm	 ‘at	 e
 :1	
-381	 i	 it	 smU	 ‘at	 e
+381	 i	 vIItrAgM	sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sNVKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 it	 smU	 ‘at	 e
 :1	
 382	 i	 k
 :1	
@@ -1360,7 +1360,7 @@
 425	 ‘	 “	 at	 y	 “i	 ‘a	 i	 tV	 ‘t	 tE 	 yd	 ‘tEn:1	 tE t	 nE	 tVyA:2	 ‘tEn:2	 psVs:3	 dU	 ud	 om	 pA	 lE	 dNVF:1	 stVT	 oD	 tE t:1	 nEvs:1	 ts	 tdEv:1	 tdEv:2	 sA	 sV	 ay	 ‘itI:1
 426	 upmA	 BU	 sO	 aT	 ‘	 sn	 ‘amV:1	 ‘e	 tE t	 ‘v	 nE	 tE t:1	 ‘vdE:1	 nEv s:1
 :1	 ‘	 tE	 aT	 ‘yd	 ev	 ydA p:1	 imI	 ‘i
-427	 ‘	 “	 at	 y	 “i	 ‘a	 tV	 ‘t	 tE 	 nE	 tVyA:1	 ‘tEn:1	 tE t:1	 ay	 ‘itI:1
+427	 ‘	 “	 at	 y	 “i	 ‘a	 imsVs	 tV	 ‘t	 tE 	 nE	 tVyA:1	 ‘tEn:1	 tE t:1	 ay	 ‘itI:1
 428	 upmA	 BU	 aT	 aT K:1	 aT K:2	 ‘	 aT K:3	 dI	 ‘n	 yMn	 aT K:4	 yd	 aT K:6	 ‘i	 agVg:7	 mA	 sc	 aT K:7	 tsVs:3
 :1	 ‘	 “	 mA	 s	 y	 aT	 ‘a	 nE	 arNI:2	 – ‘a:1	 nEv s:1
 :2	 ‘	 ‘i	 ts	 “	 mA	 sc	 yM	 aT	 “a	 nE	 arNI:2	 “apV:1	 nEvA:1	 aT K:1	 ‘y	 tsVs:2	 ‘e	 n t	 evm	 pW	 mA t
