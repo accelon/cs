@@ -670,7 +670,7 @@
 :14	 i	 t	 ay	 e
 :15	 k	 i	 ‘	 yT	 yTAr:1	 yTAr:2	 yTAr:3	 yTAr:4	 ts
 :16	 uk	 e	 evm
-:17	 i	 ‘	 y	 ts	 ay	 e
+:17	 i	 ‘	 y	 yTArUUpEn	 sUtEn	 cAgEn	 pYVYAy	 ts	 ay	 e
 :18	 ‘	 ah	 imI
 :19	 ah	 imI
 :20	 ah	 imI
@@ -896,8 +896,8 @@
 :1	 ts	 tsVm:2	 tsVm:4	 sO	 hOtI:1	 sO h:1	 ys
 :2	 tt
 :3	 t
-:4	 t
-:5	 ttVr:1
+:4	 srAgM	 vIItrAgM	 sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sMKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 t
+:5	 t
 :6	 tt
 :7	 t	 ds
 103	 kAlE:1	 sc	 scE,:1	 scE,:2	 y
@@ -1105,7 +1105,7 @@
 :5	 k	 a	 ktmA:1	 ay
 :6	 a
 :7	 i	 u	 anUp:2	 upVp:2
-:8	 c	 vIIm
+:8	 vIIrI	 c	 vIIm
 :9	 v	 s	 sm	 p
 :10	 v	 s	 sm	 p
 :11	 D	 v	 p	 ps	 s	 u

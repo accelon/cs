@@ -313,25 +313,25 @@
 363-365	 aT
 :1	
 :2	
-366-381	
+366-381	 pINVFp	 pMsUkU	 tEcIIvrIkt	 DmVmk	 vInyDrt	 bAhUs	 TAvrEy	 aAkpV	 prIvAr	 mhAp	 kOlpU	 vNVNp	 klVyAN	 apVp	 apVpA
 :1	
 382	 ‘	 k
-383-389	
+383-389	ttIyM	 ctUtVTM	 mEtVtM	 krUNM	 mUdItM	 upEkVKM
 390-393	 vE	 c	 D
 394-397	 u	 anUp:1	 upVp:2
-398-401	
-402-406	
-407-411	
-412-418	
-419-426	
+398-401	 vIIrIysm	 cItVtsm	 vIImMs
+402-406	 vIIrIyIn	 stInVdV	 smADIn	 pYVYInV
+407-411	 vIIrIyb	 stIblM	 smAD	 pYVY
+412-418	 DmVmv	 vIIrIys	 pIItIsm	 psVsd	 smADI	 upEkV
+419-426	 smVmAs	 smVmAvAc	 smVmAkmVm	 smVmAaAjIIvM	 smVmAvAyAmM	 smVmAstIM	 smVmAsmADI
 427-434	 ‘	 j	 e	 ajVJ:1	 ‘tAn:1	 jAnA:1	 evMs:1	 ajVJ:2	 ‘tAn:2	 jAnA:2	 evMs:2	 ajVJ:3	 ‘tAn:3	 jAnA:3	 evMs:3	 ajVJ:4	 ‘tAn:4	 jAnA:4	 evMs:4	 ajVJ:5	 ‘tAn:5	 jAnA:5	 evMs:5	 ajVJ:6	 ‘tAn:6	 jAnA:6	 evMs:6	 ajVJ:7	 ‘tAn:7	 jAnA:7	 evMs:7
-435-442	
-443-452	
-453-462	
-463-472	
-473-482	
-483-492	
-493-562	 a	 ‘	 kO
+435-442	 ajVJtVtM	 sUBnVtEv	 sbVbsO	 sbVbsO:1	 sbVbsO:2	 sbVbsO:3	 sbVbsO:4
+443-452	 aApOksINM	 tEjOksINM	 vAyOksINM	 nIIlksINM	 pIItksINM	 lOhItksINM	 odAtksINM	 aAkAsksINM	 vIYVYANksINM
+453-462	 mrNsYVYM	 aAhArE	 sbVblOkE	 anIcVcsYVYM	 anIcVcE	 dUkVKE	 phAnsYVYM	 vIrAgsYVYM	 nIrODsYVYM
+463-472	 antVtsYVYM	 mrNsYVYM	 aAhArE	 sbVblOkE	 aWVXIksYVYM	 pULvksYVYM	 vInIIlksYVYM	 vIcVCIdVdksYVYM	 udVDUmAtksYVYM
+473-482	 DmVmAnUsVstIM	 sNVGAnUsVstIM	 sIIlAnUsVstIM	 cAgAnUsVstIM	 dEvtAnUsVstIM	 aAnApAnsVstIM	 mrNsVstIM	 kAygtAstIM	 upsmAnUsVstIM
+483-492	 vIIrIyInVdVrIyM	 stInVdVrIyM	 smADInVdVrIyM	 pYVYInVdVrIyM	 sdVDAblM	 vIIrIyblM	 stIblM	 smADIblM	 pYVYAblM
+493-562	 ttIyjVJAnshgtM	 ctUtVTjVJAnshgtM	 mEtVtAshgtM	 krUNAshgtM	 mUdItAshgtM	 upEkVKAshgtM	 vIIrIyInVdVrIyM	 stInVdVrIyM	 smADInVdVrIyM	 pYVYInVdVrIyM	 sdVDAblM	 vIIrIyblM	 stIblM	 smADIblM	 pYVYAblM	 a	 ‘	 kO
 :1	
 563	 e
 564-570	 k	 kA	 ay
