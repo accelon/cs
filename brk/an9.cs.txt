@@ -235,7 +235,7 @@
 :11	 mUdU:1	 sO
 :12	 t
 :13	 st
-:14	 t
+:14	 srAgM	 vIItrAgM	 sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sMKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 t
 :15	 t
 :16	 t
 :17	 t	 ct

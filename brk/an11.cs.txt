@@ -89,7 +89,7 @@
 :1	 “	 ‘	 a	 “sU	 ‘s	 nIW	 tEs
 :2	 e	 ‘	 sd	 aArd	 upW	 sm	 pY	 i
 :3	 ‘	 y	 u	 ujUg:1	 pm	 i
-:4	 s	 at	 atVt:1	 d	 ‘	 sn	 y	 yTAr:1	 sU	 cAgE	 p	 ys	 u	 ujUg:1	 pm	 im	 dU
+:4	 s	 at	 atVt:1	 d	 ‘	 y	 yTAr:1	 sU	 cAgE	 p	 ys	 u	 ujUg:1	 pm	 im	 dU
 13	 t
 :1	 “	 a	 “y	 t
 :2	 n	 t	 tE	 “

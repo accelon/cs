@@ -202,7 +202,7 @@
 19	 a
 :1	 “	 “k	 “aW	 k	 mhAs:6	 ym	 ay
 :2	 y	 a
-:3	 y	 ym	 a
+:3	 ym	 a
 :4	 g	 ymV	 ay
 :5	 ym	 ay
 :6	 y	 a
@@ -245,7 +245,7 @@
 22	 t	 “	 i	 idM
 :1	 aT	 “	 k
 :2	 k	 ap	 t	 “	 ugVg:1	 “y	 sh	 ay
-:3	 t	 d	 kA	 y	 dU	 sEyV:1	 e	 ‘	 sO	 ay
+:3	 t	 d	 y	 dU	 sEyV:1	 e	 ‘	 sO	 ay
 :4	 aT	 ‘	 yA	 h	 ev	 ‘i	 aT K:1	 kOmA:1	 ayM
 :5	 t	 ay
 :6	 s	 sO	 skVk:1	 nO c	 ay
@@ -399,7 +399,7 @@
 :1	 ay
 :2	 ay
 :3	 k	 i	 pANA:2	 aprI:1	 id	 ay
-:4	 k		 m		 s	 sUrA:2	 aprI:1	 i	 ay	 im	 nv
+:4	 k	 m	 s	 sUrA:2	 aprI:1	 i	 ay	 im	 nv
 40	 y
 :1	 y
 :2	 y

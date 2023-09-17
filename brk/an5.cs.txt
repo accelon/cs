@@ -59,7 +59,7 @@
 :1	 kt	 kA	 i	 yt	 ys
 :2	 tt
 :3	 t
-:4	 sr	 t
+:4	 sr	 vIItrAgM	 sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sMKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 t
 :5	 ttVr:1
 :6	 tt
 :7	 t	 ttI
@@ -87,7 +87,7 @@
 :8	 t	 e	 tt
 :9	 t
 :10	 t
-:11	 t
+:11	 srAgM	 vIItrAgM	 sdOsM	 vIItdOsM	 smOhM	 vIItmOhM	 sMKItVtM	 vIkVKItVtM	 mhgVgtM	 amhgVgtM	 sutVtrM	 anUtVtrM	 smAhItM	 asmAhItM	 vImUtVtM	 avImUtVtM	 t
 :12	 t
 :13	 t
 :14	 t	 aW
@@ -471,7 +471,7 @@
 66	 k	 i	 atVt:1	 atVt:2	 atVt:3	 atVt:4	 im	 C
 67	 dI
 :1	 i	 v	 c	 vIIm	 u	 y	 dI	 stV
-68	 k	 C	 sO	 t
+68	 k	 C	 vIIrIys	 cItVts	 vIImMsA	 usVsOL	 sO	 t
 :1	 t
 :2	 t	 aW
 69	
@@ -523,7 +523,7 @@
 :12	 t	 e	 ay
 :13	 k	 i	 sO m	 sO v
 :14	 sO	 b	 T	 ud	 vIc	 sO i	 vIv	 ct
-:15	 sO	 t	 vImU:3	 ‘K	 id
+:15	 sO	 ‘imE	 t	 vImU:3	 ‘K	 id
 :16	 tT	 e	 ay	 imE	 pYVc:2
 76	 k	 i	 sO	 tm	 ev	 ay
 :1	 sO	 tm	 apnE:1	 sO Y	 e	 ay
@@ -543,14 +543,14 @@
 :15	 ‘	 n
 :16	 e	 ay
 :17	 s	 sO c	 y	 sOt	 G	 j	 kAyE:1	 m	 ytVv:1	 sO p:1	 vIv	 sO a	 sO a:1	 vIvI:1
-:18	 sO
+:18	 sO	 nAprM
 :19	 e	 ay	 imE	 C
 77	
-:1	 i	 ‘	 ekkM	 h	 id
-:2	 ‘	 ekkO:1	 h	 id
-:3	 ‘	 ekkO:1	 h	 id
-:4	 ‘	 ekkO:1	 h	 id
-:5	 ‘	 s	 h	 id
+:1	 i	 ‘	 ekkM	 ahI	 tEn	 h	 id
+:2	 ‘	 ekkO:1	 upkVK	 tEn	 h	 id
+:3	 ‘	 ekkO:1	 vALE	 tEn	 h	 id
+:4	 ‘	 ekkO:1	 mANv	 tEn	 h	 id
+:5	 ‘	 s	 tEn	 h	 id
 :6	 st
 78	 k	 i	 ‘	 h	 jI	 pU	 hn	 id
 :1	 ‘	 h	 bVyA:1	 pU	 hn	 id
