@@ -58,7 +58,7 @@ export const connectGrammar=(buf,ctx)=>{
                     const lexstr=formulate(lex);
                     if (lexstr) {
                         //put back tailing space
-                        const m=tokens[j].text.match(/([^A-Z]*)$/);
+                        const m=tokens[j].text.match(/([^A-Za-z]*)$/);
                         tokens[j].text=lexstr+(m?m[1]:'')
                     }
                     out.push(codes);

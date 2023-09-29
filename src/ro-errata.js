@@ -350,7 +350,11 @@ const Errata={
         ['n="101"><hi rend="paranum">101','n="98"><hi rend="paranum">98'],
         ['n="102"><hi rend="paranum">102','n="99"><hi rend="paranum">99'],
     ],
+    'e0101n.mul.xml':[
+        ['(paṭhamo bhāgo)','paṭhamo bhāgo']
+    ],
     'e0102n.mul.xml':[
+        ['(dutiyo bhāgo)','dutiyo bhāgo'],
         ['<p rend="bodytext" n="561"><hi rend="paranum">561</hi><hi rend="dot">.</hi> ayaṃ',
         '<p rend="bodytext" n="591"><hi rend="paranum">591</hi><hi rend="dot">.</hi> ayaṃ']
     ],

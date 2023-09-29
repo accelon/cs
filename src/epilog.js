@@ -29,7 +29,7 @@ const prependAK=(buf,bkid)=>{
 
 export const addEpilog=(buf,ctx)=>{
     if (ctx.bkid==='vs' || ctx.bkid==='vs0a') {
-        buf=buf.replace('\n^n1 ','\n^n ');
+        buf=buf.replace('\n^n1 ','\n').replace('^bk#vs','^ak#vs(vIsUdVDImgVg)^bk#vs');//redundent
     }
     return prependAK(buf,ctx.bkid);
 }
